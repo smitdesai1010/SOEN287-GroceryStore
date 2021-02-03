@@ -1,5 +1,5 @@
-var path = document.currentScript.getAttribute('abspath') + "/"
-
+var path = document.currentScript.getAttribute('abspath') 
+console.log(path)
 var link1src = "https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
 var link2src = path + "assets/bootstrap/css/bootstrap.min.css";
 var link3src = path + "assets/img/favicon.jpg" 
