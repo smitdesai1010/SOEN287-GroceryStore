@@ -1,8 +1,14 @@
+
+
 .bs-item {
-padding: .5rem;
+    display: block;
+    padding: .25rem 1rem;
+    font-size: 16pt;
+    
+    
 }
 
 .bs-sidebar {
     position: sticky;
+    background-color: #e5e5e5;
 }
-

@@ -1,3 +1,7 @@
-.return-to-products {
-    
+.container-fluid {
+    min-height: 52.5vh;
+}
+
+.title-description, .add-images-group, .organization-tags {
+    background-color: white;
 }
