@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Apples</title>
+</head>
+<style>
+    h1 {
+        text-align: center;
+        background-color: #777777;
+        color: #46B510
+    }
+
+    footer {
+        text-align: center;
+        background-color: #777777;
+    }
+
+    .green {
+        color: #46B510
+    }
+
+    .white{
+        color: #FFFFFF
+    }
+
+</style>
+<h1 class="green display-1 p-4">FRUITS</h1>
+
+<section class="px-4">
+    <div container>
+        <div class="row">
+            <div class="column mx-4 py-5">
+                <img src="https://images.unsplash.com/photo-1560806887-1e4cd0b6cbd6?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mnx8YXBwbGV8ZW58MHx8MHw%3D&auto=format&fit=crop&w=500&q=60">
+            </div>
+            <div class="card py-4 col-12 col-md-8">
+                <h3><b>APPLES</b></h3>
+                <h5 class="green">$2.99/lb</h5>
+                <div class="row mx-1">
+                    <button onclick="increment()">+</button>
+                    <input id=demoInput type=number min=0 max=20>            
+                    <button onclick="decrement()">-</button> 
+                    <script>
+                        function increment() {
+                            document.getElementById('demoInput').stepUp();
+                        }
+                        function decrement() {
+                            document.getElementById('demoInput').stepDown();                            }
+                    </script>
+                </div>
+                <br>
+                <p>Our apples are locally grown, with a wide selection of apples. Granny smith, gala, macintosh, honey crisp, and many more!</p>
+                <p>Apples cost the same amount for each and every variety.</p>
+                <a href=""><button type="button" class="btn btn-primary btn-lg my-2">ADD TO CART</button></a>
+            </div>
+        </div>
+    </div> 
+</section>
+
+
+
+
+
+<footer>
+    <div class="py-5">
+        <p class="white">Website was created by students from SOEN 287 Concordia University</p>
+        <a href="" class="green">Backpage</a> <!-- Enter backpage html reference -->
+    </div>
+</footer>
+
+</html>>
