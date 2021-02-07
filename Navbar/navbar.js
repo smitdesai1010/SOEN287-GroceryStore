@@ -20,6 +20,8 @@ var aisle5 = path + "" ;
 var cart = path + "" ;
 // Inserting CSS code of header and Footer into head
 
+var admin = path + "Admin/productlist.html";
+
 var head = document.querySelector('head');
 
 var style = document.createElement('style')
@@ -312,7 +314,7 @@ footer.innerHTML =
             <div class="col-md-6 item text">
                 <h3>The Grocery Store</h3>
                 <ul>
-                    <li><a href="#">Administrative</a></li>
+                    <li><a href="${admin}">Administrative</a></li>
                 </ul>
             </div>
         </div>
