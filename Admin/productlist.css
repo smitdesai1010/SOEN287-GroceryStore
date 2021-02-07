@@ -1,0 +1,5 @@
+@media only screen and (min-height: 800px) {
+    .wrapper {
+        height: 72.0vh;
+    }
+}

@@ -11,12 +11,14 @@ var script3src = path + "assets/js/Advanced-NavBar---Multi-dropdown.js";
 var login = path + "Login/login.html";
 var signup = path + "Signup/Signup.html";
 
-var Products = "";
-var Customers = "";
-var Orders = "";
+var Products = path + "Admin/productlist.html";
+var Customers = path + "";
+var Orders = path + "";
 
 
 var cart = path + "" ;
+
+var admin = "Admin/productlist.html";
 // Inserting CSS code of header and Footer into head
 
 var head = document.querySelector('head');
@@ -291,7 +293,7 @@ footer.innerHTML =
             <div class="col-md-6 item text">
                 <h3>The Grocery Store</h3>
                 <ul>
-                    <li><a href="#">Administrative</a></li>
+                    <li><a href="${admin}">Administrative</a></li>
                 </ul>
             </div>
         </div>
