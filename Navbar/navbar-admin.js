@@ -128,7 +128,7 @@ style.innerHTML = `.footer-dark {
   }
   
   .header2.bg-success-gradiant {
-    background: #282d32;
+    background: #212525;
   }
   
   .header2 .font-12 {
