@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="../style.css" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrot</title>
+</head>
+
+
+<body>
+<h3 class="title display-3 p-4">VEGETABLES</h3>
+<section class="p-lg-5 m-5">
+    <div container>
+        <div class="row">
+            <div class="column mx-4 py-5">
+                <img style="width: 375px; height: 375px;" src="https://www.euroharvest.co.uk/wp-content/uploads/2020/07/carrots_.png" class="rounded img-fluid" alt="Responsive image">
+            </div>
+            <div class="card py-5 col-12 col-md-8">
+                <h3><b>CARROT</b></h3>
+                <h5 class="green" id="price">$1.29/lb</h5>
+                <div class="row mx-1">
+                    <button onclick="decrement()">-</button>
+                    <input id=demoInput type=number min=0 max=20 style="text-align: center;">            
+                    <button onclick="increment()">+</button> 
+                    <script>
+                        function increment() {
+                            document.getElementById('demoInput').stepUp();
+                        }
+                        function decrement() {
+                            document.getElementById('demoInput').stepDown();                            
+                        }
+                    </script>
+                </div>
+                <br>
+                <p>Carrots are locally grown in Ontario, Canada. Widely available during late spring and fall.</p>
+                <a href=""><button type="button" style="background-color: #46B510 !important; border-color: #46B510 !important;" class="btn btn-primary btn-lg my-2">ADD TO CART</button></a>
+            </div>
+        </div>
+    </div> 
+</section>
+
+<script src="../../../Navbar/navbar.js" abspath="../../../"></script>
+</body>
+
+</html>
