@@ -15,3 +15,18 @@
 .bottom {
     height: 200px;
 }
+
+
+.imagecrd {
+    width: 375px; 
+    height: 375px;
+}
+
+.cardwidth {
+    width: 18rem;
+}
+
+.crdimagesize {
+    width:286px; 
+    height: 180px;
+}
