@@ -31,12 +31,12 @@
             <a class="btn btn-primary mb-3 float-right mr-4" href="" role="button">Add Product</a>
             <h1>Add Product</h1>
         </header>
-        <div class="container-fluid row mb-5">
-            <div class="ttl-dscr-img border rounded col-6 ml-4">
+        <div class="d-flex mb-5">
+            <div class="ttl-dscr-img d-flex flex-column col-md-6 border rounded m-4">
                 <form class=" new-product-info-group">
                     <div class="container title-description p-4 pb-4 mb-4">
                         <h5 class="mb-3">Basic Information</h5>
-                        <div class="title-group mb-3 mr-6">
+                        <div class="title-group mb-3 ">
                             <label for="inputProductName">Product Name</label>
                             <input type="text" class="form-control" id="inputProductName"
                                 placeholder="Enter Product Name">
@@ -58,7 +58,7 @@
             </div>
 
 
-            <div class="container organization-tags col-3 border rounded offset-2">
+            <div class="d-flex flex-column organization-tags col-md-4 col-sm-6 m-4 border rounded ml-auto">
                 <form class="type-vendor-tag">
                     <div class="organization pt-4">
                         <h5>Organization</h5>
@@ -85,11 +85,11 @@
                         <input type="text" class="form-control" id="tagsInput" placeholder="e.g. Organic, local">
                     </div>
                 </form>
-
             </div>
+            <script src="..\..\Navbar\navbar.js"></script>
         </div>
     </main>
-    <script src="..\..\Navbar\navbar.js"></script>
+
 </body>
 
 </html>
