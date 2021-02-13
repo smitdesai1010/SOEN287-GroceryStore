@@ -130,7 +130,7 @@ style.innerHTML = `.footer-dark {
   }
   
   .header2.bg-success-gradiant {
-    background: #212525;
+    background: #212529;
   }
   
   .header2 .font-12 {

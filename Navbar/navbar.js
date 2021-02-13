@@ -11,11 +11,11 @@ var script3src = path + "assets/js/Advanced-NavBar---Multi-dropdown.js";
 var login = path + "Login/login.html";
 var signup = path + "Signup/Signup.html";
 
-var aisle1 = path + "" ;
-var aisle2 = path + "" ;
-var aisle3 = path + "" ;
-var aisle4 = path + "" ; 
-var aisle5 = path + "" ;
+var aisle1 = path + "Aisles/Aisles/Aisle 1/1_Fruits.html" ;
+var aisle2 = path + "Aisles/Aisles/Aisle 2/2_Vegetables.html" ;
+var aisle3 = path + "Aisles/Aisles/Aisle 3/3_Meat.html" ;
+var aisle4 = path + "Aisles/Aisles/Aisle 4/4_Dairy.html" ; 
+var aisle5 = path + "Aisles/Aisles/Aisle 5/5_Pastry.html" ;
 
 var cart = path + "Cart/cart.html" ;
 // Inserting CSS code of header and Footer into head
@@ -131,7 +131,7 @@ style.innerHTML = `.footer-dark {
   }
   
   .header2.bg-success-gradiant {
-    background: #212525;
+    background: #212529;
   }
   
   .header2 .font-12 {
@@ -273,11 +273,11 @@ header.innerHTML = `
                 Product <i class="icon-arrow-down ml-1 font-12"></i>
             </a>
             <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="${aisle1}">Aisle1</a></li>
-                <li><a class="dropdown-item" href="${aisle2}">Aisle2</a></li>
-                <li><a class="dropdown-item" href="${aisle3}">Aisle3</a></li>
-                <li><a class="dropdown-item" href="${aisle4}">Aisle4</a></li>
-                <li><a class="dropdown-item" href="${aisle5}">Aisle5</a></li>
+                <li><a class="dropdown-item" href="${aisle1}">Fruits</a></li>
+                <li><a class="dropdown-item" href="${aisle2}">Vegetables</a></li>
+                <li><a class="dropdown-item" href="${aisle3}">Meat</a></li>
+                <li><a class="dropdown-item" href="${aisle4}">Dairy</a></li>
+                <li><a class="dropdown-item" href="${aisle5}">Pastry</a></li>
             </ul>
             </li>
         </ul>
