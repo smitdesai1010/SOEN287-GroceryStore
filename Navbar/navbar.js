@@ -11,11 +11,11 @@ var script3src = path + "assets/js/Advanced-NavBar---Multi-dropdown.js";
 var login = path + "Login/login.html";
 var signup = path + "Signup/Signup.html";
 
-var aisle1 = path + "Aisles/Aisles/Aisle 1/1_Fruits.html" ;
-var aisle2 = path + "Aisles/Aisles/Aisle 2/2_Vegetables.html" ;
-var aisle3 = path + "Aisles/Aisles/Aisle 3/3_Meat.html" ;
-var aisle4 = path + "Aisles/Aisles/Aisle 4/4_Dairy.html" ; 
-var aisle5 = path + "Aisles/Aisles/Aisle 5/5_Pastry.html" ;
+var aisle1 = path + "AISLES/Aisles/Aisle 1/1_Fruits.html" ;
+var aisle2 = path + "AISLES/Aisles/Aisle 2/2_Vegetables.html" ;
+var aisle3 = path + "AISLES/Aisles/Aisle 3/3_Meat.html" ;
+var aisle4 = path + "AISLES/Aisles/Aisle 4/4_Dairy.html" ; 
+var aisle5 = path + "AISLES/Aisles/Aisle 5/5_Pastry.html" ;
 
 var cart = path + "Cart/cart.html" ;
 // Inserting CSS code of header and Footer into head
