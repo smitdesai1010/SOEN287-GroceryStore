@@ -1,9 +1,0 @@
-.title-description, .add-images-group, .organization-tags {
-    background-color: white;
-}
-
-@media only screen and (min-height: 800px) {
-    .wrapper {
-        height: 70.0vh;
-    }
-}
