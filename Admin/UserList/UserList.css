@@ -1,0 +1,19 @@
+/* *{
+    box-sizing: border-box;
+}
+/* .table{
+     */
+/* } */
+ .user-table{
+    position: relative;
+    overflow: scroll;
+    max-height: 75%;
+}
+.container{
+    position: relative;
+} 
+@media only screen and (min-height: 800px) {
+    .wrapper {
+        height: 72.1vh;
+    }
+}
