@@ -27,16 +27,18 @@
 
 <body>
     <main class="wrapper">
-        <header class="return-to-products m-4">
-            <a class="btn btn-primary mb-3 float-right mr-4" href="" role="button">Add Product</a>
-            <h1>Add Product</h1>
+        <header class="d-flex return-to-products m-4">
+            <div class="">
+                <h1>Add Product</h1>
+            </div>
+            <div class="ml-auto align-self-center"><a class="btn btn-primary" href="" role="button">Add Product</a></div>
         </header>
         <div class="container-fluid row mb-5">
-            <div class="ttl-dscr-img border rounded col-6 ml-4">
-                <form class=" new-product-info-group">
-                    <div class="container title-description p-4 pb-4 mb-4">
+            <div class="ttl-dscr-img d-flex flex-column col-md-6 col-sm-4 border rounded m-4">
+                <form class="new-product-info-group">
+                    <div class="container title-description pt-4 pb-4 mb-4">
                         <h5 class="mb-3">Basic Information</h5>
-                        <div class="title-group mb-3 mr-6">
+                        <div class="title-group mb-3 ">
                             <label for="inputProductName">Product Name</label>
                             <input type="text" class="form-control" id="inputProductName"
                                 placeholder="Enter Product Name">
@@ -48,7 +50,7 @@
                         </div>
                     </div>
                     <hr />
-                    <div class="container add-images-group p-4 pb-4">
+                    <div class="container add-images-group pb-4">
                         <h5 class="mb-4">Images</h5>
                         <!--Use an image instead of a button?-->
                         <label for="exampleFormControlFile1">Add Image</label>
@@ -58,7 +60,7 @@
             </div>
 
 
-            <div class="container organization-tags col-3 border rounded offset-2">
+            <div class="d-flex flex-column organization-tags col-sm-4 border rounded m-4 ml-4 ml-sm-auto">
                 <form class="type-vendor-tag">
                     <div class="organization pt-4">
                         <h5>Organization</h5>
@@ -75,7 +77,7 @@
                     </div>
 
                     <hr />
-                    <div class="tags">
+                    <div class="tags pb-4">
                         <label for="tagsInput">
                             <h5>Tags</h5>
                         </label>
@@ -85,11 +87,12 @@
                         <input type="text" class="form-control" id="tagsInput" placeholder="e.g. Organic, local">
                     </div>
                 </form>
-
             </div>
+
         </div>
+        <script src="..\..\Navbar\navbar.js"></script>
     </main>
-    <script src="..\..\Navbar\navbar.js"></script>
+
 </body>
 
 </html>
