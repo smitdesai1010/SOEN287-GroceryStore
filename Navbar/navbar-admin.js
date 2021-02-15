@@ -15,10 +15,12 @@ var Products = path + "Admin/productlist.html";
 var Customers = path + "";
 var Orders = path + "";
 
-
 var cart = path + "" ;
 
 var admin = "Admin/productlist.html";
+
+var home = path + "index.html";
+
 // Inserting CSS code of header and Footer into head
 
 var head = document.querySelector('head');
@@ -263,7 +265,7 @@ header.innerHTML = `
         <div class="collapse navbar-collapse hover-dropdown" id="header2">
         <ul class="navbar-nav">
             <li class="nav-item active">
-                <a class="nav-link" href="#" style="font-weight: 900;">GROCERY STORE</a>
+                <a class="nav-link" href="${home}" style="font-weight: 900;">GROCERY STORE</a>
             </li>
             <li class="nav-item active"><a class="nav-link" href="../index.html">Home</a></li>
             <li class="nav-item active"><a class="nav-link" href="${Products}">Products</a></li>
