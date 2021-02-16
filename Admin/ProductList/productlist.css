@@ -1,3 +1,10 @@
+.product-table{
+    position: relative;
+    overflow: scroll;
+    max-height: 75%;
+    min-width: 99%;
+}
+
 @media only screen and (min-height: 800px) {
     .wrapper {
         height: 72.1vh;
