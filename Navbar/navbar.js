@@ -27,7 +27,12 @@ var home = path + "index.html";
 var head = document.querySelector('head');
 
 var style = document.createElement('style')
-style.innerHTML = `.footer-dark {
+style.innerHTML = `
+
+  @import url("https://fonts.googleapis.com/css?family=Raleway:400,400i,700");
+
+  .footer-dark {
+    font-family: Raleway, sans-serif;
     padding: 40px 0;
     color: #f0f9ff;
     background-color: #282d32;
@@ -127,7 +132,7 @@ style.innerHTML = `.footer-dark {
   
   
   .header2 {
-    font-family: "Montserrat", sans-serif;
+    font-family: Raleway, sans-serif;
     color: #8d97ad;
     font-weight: 300;
   }
