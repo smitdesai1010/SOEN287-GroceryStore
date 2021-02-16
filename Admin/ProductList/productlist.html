@@ -27,10 +27,10 @@
     <div class="container-fluid wrapper">
         <div class="row flex-xl-nowrap">
             <!--Main Content-->
-            <main class="container col ml-4">
+            <main class="container col ml-sm-4 ml-3">
                 <div class="main-header mt-5 mb-5">
                     <h3 class="d-inline">Products</h3>
-                    <a href="AddProduct/addproduct.html" class="d-inline btn btn-primary float-right text-white">Add
+                    <a href="AddProduct/addproduct.html" class="d-inline btn btn-primary float-right text-white mr-2">Add
                         Product</a>
                 </div>
 
@@ -41,9 +41,11 @@
                         <div class="col-2 text-center m-3"><a href="">Fruits</a></div>
                         <div class="col-2 text-center m-3"><a href="">Vegetables</a></div>
                         <div class="col-2 text-center m-3"><a href="">Meat</a></div>
+                        <div class="col-2 text-center m-3"><a href="">Dairy</a></div>                        
+                        <div class="col-2 text-center m-3"><a href="">Pastry</a></div>
                     </div>
 
-                    
+
                     <div class="border row rounded-bottom">
                         <!--Search Bar-->
                         <div class="filter-search container-fluid input-group p-3">
@@ -63,75 +65,81 @@
                         </div>
 
                         <!--Product Table-->
-                        <table class="product-list table">
-                            <thead>
-                                <tr>
-                                    <th scope="row">#</th>
-                                    <th scope="col">Product</th>
-                                    <th scope="col">Inventory</th>
-                                    <th scope="col">Type</th>
-                                    <th scope="col">Vendor</th>
+                        <div class="product-table border rounded">
+                            <table class="product-list table">
+                                <thead>
+                                    <tr>
+                                        <th scope="row">#</th>
+                                        <th scope="col">Product</th>
+                                        <th scope="col">Inventory</th>
+                                        <th scope="col">Type</th>
+                                        <th scope="col">Vendor</th>
 
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <th scope="row">2</th>
-                                    <td scope="col">Product Name</th>
-                                    <td scope="col">Amount in Stock</th>
-                                    <td scope="col">Type of Product</th>
-                                    <td scope="col">Vendor Name</th>
-                                    <td scope="col">
-                                        <a href="Admin\ProductList\AddProduct\addproduct.html" style="font-size:11px"
-                                            class="btn btn-outline-primary btn-sm pl-3 pr-3 mr-1" href="#"
-                                            role="button">Edit</a>
-                                        <a style="font-size:11px" class="btn btn-outline-danger btn-sm pl-3 pr-3"
-                                            href="#" role="button">Delete</a>
-                                    </td>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">2</th>
+                                        <td scope="col">Product Name</th>
+                                        <td scope="col">Amount in Stock</th>
+                                        <td scope="col">Type of Product</th>
+                                        <td scope="col">Vendor Name</th>
+                                        <td scope="col">
+                                            <a href="Admin\ProductList\AddProduct\addproduct.html"
+                                                style="font-size:11px"
+                                                class="btn btn-outline-primary btn-sm pl-3 pr-3 mr-1" href="#"
+                                                role="button">Edit</a>
+                                            <a style="font-size:11px" class="btn btn-outline-danger btn-sm pl-3 pr-3"
+                                                href="#" role="button">Delete</a>
+                                        </td>
 
-                                </tr>
-                                <tr>
+                                    </tr>
+                                    <tr>
 
-                                    <th scope="row">3</th>
-                                    <td scope="col">Product Name</th>
-                                    <td scope="col">Amount in Stock</th>
-                                    <td scope="col">Type of Product</th>
-                                    <td scope="col">Vendor Name</th>
-                                    <td scope="col"><a href="Admin\ProductList\AddProduct\addproduct.html"
-                                            style="font-size:11px" class="btn btn-outline-primary btn-sm pl-3 pr-3 mr-1"
-                                            href="#" role="button">Edit</a>
-                                        <a style="font-size:11px" class="btn btn-outline-danger btn-sm pl-3 pr-3"
-                                            href="#" role="button">Delete</a>
-                                    </td>
-                                </tr>
-                                <tr>
+                                        <th scope="row">3</th>
+                                        <td scope="col">Product Name</th>
+                                        <td scope="col">Amount in Stock</th>
+                                        <td scope="col">Type of Product</th>
+                                        <td scope="col">Vendor Name</th>
+                                        <td scope="col"><a href="Admin\ProductList\AddProduct\addproduct.html"
+                                                style="font-size:11px"
+                                                class="btn btn-outline-primary btn-sm pl-3 pr-3 mr-1" href="#"
+                                                role="button">Edit</a>
+                                            <a style="font-size:11px" class="btn btn-outline-danger btn-sm pl-3 pr-3"
+                                                href="#" role="button">Delete</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
 
-                                    <th scope="row">4</th>
-                                    <td scope="col">Product Name</th>
-                                    <td scope="col">Amount in Stock</th>
-                                    <td scope="col">Type of Product</th>
-                                    <td scope="col">Vendor Name</th>
-                                    <td scope="col"><a href="Admin\ProductList\AddProduct\addproduct.html"
-                                            style="font-size:11px" class="btn btn-outline-primary btn-sm pl-3 pr-3 mr-1"
-                                            href="#" role="button">Edit</a><a style="font-size:11px"
-                                            class="btn btn-outline-danger btn-sm pl-3 pr-3" href="#"
-                                            role="button">Delete</a></td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">5</th>
-                                    <td scope="col">Product Name</th>
-                                    <td scope="col">Amount in Stock</th>
-                                    <td scope="col">Type of Product</th>
-                                    <td scope="col">Vendor Name</th>
-                                    <td scope="col"><a href="Admin\ProductList\AddProduct\addproduct.html"
-                                            style="font-size:11px" class="btn btn-outline-primary btn-sm pl-3 pr-3 mr-1"
-                                            href="#" role="button">Edit</a><a style="font-size:11px"
-                                            class="btn btn-outline-danger btn-sm pl-3 pr-3" href="#"
-                                            role="button">Delete</a></td>
-                                </tr>
-                            </tbody>
+                                        <th scope="row">4</th>
+                                        <td scope="col">Product Name</th>
+                                        <td scope="col">Amount in Stock</th>
+                                        <td scope="col">Type of Product</th>
+                                        <td scope="col">Vendor Name</th>
+                                        <td scope="col"><a href="Admin\ProductList\AddProduct\addproduct.html"
+                                                style="font-size:11px"
+                                                class="btn btn-outline-primary btn-sm pl-3 pr-3 mr-1" href="#"
+                                                role="button">Edit</a><a style="font-size:11px"
+                                                class="btn btn-outline-danger btn-sm pl-3 pr-3" href="#"
+                                                role="button">Delete</a></td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">5</th>
+                                        <td scope="col">Product Name</th>
+                                        <td scope="col">Amount in Stock</th>
+                                        <td scope="col">Type of Product</th>
+                                        <td scope="col">Vendor Name</th>
+                                        <td scope="col"><a href="Admin\ProductList\AddProduct\addproduct.html"
+                                                style="font-size:11px"
+                                                class="btn btn-outline-primary btn-sm pl-3 pr-3 mr-1" href="#"
+                                                role="button">Edit</a><a style="font-size:11px"
+                                                class="btn btn-outline-danger btn-sm pl-3 pr-3" href="#"
+                                                role="button">Delete</a></td>
+                                    </tr>
+                                </tbody>
 
-                        </table>
+                            </table>
+                        </div>
                     </div>
 
                 </div>
