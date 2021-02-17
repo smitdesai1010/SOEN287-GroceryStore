@@ -11,20 +11,26 @@ var script3src = path + "assets/js/Advanced-NavBar---Multi-dropdown.js";
 var login = path + "Login/login.html";
 var signup = path + "Signup/Signup.html";
 
-var Products = path + "Admin/productlist.html";
-var Customers = path + "";
-var Orders = path + "";
-
+var Products = path + "Admin/ProductList/productlist.html";
+var Customers = path + "Admin/UserList/UserList.html";
+var Orders = path + "Admin/Orders/OrderList.html";
 
 var cart = path + "" ;
 
 var admin = "Admin/productlist.html";
+
+var home = path + "index.html";
+
 // Inserting CSS code of header and Footer into head
 
 var head = document.querySelector('head');
 
 var style = document.createElement('style')
-style.innerHTML = `.footer-dark {
+style.innerHTML = `
+  @import url("https://fonts.googleapis.com/css?family=Raleway:400,400i,700");
+
+  .footer-dark {
+    font-family: Raleway, sans-serif;
     padding: 40px 0;
     color: #f0f9ff;
     background-color: #282d32;
@@ -124,13 +130,13 @@ style.innerHTML = `.footer-dark {
   
   
   .header2 {
-    font-family: "Montserrat", sans-serif;
+    font-family: Raleway, sans-serif;
     color: #8d97ad;
     font-weight: 300;
   }
   
   .header2.bg-success-gradiant {
-    background: #212525;
+    background: #212529;
   }
   
   .header2 .font-12 {
@@ -263,7 +269,7 @@ header.innerHTML = `
         <div class="collapse navbar-collapse hover-dropdown" id="header2">
         <ul class="navbar-nav">
             <li class="nav-item active">
-                <a class="nav-link" href="#" style="font-weight: 900;">GROCERY STORE</a>
+                <a class="nav-link" href="${home}" style="font-weight: 900;">GROCERY STORE</a>
             </li>
             <li class="nav-item active"><a class="nav-link" href="../index.html">Home</a></li>
             <li class="nav-item active"><a class="nav-link" href="${Products}">Products</a></li>

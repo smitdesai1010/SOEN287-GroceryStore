@@ -1,5 +1,5 @@
 var path = document.currentScript.getAttribute('abspath') 
-console.log(path)
+
 var link1src = "https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
 var link2src = path + "assets/bootstrap/css/bootstrap.min.css";
 var link3src = path + "assets/img/favicon.jpg" 
@@ -11,21 +11,28 @@ var script3src = path + "assets/js/Advanced-NavBar---Multi-dropdown.js";
 var login = path + "Login/login.html";
 var signup = path + "Signup/Signup.html";
 
-var aisle1 = path + "" ;
-var aisle2 = path + "" ;
-var aisle3 = path + "" ;
-var aisle4 = path + "" ; 
-var aisle5 = path + "" ;
+var aisle1 = path + "Aisles/Aisle1/1_Fruits.html" ;
+var aisle2 = path + "Aisles/Aisle2/2_Vegetables.html" ;
+var aisle3 = path + "Aisles/Aisle3/3_Meat.html" ;
+var aisle4 = path + "Aisles/Aisle4/4_Dairy.html" ; 
+var aisle5 = path + "Aisles/Aisle5/5_Pastry.html" ;
 
 var cart = path + "Cart/cart.html" ;
 // Inserting CSS code of header and Footer into head
 
-var admin = path + "Admin/productlist.html";
+var admin = path + "Admin/administration.html";
+
+var home = path + "index.html";
 
 var head = document.querySelector('head');
 
 var style = document.createElement('style')
-style.innerHTML = `.footer-dark {
+style.innerHTML = `
+
+  @import url("https://fonts.googleapis.com/css?family=Raleway:400,400i,700");
+
+  .footer-dark {
+    font-family: Raleway, sans-serif;
     padding: 40px 0;
     color: #f0f9ff;
     background-color: #282d32;
@@ -125,13 +132,13 @@ style.innerHTML = `.footer-dark {
   
   
   .header2 {
-    font-family: "Montserrat", sans-serif;
+    font-family: Raleway, sans-serif;
     color: #8d97ad;
     font-weight: 300;
   }
   
   .header2.bg-success-gradiant {
-    background: #212525;
+    background: #212529;
   }
   
   .header2 .font-12 {
@@ -264,20 +271,20 @@ header.innerHTML = `
         <div class="collapse navbar-collapse hover-dropdown" id="header2">
         <ul class="navbar-nav">
             <li class="nav-item active">
-            <a class="nav-link" href="#" style="font-weight: 900;">GROCERY STORE</a>
+            <a class="nav-link" href="${home}" style="font-weight: 900;">GROCERY STORE</a>
             </li>
-            <li class="nav-item active"><a class="nav-link" href="#">Home</a></li>
+            <li class="nav-item active"><a class="nav-link" href="${home}">Home</a></li>
 
             <li class="nav-item dropdown position-relative">
             <a class="nav-link dropdown-toggle" href="#" id="h2-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Product <i class="icon-arrow-down ml-1 font-12"></i>
             </a>
             <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="${aisle1}">Aisle1</a></li>
-                <li><a class="dropdown-item" href="${aisle2}">Aisle2</a></li>
-                <li><a class="dropdown-item" href="${aisle3}">Aisle3</a></li>
-                <li><a class="dropdown-item" href="${aisle4}">Aisle4</a></li>
-                <li><a class="dropdown-item" href="${aisle5}">Aisle5</a></li>
+                <li><a class="dropdown-item" href="${aisle1}">Fruits</a></li>
+                <li><a class="dropdown-item" href="${aisle2}">Vegetables</a></li>
+                <li><a class="dropdown-item" href="${aisle3}">Meat</a></li>
+                <li><a class="dropdown-item" href="${aisle4}">Dairy</a></li>
+                <li><a class="dropdown-item" href="${aisle5}">Pastry</a></li>
             </ul>
             </li>
         </ul>

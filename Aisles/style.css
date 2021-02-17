@@ -1,0 +1,32 @@
+.title {
+    text-align: center;
+    color: #FFFFFF;
+    background-color: #46B510;
+}
+
+.green {
+    color: #46B510
+}
+
+.white{
+    background-color: #f5f5f5
+}
+
+.bottom {
+    height: 200px;
+}
+
+
+.imagecrd {
+    width: 375px; 
+    height: 375px;
+}
+
+.cardwidth {
+    width: 18rem;
+}
+
+.crdimagesize {
+    width:286px; 
+    height: 180px;
+}

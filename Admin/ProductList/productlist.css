@@ -1,0 +1,12 @@
+.product-table{
+    position: relative;
+    overflow: scroll;
+    max-height: 75%;
+    min-width: 99%;
+}
+
+.box {
+    display: flex;
+    flex-flow: column;
+    height: 60%;      /* If doesn't work, play with the height */
+  }
