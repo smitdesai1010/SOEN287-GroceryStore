@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Order</title>
+    <!--Bootstrap Imports-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="CreateOrder.css">
+
+        
+
+        </head>
+
+        <body>
+            
+                <main class ="wrapper">
+                    <header class="return-to-order m-4">
+                        <button type="button" class="btn btn-success float-right">Save Order</button>
+                        <h1>Create Order</h1>
+                    </header>
+
+                    <div class="container-fluid row mb-5">
+                        <div class="ttl-dscr-img border rounded col-6 ml-4">
+                            
+                            <form class=" order-info-group">
+                                <div class="container title-description p-4 pb-4 mb-4">
+                                    
+                                    <h5 class="mb-3">Order Details</h5>
+                                    
+
+                                      <nav class="form-row">
+                                        <form class="form-inline">
+                                          <input class="form-control mr-sm-2" type="search" placeholder="Search for Products" aria-label="Search">
+                                          <button class="btn btn-success  my-3" type="submit">Find</button>
+                                        </form>
+                                      </nav>
+                                      <p>
+
+                                      </p>
+                                    <div class="title-group mb-3 mr-6">
+                                        <label for="inputProductName">Add Quantity</label>
+                                        <input type="text" class="form-control" id="inputquantity"
+                                            placeholder="Enter Quantity of product">
+                                    </div>
+                                    <div class="row">
+
+                                   
+                                    <div class="description-group col">
+                                        <label for="inputDescription">Notes</label>
+                                        <textarea class="form-control" placeholder="Add delivery notes"></textarea>
+                                    </div>
+
+                                    <div class="costs col">
+                                      <table class="table table-borderless">
+                                        
+                                        <thead>
+                                          <tr>
+                                            <td scope="col">Add Discount</td>
+                                            <td scope="col">  -</td>
+                                           
+                                          </tr>
+                                        </thead>
+                                        <tbody>
+                                          <tr>
+                                            <td scope="row">Subtotal</td>
+                                            <td>0.00 $</td>
+                                            
+                                          </tr>
+                                          <tr>
+                                            <td scope="row">Add Shipping</td>
+                                            <td>  -</td>
+                                            
+                                          </tr>
+                                          <tr>
+                                            <td scope="row">Taxes</td>
+                                            <td >0.00 $</td>
+                                           
+                                          </tr>
+
+                                          <tr>
+                                            <th scope="row">Total</th>
+                                            <th >0.00 $</th>
+                                           
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                      
+
+
+                                    </div>
+                                </div>
+
+                               
+
+                              <hr/>
+
+                              <div class="email mb-3 mr-6">
+                                <label for="Email">Email</label>
+                                <button type="button" class="btn btn-success float-right">Email Invoice</button>
+                              </div>
+                             <hr/>
+
+
+                             
+                             
+                             <div class="dropdown">
+                              <label for="Payment">Payment</label>
+                              <button class="btn btn-success dropdown-toggle float-right" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Choose..
+                              </button>
+                              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="#">Mark as Paid</a>
+                                <a class="dropdown-item" href="#">Mark Pending</a>
+                                <a class="dropdown-item" href="#">Pay with Credit Card</a>
+                              </div>
+                            </div>
+                             <hr/>
+
+
+
+                                <form class="form-inline">
+                                    <label class="my-1 mr-2" for="inlineFormCustomSelectPref">Type of Delivery</label>
+                                    <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+                                      <option selected>Choose...</option>
+                                      <option value="1">In-Store Pickup</option>
+                                      <option value="2">Standard Home Delivery</option>
+                                      <option value="3">Express Home Delivery</option>
+                                    </select>
+                                  
+                                   
+                                  
+                                    
+                                  </form>
+                                
+                                
+                            </form>
+                            </div>
+                        </div>
+                    
+
+                    <div class="container organization-tags col-4 border rounded offset-1">
+                        <form class="customer Information">
+                            <div class="customer pt-4">
+                                <h5>Find or create a customer</h5>
+                                
+                                <div class="">
+                                   
+                                    <input type="customer-code" class="form-control" id="customer"
+                                        placeholder="Enter Customer ID or Name">
+                                </div>
+                            </div>
+        
+                            <hr />
+                            
+
+                              <div class="tags">
+                                <label for="ordertags">
+                                    <h5>Tags</h5>
+                                </label>
+                                <a href="#" class="View-tags">
+                                    <p>View all tags</p>
+                                </a>
+                                <input type="text" class="form-control" id="ordertags" placeholder="e.g: Urgent, reviewed, wholesale">
+                            </div>
+                        </form>
+        
+                    </div>
+</div>
+
+
+
+                </main>
+
+            <script src="../Navbar/navbar-admin.js" abspath="../"> </script>
+
+        </body>
+
+        </html>
