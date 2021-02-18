@@ -8,9 +8,3 @@ body{
         height: auto !important;
     }
 }
-img{
-    float: left;
-    width:  2000px;
-    height: 1500px;
-    object-fit: cover;
-}
