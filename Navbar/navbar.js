@@ -313,9 +313,9 @@ footer.innerHTML =
             <div class="col-sm-6 col-md-3 item">
                 <h3>About</h3>
                 <ul>
-                    <li><a href="#">Company</a></li>
-                    <li><a href="#">Team</a></li>
-                    <li><a href="#">Careers</a></li>
+                    <li><a href="./About/company.html">Company</a></li>
+                    <li><a href="./About/team.html">Team</a></li>
+                    <li><a href="./About/careers.html">Careers</a></li>
                 </ul>
             </div>
             <div class="col-md-6 item text">
