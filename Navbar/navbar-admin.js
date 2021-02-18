@@ -13,7 +13,7 @@ var signup = path + "Signup/Signup.html";
 
 var Products = path + "Admin/ProductList/productlist.html";
 var Customers = path + "Admin/UserList/UserList.html";
-var Orders = path + "Admin/Orders/OrderList.html";
+var Orders = path + "Admin/Orders/OrderInfo.html";
 
 var cart = path + "" ;
 
