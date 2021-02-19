@@ -5,8 +5,6 @@
     min-width: 99%;
 }
 
-.box {
-    display: flex;
-    flex-flow: column;
-    height: 60%;       //If doesn't work, play with the height
+.main {
+    height: 70.25%;
   }
