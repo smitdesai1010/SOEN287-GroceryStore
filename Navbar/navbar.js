@@ -20,7 +20,7 @@ var aisle5 = path + "Aisles/Aisle5/5_Pastry.html" ;
 var cart = path + "Cart/cart.html" ;
 // Inserting CSS code of header and Footer into head
 
-var admin = path + "Admin/productlist.html";
+var admin = path + "Admin/administration.html";
 
 var home = path + "index.html";
 

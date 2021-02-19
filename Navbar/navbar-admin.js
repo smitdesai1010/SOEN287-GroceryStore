@@ -11,9 +11,9 @@ var script3src = path + "assets/js/Advanced-NavBar---Multi-dropdown.js";
 var login = path + "Login/login.html";
 var signup = path + "Signup/Signup.html";
 
-var Products = path + "Admin/productlist.html";
-var Customers = path + "";
-var Orders = path + "";
+var Products = path + "Admin/ProductList/productlist.html";
+var Customers = path + "Admin/UserList/UserList.html";
+var Orders = path + "Admin/Orders/OrderInfo.html";
 
 var cart = path + "" ;
 
