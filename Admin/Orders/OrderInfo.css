@@ -1,0 +1,6 @@
+.user-table{
+    position: relative;
+    overflow: scroll;
+    max-height: 75%;
+    min-width: 99%;
+}
