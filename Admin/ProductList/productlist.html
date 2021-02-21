@@ -20,18 +20,25 @@
         crossorigin="anonymous"></script>
     <!--Our Imports-->
     <link rel="stylesheet" href="productlist.css">
+    <style>
+        .box {
+            display: flex;
+            flex-flow: column;
+            height: 75%;
+        }
+    </style>
 </head>
 
 <body>
 
-    <div class="container-fluid wrapper">
+    <div class="box container-fluid main wrapper">
         <div class="row flex-xl-nowrap">
             <!--Main Content-->
             <main class="container col ml-sm-4 ml-3">
                 <div class="main-header mt-5 mb-5">
                     <h3 class="d-inline">Products</h3>
                     <a href="AddProduct/addproduct.html"
-                        class="d-inline btn btn-success float-right text-white mr-2">Add
+                        class="d-inline btn btn-success float-right text-white">Add
                         Product</a>
                 </div>
 
@@ -51,7 +58,7 @@
                         <!--Search Bar-->
                         <div class="filter-search container-fluid input-group p-3">
                             <div class="input-group-prepend">
-                                <button class="btn btn-outline-secondary dropdown-toggle" type="button"
+                                <button class="btn btn-outline-success dropdown-toggle" type="button"
                                     data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Filter</button>
                                 <div class="dropdown-menu">
                                     <a class="dropdown-item" href="#">Fruits</a>
