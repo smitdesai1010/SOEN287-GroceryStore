@@ -1,5 +1,5 @@
 var path = document.currentScript.getAttribute('abspath') 
-console.log(path)
+
 var link1src = "https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
 var link2src = path + "assets/bootstrap/css/bootstrap.min.css";
 var link3src = path + "assets/img/favicon.jpg" 
@@ -16,10 +16,12 @@ var Customers = path + "Admin/UserList/UserList.html";
 var Orders = path + "Admin/Orders/OrderInfo.html";
 
 var cart = path + "" ;
-
-var admin = "Admin/productlist.html";
-
+var admin = path + "Admin/administration.html";
 var home = path + "index.html";
+
+var company = path + "About/company.html"
+var team = path + "About/team.html"
+var careers = path + "About/careers.html"
 
 // Inserting CSS code of header and Footer into head
 
@@ -271,7 +273,7 @@ header.innerHTML = `
             <li class="nav-item active">
                 <a class="nav-link" href="${home}" style="font-weight: 900;">GROCERY STORE</a>
             </li>
-            <li class="nav-item active"><a class="nav-link" href="../index.html">Home</a></li>
+            <li class="nav-item active"><a class="nav-link" href="${admin}">Home</a></li>
             <li class="nav-item active"><a class="nav-link" href="${Products}">Products</a></li>
             <li class="nav-item active"><a class="nav-link" href="${Customers}">Customers</a></li>
             <li class="nav-item active"><a class="nav-link" href="${Orders}">Orders</a></li>
@@ -291,9 +293,9 @@ footer.innerHTML =
             <div class="col-sm-6 col-md-3 item">
                 <h3>About</h3>
                 <ul>
-                    <li><a href="#">Company</a></li>
-                    <li><a href="#">Team</a></li>
-                    <li><a href="#">Careers</a></li>
+                    <li><a href="${company}">Company</a></li>
+                    <li><a href="${team}">Team</a></li>
+                    <li><a href="${careers}">Careers</a></li>
                 </ul>
             </div>
             <div class="col-md-6 item text">

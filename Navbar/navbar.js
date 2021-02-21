@@ -21,8 +21,11 @@ var cart = path + "Cart/cart.html" ;
 // Inserting CSS code of header and Footer into head
 
 var admin = path + "Admin/administration.html";
-
 var home = path + "index.html";
+
+var company = path + "About/company.html"
+var team = path + "About/team.html"
+var careers = path + "About/careers.html"
 
 var head = document.querySelector('head');
 
@@ -313,9 +316,9 @@ footer.innerHTML =
             <div class="col-sm-6 col-md-3 item">
                 <h3>About</h3>
                 <ul>
-                    <li><a href="#">Company</a></li>
-                    <li><a href="#">Team</a></li>
-                    <li><a href="#">Careers</a></li>
+                    <li><a href="${company}">Company</a></li>
+                    <li><a href="${team}">Team</a></li>
+                    <li><a href="${careers}">Careers</a></li>
                 </ul>
             </div>
             <div class="col-md-6 item text">
