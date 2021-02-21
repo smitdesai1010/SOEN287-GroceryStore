@@ -15,7 +15,6 @@ var Products = path + "Admin/ProductList/productlist.html";
 var Customers = path + "Admin/UserList/UserList.html";
 var Orders = path + "Admin/Orders/OrderInfo.html";
 
-var cart = path + "" ;
 var admin = path + "Admin/administration.html";
 var home = path + "index.html";
 
