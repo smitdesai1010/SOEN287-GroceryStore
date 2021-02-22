@@ -37,124 +37,50 @@
 </head>
 
 <body>
-  <div class="container-fluid">
-    <div class="flex-xl-nowrap">
-      <main class="container col-10 ml-sm-4">
-        <div class="return-to-order m-4">
-          <button type="button" class="btn btn-success float-right">Save Order</button>
-          <h1>Create Order</h1>
-        </div>
+  <header class="d-flex return-to-order m-4">
+    <h1>Create Order</h1>
+    <div class="ml-auto align-self-center"><a class="btn btn-success" href="" role="button">Save Order</a>
+    </div>
+</header>
+  <main class="container-fluid flex-xl-nowrap row">
+      <div class="ttl-dscr-img border rounded col-sm-6 mb-4 mx-3">
 
-        <div class="container-fluid center col mb-5">
-          <div class="ttl-dscr-img border col rounded col-12">
+        <form class="order-info-group">
+          <div class="container title-description p-4 pb-4 mb-4">
 
-            <form class="order-info-group">
-              <div class="container title-description p-4 pb-4 mb-4">
-
-                <h5 class="mb-3">Order Details</h5>
+            <h5 class="mb-3">Order Details</h5>
 
 
-                <nav class="form-row">
-                  <form class="form-inline">
-                    <input class="form-control mr-sm-2" type="search" placeholder="Search for Products"
-                      aria-label="Search">
-                    <button class="btn btn-success  my-3" type="submit">Find</button>
-                  </form>
-                </nav>
-                <p>
+            <nav class="form-row">
+              <form class="form-inline">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search for Products" aria-label="Search">
+                <button class="btn btn-success  my-3" type="submit">Find</button>
+              </form>
+            </nav>
+            <p>
 
-                </p>
-                <div class="title-group mb-3 mr-6">
-                  <label for="inputProductName">Add Quantity</label>
-                  <input type="text" class="form-control" id="inputquantity" placeholder="Enter Quantity of product">
-                </div>
-                <div class="row">
-
-
-                  <div class="description-group col">
-                    <label for="inputDescription">Notes</label>
-                    <textarea class="form-control" placeholder="Add delivery notes"></textarea>
-                  </div>
-
-                  <div class="costs col">
-                    <table class="table table-borderless">
-
-                      <thead>
-                        <tr>
-                          <td scope="col">Add Discount</td>
-                          <td scope="col"> -</td>
-
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <td scope="row">Subtotal</td>
-                          <td>0.00 $</td>
-
-                        </tr>
-                        <tr>
-                          <td scope="row">Add Shipping</td>
-                          <td> -</td>
-
-                        </tr>
-                        <tr>
-                          <td scope="row">Taxes</td>
-                          <td>0.00 $</td>
-
-                        </tr>
-
-                        <tr>
-                          <th scope="row">Total</th>
-                          <th>0.00 $</th>
-
-                        </tr>
-                      </tbody>
-                    </table>
+            </p>
+            <div class="title-group mb-3 mr-6">
+              <label for="inputProductName">Add Quantity</label>
+              <input type="text" class="form-control" id="inputquantity" placeholder="Enter Quantity of product">
+            </div>
+            <div class="row">
 
 
+              <div class="description-group col">
+                <label for="inputDescription">Notes</label>
+                <textarea class="form-control" placeholder="Add delivery notes"></textarea>
+              </div>
 
-                  </div>
-                </div>
+              <div class="costs col">
+                <table class="table table-borderless">
 
+                  <thead>
+                    <tr>
+                      <td scope="col">Add Discount</td>
+                      <td scope="col"> -</td>
 
-
-                <hr />
-
-                <div class="email mb-3 mr-6">
-                  <label for="Email">Email</label>
-                  <button type="button" class="btn btn-success float-right">Email Invoice</button>
-                </div>
-                <hr />
-
-
-
-
-                <div class="dropdown">
-                  <label for="Payment">Payment</label>
-                  <button class="btn btn-success dropdown-toggle float-right" type="button" id="dropdownMenuButton"
-                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Choose..
-                  </button>
-                  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                    <a class="dropdown-item" href="#">Mark as Paid</a>
-                    <a class="dropdown-item" href="#">Mark Pending</a>
-                    <a class="dropdown-item" href="#">Pay with Credit Card</a>
-                  </div>
-                </div>
-                <hr />
-
-
-
-                <form class="form-inline">
-                  <label class="my-1 mr-2" for="inlineFormCustomSelectPref">Type of Delivery</label>
-                  <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
-                    <option selected>Choose...</option>
-                    <option value="1">In-Store Pickup</option>
-                    <option value="2">Standard Home Delivery</option>
-                    <option value="3">Express Home Delivery</option>
-                  </select>
-
-                  </tr>
+                    </tr>
                   </thead>
                   <tbody>
                     <tr>
@@ -179,18 +105,54 @@
 
                     </tr>
                   </tbody>
-                  </table>
+                </table>
 
 
 
               </div>
+            </div>
+
+
+
+            <hr />
+
+            <div class="email mb-3 mr-6">
+              <label for="Email">Email</label>
+              <button type="button" class="btn btn-success float-right">Email Invoice</button>
+            </div>
+            <hr />
+
+
+
+
+            <div class="dropdown">
+              <label for="Payment">Payment</label>
+              <button class="btn btn-success dropdown-toggle float-right" type="button" id="dropdownMenuButton"
+                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Choose..
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#">Mark as Paid</a>
+                <a class="dropdown-item" href="#">Mark Pending</a>
+                <a class="dropdown-item" href="#">Pay with Credit Card</a>
+              </div>
+            </div>
+            <hr />
+
+
+
+            <form class="form-inline">
+              <label class="my-1 mr-2" for="inlineFormCustomSelectPref">Type of Delivery</label>
+              <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+                <option selected>Choose...</option>
+                <option value="1">In-Store Pickup</option>
+                <option value="2">Standard Home Delivery</option>
+                <option value="3">Express Home Delivery</option>
+              </select>
           </div>
 
 
-
-          <hr />
-
-          <!-- <div class="email mb-3 mr-6">
+      <!-- <div class="email mb-3 mr-6">
         <label for="Email">Email</label>
         <button type="button" class="btn btn-success float-right">Email Invoice</button>
       </div>
@@ -199,7 +161,7 @@
 
 
 
-          <!-- <div class="dropdown">
+      <!-- <div class="dropdown">
         <label for="Payment">Payment</label>
         <button class="btn btn-success dropdown-toggle float-right" type="button" id="dropdownMenuButton"
           data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -215,7 +177,7 @@
 
 
 
-          <!-- <form class="form-inline">
+      <!-- <form class="form-inline">
         <label class="my-1 mr-2" for="inlineFormCustomSelectPref">Type of Delivery</label>
         <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
           <option selected>Choose...</option>
@@ -230,17 +192,14 @@
       </form> -->
 
 
-          </form>
-        </div>
+      </form>
     </div>
-
-    </main>
-    <div class="container organization-tags col-10 border rounded mb-4">
-      <form class="customer Information">
+    <div class="organization-tags border rounded col-sm-4 mb-4 mx-3">
+      <form class="customer-information">
         <div class="customer pt-4">
           <h5>Find or create a customer</h5>
 
-          <div class="">
+          <div class="customers">
 
             <input type="customer-code" class="form-control" id="customer" placeholder="Enter Customer ID or Name">
           </div>
@@ -249,7 +208,7 @@
         <hr />
 
 
-        <div class="tags mb-3">
+        <div class="tags mb-4">
           <label for="ordertags">
             <h5>Tags</h5>
           </label>
@@ -261,11 +220,8 @@
       </form>
 
     </div>
-  </div>
+  </main>
 
-
-  </div>
-  </div>
   <script src="../../Navbar/navbar-admin.js" abspath="../../"> </script>
 
 </body>
