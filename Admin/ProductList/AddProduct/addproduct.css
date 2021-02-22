@@ -1,9 +1,7 @@
-.title-description, .add-images-group, .organization-tags {
-    background-color: white;
-}
-
-@media only screen and (min-height: 800px) {
-    .wrapper {
-        height: 70.0vh;
+@media only screen and (min-width: 800px) {  
+    .all {
+        display: flex;
+        flex-flow: column;
+        height: 72.2%;
+      }
     }
-}
