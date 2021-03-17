@@ -25,7 +25,7 @@
                 
                         <div class="row mx-1">
                             <button onclick="decrement()">-</button>
-                            <input id=demoInput type=number min=0 max=20 style="text-align: center;">            
+                            <input id="demoInput" type="number" min="0" max="20" style="text-align: center;">            
                             <button onclick="increment()">+</button> 
                             <script>
                                 function increment() 
@@ -64,7 +64,7 @@
                 <p>Apples cost the same amount for each and every variety.</p>
                 
                 <div class="d-flex">
-                    <a class="mr-4"><button href="" type="button" style="background-color: #46B510 !important; border-color: #46B510 !important;" class="btn btn-primary btn-lg my-2">ADD TO CART</button></a>
+                    <a class="mr-4"><button id="add" type="button" style="background-color: #46B510 !important; border-color: #46B510 !important;" class="btn btn-primary btn-lg my-2">ADD TO CART</button></a>
                     <a><button onclick="toggle(event)" type="button" style="background-color: #46B510 !important; border-color: #46B510 !important;" class="btn btn-primary btn-lg my-2">More Info</button></a>
                     
                     <script>
@@ -98,6 +98,8 @@
 </section>
 
 <script src="../../Navbar/navbar.js" abspath="../../"></script>
+<script> increment() </script> <!--To make the default value 1-->
+<script src="../../Orders/prod-order.js"></script>
 </body>
 
 </html>
