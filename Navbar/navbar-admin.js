@@ -112,7 +112,7 @@ style.innerHTML = `
   }
   
   .nav-link:hover {
-    color: #4bda52;
+    color: #4bda52 !important;
   }
   
   .nav-item {
