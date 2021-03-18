@@ -11,7 +11,7 @@ document.querySelectorAll('#add').forEach(ele => ele.addEventListener('click', e
     var price = e.target.previousElementSibling.firstElementChild.nextElementSibling.getAttribute('price');
     var qty = e.target.previousElementSibling.firstElementChild.nextElementSibling.value;
 
-    if (qty == '')
+    if (qty == '' || qty == 0)
     {
         alert('Select a valid quantity');
         return;

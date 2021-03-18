@@ -34,8 +34,8 @@ for ( var key in obj )
                   <a href="#" name=${key} class="remove">x</a>
                 </div>
               </div>
+              <hr/>
             </li>
-            <hr/>
           `
 
       cart.innerHTML += html;
