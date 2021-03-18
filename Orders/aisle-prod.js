@@ -1,5 +1,5 @@
 
-document.getElementById('add').addEventListener('click', () => {
+document.querySelectorAll('#add').forEach(ele => ele.addEventListener('click', e => {
 
     var orders = sessionStorage.getItem('orders');
     orders = JSON.parse(orders);
@@ -7,9 +7,15 @@ document.getElementById('add').addEventListener('click', () => {
     if ( orders == null )   //No order has been placed
         orders = {};
     
-    var name = document.querySelector('b').innerHTML;
-    var price = document.getElementById('price').getAttribute('p');
-    var qty = document.getElementById('demoInput').value;
+    var name = e.target.parentNode.firstElementChild.innerHTML;
+    var price = e.target.previousElementSibling.firstElementChild.nextElementSibling.getAttribute('price');
+    var qty = e.target.previousElementSibling.firstElementChild.nextElementSibling.value;
+
+    if (qty == '')
+    {
+        alert('Select a valid quantity');
+        return;
+    }
 
     if ( orders[name] == null )
     {
@@ -24,4 +30,4 @@ document.getElementById('add').addEventListener('click', () => {
     }
     
     sessionStorage.setItem('orders',JSON.stringify(orders))
-})
+}))

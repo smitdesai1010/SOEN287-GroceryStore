@@ -7,7 +7,6 @@ var qty;
 
 var cart = document.querySelector('.cartWrap');
 
-var even = "odd";
 var totprice;
 var html;
 
@@ -18,8 +17,9 @@ for ( var key in obj )
   qty = obj[key].qty;
 
   totprice = parseInt(qty) * parseFloat(price);
-  
-  html = `  <li class="items ${even}"> 
+  totprice = parseFloat(totprice.toPrecision(4));
+
+  html = `  <li class="items"> 
               <div class="infoWrap"> 
                 <div class="cartSection">
                     <h3>${key}</h3>
@@ -35,9 +35,8 @@ for ( var key in obj )
                 </div>
               </div>
             </li>
+            <hr/>
           `
-  
-      even = even == "even" ? 'odd' : 'even';    
 
       cart.innerHTML += html;
 }
