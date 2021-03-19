@@ -28,6 +28,6 @@ document.querySelectorAll('#add').forEach(ele => ele.addEventListener('click', e
     {
         orders[name].qty = parseInt(orders[name].qty) + parseInt(qty);
     }
-    
+    alert(`${name} * ${qty} has been added to your cart.`)
     sessionStorage.setItem('orders',JSON.stringify(orders))
 }))

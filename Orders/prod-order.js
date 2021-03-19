@@ -23,5 +23,7 @@ document.getElementById('add').addEventListener('click', () => {
         orders[name].qty = parseInt(orders[name].qty) + parseInt(qty);
     }
     
+    alert(`${name} * ${qty} has been added to your cart.`)
+    
     sessionStorage.setItem('orders',JSON.stringify(orders))
 })
