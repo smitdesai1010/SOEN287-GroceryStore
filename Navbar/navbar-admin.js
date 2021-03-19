@@ -6,7 +6,6 @@ var link3src = path + "assets/img/favicon.jpg"
 
 var script1src = "https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js";
 var script2src = path + "assets/bootstrap/js/bootstrap.min.js";
-var script3src = path + "assets/js/Advanced-NavBar---Multi-dropdown.js";
 
 var login = path + "Login/login.html";
 var signup = path + "Signup/Signup.html";
@@ -144,22 +143,15 @@ script1.src = script1src;
 var script2 = document.createElement('script');
 script2.src = script2src;
 
-var script3 = document.createElement('script');
-script3.src = script3src;
-
 
 head.appendChild(script1);
+head.appendChild(script2);
 
 head.appendChild(link1);
 head.appendChild(link2);
 head.appendChild(link3)
 
-head.appendChild(script2);
-head.appendChild(script3);
-
 head.appendChild(style)
-
-
 
 
 // Inserting HTML code of header and Footer into body
