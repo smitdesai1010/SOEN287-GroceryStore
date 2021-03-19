@@ -105,6 +105,11 @@ style.innerHTML = `
     color: #8d97ad;
   }
   
+  a, a:focus, a:active {
+    text-decoration: none;
+    color: white;
+}
+
  .nav-link {
     padding: 12px 0px;
     color: #ffffff;
