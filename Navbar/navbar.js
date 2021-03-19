@@ -6,7 +6,7 @@ var link3src = path + "assets/img/favicon.jpg"
 
 var script1src = "https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js";
 var script2src = path + "assets/bootstrap/js/bootstrap.min.js";
-var script3src = path + "assets/js/Advanced-NavBar---Multi-dropdown.js";
+//var script3src = path + "assets/js/Advanced-NavBar---Multi-dropdown.js";
 
 var login = path + "Login/login.html";
 var signup = path + "Signup/Signup.html";
