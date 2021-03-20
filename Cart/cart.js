@@ -10,6 +10,11 @@ var cart = document.querySelector('.cartWrap');
 var totprice;
 var html;
 
+if (obj == null)
+  cart.innerHTML = '<h3>No items added to the cart</h3>'
+
+else
+  cart.innerHTML = '';
 
 for ( var key in obj ) 
 { 
@@ -53,6 +58,10 @@ inputtags.forEach( ele => ele.addEventListener('input',event => {
       var qty = event.target.value;
       var name = event.target.parentElement.previousElementSibling.innerHTML;
 
+      if (qty == '')
+        qty = event.target.getAttribute('placeholder');
+      
+        
       obj[name].qty = qty;
 
       var newtotalprice = parseInt(qty) * parseFloat(price);
