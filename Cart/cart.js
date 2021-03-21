@@ -10,7 +10,7 @@ var cart = document.querySelector('.cartWrap');
 var totprice;
 var html;
 
-if (obj == null)
+if (obj == null || obj == {})
   cart.innerHTML = '<h3>No items added to the cart</h3>'
 
 else
