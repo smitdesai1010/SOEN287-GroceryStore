@@ -1,11 +1,43 @@
 <?xml version="1.0"?>
 <!--
-    <USER>
-        NAME
-        EMAIL
-        PASSWORD
-    </USER>
+<USER>
+NAME
+EMAIL
+PASSWORD
+</USER>
 -->
 <USERS>
-
-<USER><NAME>Smit Desai</NAME><EMAIL>smitdesai1010@gmail.com</EMAIL><PASSWORD>asd</PASSWORD></USER><USER><NAME>Pravin Desai</NAME><EMAIL>actor@gmail.com</EMAIL><PASSWORD>qwe</PASSWORD></USER></USERS>
+	<USER>
+		<NAME>
+			Smit Desai
+		</NAME>
+		<EMAIL>
+			smitdesai1010@gmail.com
+		</EMAIL>
+		<PASSWORD>
+			asd
+		</PASSWORD>
+	</USER>
+	<USER>
+		<NAME>
+			Pravin Desai
+		</NAME>
+		<EMAIL>
+			actor@gmail.com
+		</EMAIL>
+		<PASSWORD>
+			qwe
+		</PASSWORD>
+	</USER>
+	<USER>
+		<NAME>
+			SPD
+		</NAME>
+		<EMAIL>
+			SPD@desai.com
+		</EMAIL>
+		<PASSWORD>
+			pravinactor
+		</PASSWORD>
+	</USER>
+</USERS>

@@ -18,17 +18,17 @@
                 <h3 class="card-title text-center">Log in</h3>
                 <div class="card-text">
 
-                    <form action="login.php" method="POST">
+                    <form id="form" action="login.php" method="POST">
                         <div class="form-group">
                             <label for="exampleInputEmail1">Email address</label>
-                            <input name="email" type="email" class="form-control form-control-sm" id="exampleInputEmail1" aria-describedby="emailHelp">
+                            <input name="email" type="email" class="form-control form-control-sm" id="email" aria-describedby="emailHelp">
                         </div>
                         <div class="form-group">
                             <label for="exampleInputPassword1">Password</label>
                             <a href="#" style="float:right;font-size:12px;">Forgot password?</a>
-                            <input name="password" type="password" class="form-control form-control-sm" id="exampleInputPassword1">
+                            <input name="password" type="password" class="form-control form-control-sm" id="password">
                         </div>
-                        <button type="submit" class="btn btn-primary btn-block">Sign in</button>
+                        <a onclick="submitForm()" class="btn btn-primary btn-block">Sign in</a>
 
                         <div class="sign-up">
                             Don't have an account? <a href="../Signup/Signup.html">Create One</a>
@@ -42,6 +42,26 @@
 
     <script>
 
+function submitForm(){
+               
+                var email = document.getElementById('email').value;
+                var password = document.getElementById('password').value;
+
+                if ( email == '' )
+                {
+                    alert('Please enter a Email');
+                    return;
+                }
+
+                if ( password == '' )
+                {
+                    alert('Please enter a Password');
+                    return;
+                }
+
+                document.getElementById('form').submit();
+            }
+
         /*
             null: Not entered info yet
             0: User doesnot exists
@@ -52,13 +72,13 @@
         const status = urlParams.get('status');
         const name = urlParams.get('name');
 
-        if ( status === 0)
+        if ( status == 0)
             alert('User doesnot exist. Signup if you are a new user')
 
-        if ( status === 1)
+        if ( status == 1)
             alert('Invalid password')
 
-        if ( status === 2)
+        if ( status == 2)
             alert('Login successfull. Welcome '+name)
         
     </script>
