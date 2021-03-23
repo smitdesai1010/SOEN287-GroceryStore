@@ -5,14 +5,32 @@
     $password = $_POST['password'];
     
     $myfile = simplexml_load_file('../DataBase/user.xml');
+    $ispresent = false;
 
-    $user = $myfile->addChild('USER');
-    $user->addChild('NAME',$name);
-    $user->addChild('EMAIL',$email);
-    $user->addChild('PASSWORD',$password);
+    //----------Check if the given record exists-----------
+    foreach ($myfile->USER as $user)
+    {   
+      if ( trim($user->EMAIL) == $email )
+      {
+          $ispresent = true;
+          echo "<h2>Record already exist</h2>";
+          break;
+      }  
+    }    
 
-    $myfile->asXML('../DataBase/user.xml');
+    //-----------------------------------------------------
+    
+    if (!$ispresent)
+    {
+        $user = $myfile->addChild('USER');
+        $user->addChild('NAME',$name);
+        $user->addChild('EMAIL',$email);
+        $user->addChild('PASSWORD',$password);
+    
+        $myfile->asXML('../DataBase/user.xml');
+    
+        header('location: /Login/Login.html');
+        exit();
+    }
 
-    header('location: /Signup/Signup.html');
-    exit();
 ?>

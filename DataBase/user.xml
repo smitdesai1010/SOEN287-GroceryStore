@@ -40,4 +40,15 @@ PASSWORD
 			pravinactor
 		</PASSWORD>
 	</USER>
+	<USER>
+		<NAME>
+			Smit Desai
+		</NAME>
+		<EMAIL>
+			Abd@gmail.com
+		</EMAIL>
+		<PASSWORD>
+			qwerty
+		</PASSWORD>
+	</USER>
 </USERS>

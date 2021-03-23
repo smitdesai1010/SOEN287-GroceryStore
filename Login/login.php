@@ -4,9 +4,9 @@
     $password = $_POST['password'];
     $status = 0;
     $name;
-    $xml = simplexml_load_file('../DataBase/user.xml');
+    $myfile = simplexml_load_file('../DataBase/user.xml');
 
-    foreach ($xml->USER as $user)
+    foreach ($myfile->USER as $user)
     {
       
       //because the string has extra characters. Spent 1 hour for this :(
