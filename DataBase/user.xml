@@ -1,3 +1,4 @@
+<?xml version="1.0"?>
 <!--
     <USER>
         NAME
@@ -5,34 +6,6 @@
         PASSWORD
     </USER>
 -->
+<USERS>
 
-
-<USER>
-    <NAME>Smit Desai</NAME>
-    <EMAIL>smitdesai1010@gmail.com</EMAIL>
-    <PASSWORD>smit1010</PASSWORD>
-</USER>
-
-<USER>
-    <NAME>Alexa Translations</NAME>
-    <EMAIL>smitdesai1010@gmail.com</EMAIL>
-    <PASSWORD>asd</PASSWORD>
-</USER>
-
-<USER>
-	<NAME>Dovetail</NAME>
-	<EMAIL>matrox#</EMAIL>
-	<PASSWORD>asd</PASSWORD>
-</USER>
-
-<USER>
-	<NAME>Smit Desai</NAME>
-	<EMAIL>smitdesai1010gmail.com</EMAIL>
-	<PASSWORD>ert</PASSWORD>
-</USER>
-
-<USER>
-	<NAME>Smit Desai</NAME>
-	<EMAIL>smitdesai1010@gmail.com</EMAIL>
-	<PASSWORD>asd</PASSWORD>
-</USER>
+<USER><NAME>Smit Desai</NAME><EMAIL>smitdesai1010@gmail.com</EMAIL><PASSWORD>asd</PASSWORD></USER><USER><NAME>Pravin Desai</NAME><EMAIL>actor@gmail.com</EMAIL><PASSWORD>qwe</PASSWORD></USER></USERS>

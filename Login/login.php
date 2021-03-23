@@ -4,6 +4,10 @@
     $password = $_POST['password'];
     $status = 1;
 
-    header("Location: /Login/login.html?status=$status");
-    exit();
+    $xml = simplexml_load_file('../DataBase/user.xml');
+
+    echo var_dump($xml);
+
+    // header("Location: /Login/login.html?status=$status");
+    // exit();
 ?>
