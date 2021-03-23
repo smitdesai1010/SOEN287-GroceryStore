@@ -15,7 +15,7 @@ var Customers = path + "Admin/UserList/UserList.html";
 var Orders = path + "Admin/Orders/OrderInfo.html";
 
 var admin = path + "Admin/administration.html";
-var home = path + "index.html";
+var home = path + "index.php";
 
 var company = path + "About/company.html"
 var team = path + "About/team.html"

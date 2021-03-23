@@ -29,7 +29,7 @@
     
         $myfile->asXML('../DataBase/user.xml');
     
-        header('location: /Login/Login.html');
+        header('location: /Login/login.html');
         exit();
     }
 
