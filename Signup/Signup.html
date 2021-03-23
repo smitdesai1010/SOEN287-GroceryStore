@@ -20,27 +20,27 @@
 
                     <div class="card-body py-md-4">
 
-                        <form _lpchecked="1">
+                        <form _lpchecked="1" id="form" action="Signup.php" method="POST">
                             <div class="form-group">
-                                <input type="text" class="form-control" id="name" placeholder="Name">
+                                <input name="name" type="text" class="form-control" id="name" placeholder="Name">
                             </div>
 
                             <div class="form-group">
-                                <input type="email" class="form-control" id="email" placeholder="Email">
+                                <input name="email" type="email" class="form-control" id="email" placeholder="Email">
                             </div>
                                             
                                             
                             <div class="form-group">
-                                <input type="password" class="form-control" id="password" placeholder="Password">
+                                <input name="password" type="password" class="form-control" id="password" placeholder="Password">
                             </div>
 
                             <div class="form-group">
-                                <input type="password" class="form-control" id="confirm-password" placeholder="confirm-password">
+                                <input name="confirm-password" type="password" class="form-control" id="confirm-password" placeholder="confirm-password">
                             </div>
 
                             <div class="d-flex flex-row align-items-center justify-content-between">
                                 <a href="../Login/login.html">Login</a>
-                                <button class="btn btn-primary">Create Account</button>
+                                <div class="btn btn-primary" onclick="submitForm()">Create Account</div>
                             </div>
                             
                         </form>
@@ -50,7 +50,48 @@
         </div>
     </div>
 
-    
+    <script>
+
+            function submitForm(){
+                var name = document.getElementById('name').value;
+                var email = document.getElementById('email').value;
+                var password = document.getElementById('password').value;
+                var confirm_password = document.getElementById('confirm-password').value;
+
+                if ( name == '' )
+                {
+                    alert('Please enter a Name');
+                    return;
+                }
+
+                if ( email == '' )
+                {
+                    alert('Please enter a Email');
+                    return;
+                }
+
+                if ( password == '' )
+                {
+                    alert('Please enter a Password');
+                    return;
+                }
+
+                if ( confirm_password == '' )
+                { 
+                    alert('Please confirm password');
+                    return;
+                }
+
+                if ( password !== confirm_password )
+                {
+                    alert('Password donot match')
+                    return;
+                }
+
+                document.getElementById('form').submit();
+            }
+
+    </script>
 
 </body>
 </html>
