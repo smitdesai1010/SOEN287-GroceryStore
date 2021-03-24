@@ -1,0 +1,99 @@
+<!-- 
+    Title
+    Image
+	Thumbnail
+    Price
+    Description
+    More-Info
+ -->
+<ROOT>
+	<FRUITS>
+		<PRODUCT>
+			<TITLE>APPLE</TITLE>
+			<IMAGE>https://i5.walmartimages.ca/images/Enlarge/094/514/6000200094514.jpg</IMAGE>
+			<THUMBNAIL>https://images.unsplash.com/photo-1560806887-1e4cd0b6cbd6?ixlib=rb-1.2.1&amp;amp;ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mnx8YXBwbGV8ZW58MHx8MHw%3D&amp;amp;auto=format&amp;amp;fit=crop&amp;amp;w=500&amp;amp;q=60</THUMBNAIL>
+			<PRICE>2.99</PRICE>
+			<DESCRIPTION>Apples are locally grown in Canada, with a wide selection of apples. Granny smith, gala, macintosh, honey crisp, and many more!</DESCRIPTION>
+			<MOREINFO>
+				<P>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</P>
+				<P>Proin sagittis nisl rhoncus mattis rhoncus urna neque viverra justo. Faucibus scelerisque eleifend donec pretium vulputate sapien nec sagittis. Cursus in hac habitasse platea dictumst quisque. Aliquet porttitor lacus luctus accumsan tortor posuere ac ut. Pellentesque eu tincidunt tortor aliquam nulla. Tristique magna sit amet purus gravida quis blandit turpis cursus. Molestie ac feugiat sed lectus vestibulum mattis. Semper viverra nam libero justo laoreet sit amet cursus sit. Augue mauris augue neque gravida in fermentum et sollicitudin. Mattis aliquam faucibus purus in massa tempor. Velit sed ullamcorper morbi tincidunt. Viverra suspendisse potenti nullam ac. Lorem dolor sed viverra ipsum. Ac tincidunt vitae semper quis. Porttitor massa id neque aliquam vestibulum morbi blandit cursus. Consequat semper viverra nam libero. Varius morbi enim nunc faucibus a pellentesque sit amet porttitor. Quis risus sed vulputate odio ut enim. Platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper.</P>
+			</MOREINFO>
+		</PRODUCT>
+
+		<PRODUCT>
+			<TITLE>BANANA</TITLE>
+			<IMAGE></IMAGE>
+			<THUMBNAIL>https://images.unsplash.com/photo-1555133036-b32b5dcfce73?ixlib=rb-1.2.1&amp;amp;ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&amp;amp;auto=format&amp;amp;fit=crop&amp;amp;w=1267&amp;amp;q=80</THUMBNAIL>
+			<PRICE>2.99</PRICE>
+			<DESCRIPTION>Apples are locally grown in Canada, with a wide selection of apples. Granny smith, gala, macintosh, honey crisp, and many more!</DESCRIPTION>
+			<MOREINFO>
+				<P>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</P>
+				<P>Proin sagittis nisl rhoncus mattis rhoncus urna neque viverra justo. Faucibus scelerisque eleifend donec pretium vulputate sapien nec sagittis. Cursus in hac habitasse platea dictumst quisque. Aliquet porttitor lacus luctus accumsan tortor posuere ac ut. Pellentesque eu tincidunt tortor aliquam nulla. Tristique magna sit amet purus gravida quis blandit turpis cursus. Molestie ac feugiat sed lectus vestibulum mattis. Semper viverra nam libero justo laoreet sit amet cursus sit. Augue mauris augue neque gravida in fermentum et sollicitudin. Mattis aliquam faucibus purus in massa tempor. Velit sed ullamcorper morbi tincidunt. Viverra suspendisse potenti nullam ac. Lorem dolor sed viverra ipsum. Ac tincidunt vitae semper quis. Porttitor massa id neque aliquam vestibulum morbi blandit cursus. Consequat semper viverra nam libero. Varius morbi enim nunc faucibus a pellentesque sit amet porttitor. Quis risus sed vulputate odio ut enim. Platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper.</P>
+			</MOREINFO>
+		</PRODUCT>
+		
+		<PRODUCT>
+			<TITLE>MANGO</TITLE>
+			<IMAGE>https://i5.walmartimages.ca/images/Enlarge/094/514/6000200094514.jpg</IMAGE>
+			<THUMBNAIL>https://images.unsplash.com/photo-1560806887-1e4cd0b6cbd6?ixlib=rb-1.2.1&amp;amp;ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mnx8YXBwbGV8ZW58MHx8MHw%3D&amp;amp;auto=format&amp;amp;fit=crop&amp;amp;w=500&amp;amp;q=60</THUMBNAIL>
+			<PRICE>2.99</PRICE>
+			<DESCRIPTION>Apples are locally grown in Canada, with a wide selection of apples. Granny smith, gala, macintosh, honey crisp, and many more!</DESCRIPTION>
+			<MOREINFO>
+				<P>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</P>
+				<P>Proin sagittis nisl rhoncus mattis rhoncus urna neque viverra justo. Faucibus scelerisque eleifend donec pretium vulputate sapien nec sagittis. Cursus in hac habitasse platea dictumst quisque. Aliquet porttitor lacus luctus accumsan tortor posuere ac ut. Pellentesque eu tincidunt tortor aliquam nulla. Tristique magna sit amet purus gravida quis blandit turpis cursus. Molestie ac feugiat sed lectus vestibulum mattis. Semper viverra nam libero justo laoreet sit amet cursus sit. Augue mauris augue neque gravida in fermentum et sollicitudin. Mattis aliquam faucibus purus in massa tempor. Velit sed ullamcorper morbi tincidunt. Viverra suspendisse potenti nullam ac. Lorem dolor sed viverra ipsum. Ac tincidunt vitae semper quis. Porttitor massa id neque aliquam vestibulum morbi blandit cursus. Consequat semper viverra nam libero. Varius morbi enim nunc faucibus a pellentesque sit amet porttitor. Quis risus sed vulputate odio ut enim. Platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper.</P>
+			</MOREINFO>
+		</PRODUCT>
+
+		<PRODUCT>
+			<TITLE>APPLE</TITLE>
+			<IMAGE>https://i5.walmartimages.ca/images/Enlarge/094/514/6000200094514.jpg</IMAGE>
+			<THUMBNAIL>https://images.unsplash.com/photo-1560806887-1e4cd0b6cbd6?ixlib=rb-1.2.1&amp;amp;ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mnx8YXBwbGV8ZW58MHx8MHw%3D&amp;amp;auto=format&amp;amp;fit=crop&amp;amp;w=500&amp;amp;q=60</THUMBNAIL>
+			<PRICE>2.99</PRICE>
+			<DESCRIPTION>Apples are locally grown in Canada, with a wide selection of apples. Granny smith, gala, macintosh, honey crisp, and many more!</DESCRIPTION>
+			<MOREINFO>
+				<P>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</P>
+				<P>Proin sagittis nisl rhoncus mattis rhoncus urna neque viverra justo. Faucibus scelerisque eleifend donec pretium vulputate sapien nec sagittis. Cursus in hac habitasse platea dictumst quisque. Aliquet porttitor lacus luctus accumsan tortor posuere ac ut. Pellentesque eu tincidunt tortor aliquam nulla. Tristique magna sit amet purus gravida quis blandit turpis cursus. Molestie ac feugiat sed lectus vestibulum mattis. Semper viverra nam libero justo laoreet sit amet cursus sit. Augue mauris augue neque gravida in fermentum et sollicitudin. Mattis aliquam faucibus purus in massa tempor. Velit sed ullamcorper morbi tincidunt. Viverra suspendisse potenti nullam ac. Lorem dolor sed viverra ipsum. Ac tincidunt vitae semper quis. Porttitor massa id neque aliquam vestibulum morbi blandit cursus. Consequat semper viverra nam libero. Varius morbi enim nunc faucibus a pellentesque sit amet porttitor. Quis risus sed vulputate odio ut enim. Platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper.</P>
+			</MOREINFO>
+		</PRODUCT>
+
+
+		<PRODUCT>
+			<TITLE>APPLE</TITLE>
+			<IMAGE>https://i5.walmartimages.ca/images/Enlarge/094/514/6000200094514.jpg</IMAGE>
+			<THUMBNAIL>https://images.unsplash.com/photo-1560806887-1e4cd0b6cbd6?ixlib=rb-1.2.1&amp;amp;ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mnx8YXBwbGV8ZW58MHx8MHw%3D&amp;amp;auto=format&amp;amp;fit=crop&amp;amp;w=500&amp;amp;q=60</THUMBNAIL>
+			<PRICE>2.99</PRICE>
+			<DESCRIPTION>Apples are locally grown in Canada, with a wide selection of apples. Granny smith, gala, macintosh, honey crisp, and many more!</DESCRIPTION>
+			<MOREINFO>
+				<P>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</P>
+				<P>Proin sagittis nisl rhoncus mattis rhoncus urna neque viverra justo. Faucibus scelerisque eleifend donec pretium vulputate sapien nec sagittis. Cursus in hac habitasse platea dictumst quisque. Aliquet porttitor lacus luctus accumsan tortor posuere ac ut. Pellentesque eu tincidunt tortor aliquam nulla. Tristique magna sit amet purus gravida quis blandit turpis cursus. Molestie ac feugiat sed lectus vestibulum mattis. Semper viverra nam libero justo laoreet sit amet cursus sit. Augue mauris augue neque gravida in fermentum et sollicitudin. Mattis aliquam faucibus purus in massa tempor. Velit sed ullamcorper morbi tincidunt. Viverra suspendisse potenti nullam ac. Lorem dolor sed viverra ipsum. Ac tincidunt vitae semper quis. Porttitor massa id neque aliquam vestibulum morbi blandit cursus. Consequat semper viverra nam libero. Varius morbi enim nunc faucibus a pellentesque sit amet porttitor. Quis risus sed vulputate odio ut enim. Platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper.</P>
+			</MOREINFO>
+		</PRODUCT>
+
+
+		<PRODUCT>
+			<TITLE>APPLE</TITLE>
+			<IMAGE>https://i5.walmartimages.ca/images/Enlarge/094/514/6000200094514.jpg</IMAGE>
+			<THUMBNAIL>https://images.unsplash.com/photo-1560806887-1e4cd0b6cbd6?ixlib=rb-1.2.1&amp;amp;ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mnx8YXBwbGV8ZW58MHx8MHw%3D&amp;amp;auto=format&amp;amp;fit=crop&amp;amp;w=500&amp;amp;q=60</THUMBNAIL>
+			<PRICE>2.99</PRICE>
+			<DESCRIPTION>Apples are locally grown in Canada, with a wide selection of apples. Granny smith, gala, macintosh, honey crisp, and many more!</DESCRIPTION>
+			<MOREINFO>
+				<P>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</P>
+				<P>Proin sagittis nisl rhoncus mattis rhoncus urna neque viverra justo. Faucibus scelerisque eleifend donec pretium vulputate sapien nec sagittis. Cursus in hac habitasse platea dictumst quisque. Aliquet porttitor lacus luctus accumsan tortor posuere ac ut. Pellentesque eu tincidunt tortor aliquam nulla. Tristique magna sit amet purus gravida quis blandit turpis cursus. Molestie ac feugiat sed lectus vestibulum mattis. Semper viverra nam libero justo laoreet sit amet cursus sit. Augue mauris augue neque gravida in fermentum et sollicitudin. Mattis aliquam faucibus purus in massa tempor. Velit sed ullamcorper morbi tincidunt. Viverra suspendisse potenti nullam ac. Lorem dolor sed viverra ipsum. Ac tincidunt vitae semper quis. Porttitor massa id neque aliquam vestibulum morbi blandit cursus. Consequat semper viverra nam libero. Varius morbi enim nunc faucibus a pellentesque sit amet porttitor. Quis risus sed vulputate odio ut enim. Platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper.</P>
+			</MOREINFO>
+		</PRODUCT>
+
+		
+	</FRUITS>
+
+	<VEGETABLES>
+	</VEGETABLES>
+
+	<MEAT>
+	</MEAT>
+
+	<DAIRY>
+	</DAIRY>
+
+	<PASTRY>
+	</PASTRY>
+</ROOT>
