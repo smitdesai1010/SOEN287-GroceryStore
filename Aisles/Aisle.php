@@ -62,8 +62,8 @@
         </div>
     </section>
 
-<script src="../../Navbar/navbar.js" abspath="../../"></script>
-<script src="../../Orders/aisle-prod.js"></script>
+<script src="../Navbar/navbar.js" abspath="../"></script>
+<script src="../Orders/aisle-prod.js"></script>
 </body>
 
 
