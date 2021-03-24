@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" type="text/css" href="../style.css" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fruits</title>
@@ -19,12 +19,12 @@
             <?php
 
                 $title = $_GET['title'];
-                $myfile = simplexml_load_file('../../DataBase/products.xml');
+                $myfile = simplexml_load_file('../DataBase/products.xml');
                 $ctr = 0;
                 $row = "<div class='row d-flex justify-content-center'>";
 
                 echo $row;
-
+    
                 foreach ($myfile->$title->PRODUCT as $prod)
                 {
                     if ( $ctr!=0 && $ctr%3 == 0 )
@@ -65,7 +65,5 @@
 <script src="../Navbar/navbar.js" abspath="../"></script>
 <script src="../Orders/aisle-prod.js"></script>
 </body>
-
-
 
 </html>
