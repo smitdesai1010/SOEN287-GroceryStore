@@ -10,11 +10,11 @@ var script2src = path + "assets/bootstrap/js/bootstrap.min.js";
 var login = path + "Login/login.html";
 var signup = path + "Signup/Signup.html";
 
-var aisle1 = path + "Aisles/Aisle.php?title=FRUITS" ;
-var aisle2 = path + "Aisles/Aisle.php?title=VEGETABLES" ;
-var aisle3 = path + "Aisles/Aisle.php?title=MEAT" ;
-var aisle4 = path + "Aisles/Aisle.php?title=DAIRY" ; 
-var aisle5 = path + "Aisles/Aisle.php?title=PASTRY" ;
+var aisle1 = path + "Aisles/Aisle.php?category=FRUITS" ;
+var aisle2 = path + "Aisles/Aisle.php?category=VEGETABLES" ;
+var aisle3 = path + "Aisles/Aisle.php?category=MEAT" ;
+var aisle4 = path + "Aisles/Aisle.php?category=DAIRY" ; 
+var aisle5 = path + "Aisles/Aisle.php?category=PASTRY" ;
 
 var cart = path + "Cart/cart.html" ;
 // Inserting CSS code of header and Footer into head

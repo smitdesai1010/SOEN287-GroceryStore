@@ -4,13 +4,15 @@
     <link rel="stylesheet" type="text/css" href="style.css" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fruits</title>
+    <title>
+        <?php echo $_GET['category']?>
+    </title>
 </head>
 
 
 <body class="white">
     <h3 class="title display-5 p-4">
-        <?php echo $_GET['title']?>
+        <?php echo $_GET['category']?>
     </h3>
     
     <section class="px-4">
@@ -18,14 +20,14 @@
         
             <?php
 
-                $title = $_GET['title'];
+                $category = $_GET['category'];
                 $myfile = simplexml_load_file('../DataBase/products.xml');
                 $ctr = 0;
                 $row = "<div class='row d-flex justify-content-center'>";
 
                 echo $row;
     
-                foreach ($myfile->$title->PRODUCT as $prod)
+                foreach ($myfile->$category->PRODUCT as $prod)
                 {
                     if ( $ctr!=0 && $ctr%3 == 0 )
                     {
@@ -46,7 +48,7 @@
                                 </span>
 
                                 <a id='add' style='background-color: #46B510 !important; border-color: #46B510 !important;' class='btn btn-primary'>Add to cart</a><!-- add reference to cart? --> 
-                                <a href='apple.html' style='background-color: #46B510 !important; border-color: #46B510 !important;' class='btn btn-primary'>More details</a>
+                                <a href='product.php?category=$category&name=$prod->TITLE' style='background-color: #46B510 !important; border-color: #46B510 !important;' class='btn btn-primary'>More details</a>
                             </div>
                         </div>
                     </div>        
