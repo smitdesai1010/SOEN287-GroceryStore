@@ -19,7 +19,7 @@
         crossorigin="anonymous"></script>
 
     <!--Custom-->
-    <link rel="stylesheet" href="addproduct.css">
+    <link rel="stylesheet" href="Admin\ProductList\AddProduct\addproduct.css">
 
 
     <title>Add Product</title>
@@ -29,7 +29,8 @@
     <div class="all" style="height: auto;">
         <header class="d-flex return-to-products m-4">
             <h1>Add Product</h1>
-            <div class="ml-auto align-self-center"><a class="btn btn-success" href="" role="button">Add Product</a>
+            
+            <div class="ml-auto align-self-center"><a class="btn btn-success" href="..\productlist.html" role="button">Product List</a>
             </div>
         </header>
         <main class="container-fluid flex-xl-nowrap row">
@@ -53,7 +54,7 @@
                         <h5 class="mb-4">Images</h5>
                         <!--Use an image instead of a button?-->
                         <label for="exampleFormControlFile1">Add Image</label>
-                        <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                        <input type="text" class="form-control" id="imageURL" placeholder="Enter a URL"></textarea>
                     </div>
                 </form>
             </div>
@@ -68,27 +69,19 @@
                             <input type="text" class="form-control" id="productType"
                                 placeholder="e.g. Vegetable, Fruit">
                         </div>
-                        <div class="">
+                        <div class="pt-4">
                             <label for="productVendor">Vendor</label>
                             <input type="product-vendor" class="form-control" id="productVendor"
                                 placeholder="e.g. Franklin's Farms">
                         </div>
                     </div>
-
-                    <hr />
-                    <div class="tags pb-4">
-                        <label for="tagsInput">
-                            <h5>Tags</h5>
-                        </label>
-                        <a href="#" class="view-tags">
-                            <p>View all tags</p>
-                        </a>
-                        <input type="text" class="form-control" id="tagsInput" placeholder="e.g. Organic, local">
-                    </div>
                 </form>
             </div>
+            
             <script src="..\..\..\Navbar\navbar-admin.js" abspath="..\..\..\"></script>
         </main>
+        <div><a class="btn btn-outline-primary px-5 my-4 ml-5" href="#" role="button">Add New
+            User</a></div>
     </div>
 </body>
 
