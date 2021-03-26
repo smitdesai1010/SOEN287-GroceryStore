@@ -19,7 +19,7 @@ var aisle5 = path + "Aisles/Aisle.php?category=PASTRY" ;
 var cart = path + "Cart/cart.html" ;
 // Inserting CSS code of header and Footer into head
 
-var admin = path + "Admin/administration.html";
+var admin = path + "Admin/administration.php";
 var home = path + "index.php";
 
 var company = path + "About/company.html"
@@ -222,6 +222,7 @@ footer.innerHTML =
                 <h3>The Grocery Store</h3>
                 <ul>
                     <li><a href="${admin}">Administrative</a></li>
+                    <li><a onclick="logout()" style="cursor:pointer">Logout</a></li>
                 </ul>
             </div>
         </div>
@@ -237,3 +238,12 @@ body.appendChild(footer);
 
 
 
+//----------------------------Logout-----------------------------
+
+function logout(){
+
+  sessionStorage.clear();
+  fetch('/Login/logout.php');
+  alert('You have successfully logged out');
+
+}

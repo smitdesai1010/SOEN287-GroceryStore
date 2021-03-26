@@ -14,7 +14,7 @@ var Products = path + "Admin/ProductList/productlist.html";
 var Customers = path + "Admin/UserList/UserList.html";
 var Orders = path + "Admin/Orders/OrderInfo.html";
 
-var admin = path + "Admin/administration.html";
+var admin = path + "Admin/administration.php";
 var home = path + "index.php";
 
 var company = path + "About/company.html"
@@ -202,6 +202,7 @@ footer.innerHTML =
                 <h3>The Grocery Store</h3>
                 <ul>
                     <li><a href="${admin}">Administrative</a></li>
+                    <li><a onclick="logout()" style="cursor:pointer">Logout</a></li>
                 </ul>
             </div>
         </div>
@@ -216,4 +217,13 @@ body.prepend(header);
 body.appendChild(footer);
 
 
+//----------------------------Logout-----------------------------
+
+function logout(){
+
+  sessionStorage.clear();
+  fetch('/Login/logout.php');
+  alert('You have successfully logged out');
+
+}
 
