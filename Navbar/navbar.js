@@ -222,6 +222,7 @@ footer.innerHTML =
                 <h3>The Grocery Store</h3>
                 <ul>
                     <li><a href="${admin}">Administrative</a></li>
+                    <li><a onclick="profile()" style="cursor:pointer">Profile</a></li>
                     <li><a onclick="logout()" style="cursor:pointer">Logout</a></li>
                 </ul>
             </div>
@@ -237,13 +238,22 @@ body.prepend(header);
 body.appendChild(footer);
 
 
+//----------------------------Profile----------------------------
+
+function profile(){
+  fetch('/Login/currentSession.php?action=profile')
+  .then(res => res.text())
+  .then(text => alert(text))
+  .catch(err => console.error(err))
+}
+
 
 //----------------------------Logout-----------------------------
 
 function logout(){
 
   sessionStorage.clear();
-  fetch('/Login/logout.php');
+  fetch('/Login/currentSession.php?action=logout');
   alert('You have successfully logged out');
 
 }
