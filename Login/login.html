@@ -71,6 +71,8 @@
         const urlParams = new URLSearchParams(window.location.search);
         const status = urlParams.get('status');
         const name = urlParams.get('name');
+        const role = urlParams.get('role');
+
 
         if ( status == 0)
             alert('User doesnot exist. Signup if you are a new user')
@@ -79,8 +81,10 @@
             alert('Invalid password')
 
         if ( status == 2)
-            alert('Login successfull. Welcome '+name)
-        
+        {
+            alert('Login successfull.\nWelcome '+name+'\nRole: '+role);
+            window.location = '/index.php';
+        }
     </script>
 
 </body>

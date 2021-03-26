@@ -1,9 +1,10 @@
 <?xml version="1.0"?>
 <!--
-<USER>
-NAME
-EMAIL
-PASSWORD
+	<USER>
+	NAME
+	EMAIL
+	PASSWORD
+	ROLE: USER and ADMIN
 </USER>
 -->
 <USERS>
@@ -17,38 +18,9 @@ PASSWORD
 		<PASSWORD>
 			asd
 		</PASSWORD>
+		<ROLE>
+			ADMIN
+		</ROLE>
 	</USER>
-	<USER>
-		<NAME>
-			Pravin Desai
-		</NAME>
-		<EMAIL>
-			actor@gmail.com
-		</EMAIL>
-		<PASSWORD>
-			qwe
-		</PASSWORD>
-	</USER>
-	<USER>
-		<NAME>
-			SPD
-		</NAME>
-		<EMAIL>
-			SPD@desai.com
-		</EMAIL>
-		<PASSWORD>
-			pravinactor
-		</PASSWORD>
-	</USER>
-	<USER>
-		<NAME>
-			Smit Desai
-		</NAME>
-		<EMAIL>
-			Abd@gmail.com
-		</EMAIL>
-		<PASSWORD>
-			qwerty
-		</PASSWORD>
-	</USER>
+	
 </USERS>

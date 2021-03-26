@@ -26,6 +26,7 @@
         $user->addChild('NAME',$name);
         $user->addChild('EMAIL',$email);
         $user->addChild('PASSWORD',$password);
+        $user->addChild('ROLE','USER');
     
         $myfile->asXML('../DataBase/user.xml');
     
