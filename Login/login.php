@@ -27,6 +27,8 @@
             //Setting the sessions variable once a user logs in
             $_SESSION['user'] = trim( (string)$user->NAME );
             $_SESSION['role'] = trim( (string)$user->ROLE );
+            $_SESSION['email'] = trim( (string)$user->EMAIL );
+
           }
 
           break;

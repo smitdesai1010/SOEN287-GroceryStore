@@ -1,12 +1,6 @@
 <?xml version="1.0"?>
-<!--
-	<USER>
-	NAME
-	EMAIL
-	PASSWORD
-	ROLE: USER and ADMIN
-</USER>
--->
+
+
 <USERS>
 	<USER>
 		<NAME>

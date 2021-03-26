@@ -63,15 +63,40 @@
     
     <script>
 
-        function Checkout(){
+      async function Checkout(){
+          var order = sessionStorage.getItem('orders');
 
+          //Checking if the cart is empty or not
+          if (order == null || order == {})
+          {
+            alert('Cart is empty');
+            return;
+          }
+
+          //Checking if the user is logged in or not
+          const res = await fetch('/Login/currentSession.php?action=profile')
+          const text = await res.text();
+         
+          if ( text === "You are not logged in" )
+          {
+            alert(text)
+            return;
+          }
+
+          //sending data to server for checkout
           fetch('/Cart/cart.php',{
             method: "POST",
-            body: sessionStorage.getItem('orders') 
+            body: order 
           })
           .then(res => res.text())
           .then(res => console.log(res));
-        }
+
+          
+          alert('Checked-out');
+          localStorage.clear();
+          window.location = '/index.php';
+      }
+
 
     </script>
 
