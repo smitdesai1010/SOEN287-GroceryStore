@@ -29,24 +29,24 @@
     <div class="all" style="height: auto;">
         <header class="d-flex return-to-products m-4">
             <h1>Add Product</h1>
-            
-            <div class="ml-auto align-self-center"><a class="btn btn-success" href="..\productlist.html" role="button">Product List</a>
+
+            <div class="ml-auto align-self-center"><a class="btn btn-success" href="..\productlist.html"
+                    role="button">Product List</a>
             </div>
         </header>
         <main class="container-fluid flex-xl-nowrap row">
             <div class="ttl-dscr-img d-flex flex-column col-sm-6 border rounded m-4">
-                <form class="new-product-info-group">
+                <form class="new-product-info-group" action="addproduct.php" method="POST">
                     <div class="container title-description pt-4 pb-4 mb-4">
                         <h5 class="mb-3">Basic Information</h5>
                         <div class="title-group mb-3 ">
-                            <label for="inputProductName">Product Name</label>
-                            <input type="text" class="form-control" id="inputProductName"
-                                placeholder="Enter Product Name">
+                            <label for="ProductName">Product Name</label>
+                            <input type="text" class="form-control" id="ProductName" placeholder="Enter Product Name">
                         </div>
 
                         <div class="description-group">
-                            <label for="inputDescription">Description</label>
-                            <textarea class="form-control" placeholder="Enter Description"></textarea>
+                            <label for="Description">Description</label>
+                            <textarea class="form-control" id="Description" placeholder="Enter Description"></textarea>
                         </div>
                     </div>
                     <hr />
@@ -54,21 +54,24 @@
                         <h5 class="mb-4">Images</h5>
                         <!--Use an image instead of a button?-->
                         <label for="exampleFormControlFile1">Add Image</label>
-                        <input type="text" class="form-control" id="imageURL" placeholder="Enter a URL"></textarea>
+                        <input type="text" class="form-control" id="imageURL" placeholder="Enter a URL">
                     </div>
                 </form>
             </div>
 
 
             <div class="organization-tags d-flex flex-column col-sm-4 border rounded m-4 justify-content-right">
-                <form class="type-vendor-tag">
+                <form class="type-vendor-tag" action="addproduct.php" method="POST">
                     <div class="organization pt-4">
                         <h5>Organization</h5>
-                        <div class="">
-                            <label for="productType">Product Type</label>
-                            <input type="text" class="form-control" id="productType"
-                                placeholder="e.g. Vegetable, Fruit">
-                        </div>
+                        <select class="custom-select my-2">
+                            <option selected>Food Type</option>
+                            <option value="1">Fruit</option>
+                            <option value="2">Vegetable</option>
+                            <option value="3">Meat</option>
+                            <option value="3">Dairy</option>
+                            <option value="3">Pastry</option>
+                          </select>
                         <div class="pt-4">
                             <label for="productVendor">Vendor</label>
                             <input type="product-vendor" class="form-control" id="productVendor"
@@ -77,12 +80,12 @@
                     </div>
                 </form>
             </div>
-            
-            <script src="..\..\..\Navbar\navbar-admin.js" abspath="..\..\..\"></script>
         </main>
-        <div><a class="btn btn-outline-primary px-5 my-4 ml-5" href="#" role="button">Add New
-            User</a></div>
+        <div><a class="btn btn-outline-primary px-5 my-4 ml-5" href="#" role="button" onclick="submitProduct()">Add New
+                Product</a></div>
     </div>
+    <script src="..\..\..\Navbar\navbar-admin.js" abspath="..\..\..\"></script>
+    <script src="addproduct.js"></script>
 </body>
 
 </html>
