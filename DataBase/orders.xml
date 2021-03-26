@@ -1,9 +1,49 @@
 <?xml version="1.0"?>
-
 <ROOT>
-
-    <ID>1</ID>
-
-    <ORDERS>
-    </ORDERS>
+	<ID>
+		2
+	</ID>
+	<ORDERS>
+		<ORDER>
+			<ID>
+				1
+			</ID>
+			<NAME>
+				Smit Desai
+			</NAME>
+			<EMAIL>
+				smitdesai1010@gmail.com
+			</EMAIL>
+			<PRODUCTS>
+				<PRODUCT>
+					<PRODUCTNAME>
+						PASTRY
+					</PRODUCTNAME>
+					<PRICE>
+						2.99
+					</PRICE>
+					<QUANTITY>
+						20
+					</QUANTITY>
+				</PRODUCT>
+				<PRODUCT>
+					<PRODUCTNAME>
+						APPLE
+					</PRODUCTNAME>
+					<PRICE>
+						2.99
+					</PRICE>
+					<QUANTITY>
+						2
+					</QUANTITY>
+				</PRODUCT>
+			</PRODUCTS>
+			<TAX>
+				9
+			</TAX>
+			<TOTAL>
+				74.78
+			</TOTAL>
+		</ORDER>
+	</ORDERS>
 </ROOT>
