@@ -1,8 +1,8 @@
 function submitProduct(){
     var ProductName = document.getElementById('ProductName').value;
-    var Description = document.getElementById('Descriptio').value;
+    var Description = document.getElementById('Description').value;
     var imageURL = document.getElementById('imageURL').value;
-    var foodType = document.querySelector("option[selected]").value;
+    var foodType = document.getElementById('foodType').value;
     var productVendor = document.getElementById('productVendor').value;
 
     // All inputs must be filled.
@@ -17,4 +17,5 @@ function submitProduct(){
     }
 
     document.getElementById('form').submit();
+    alert('Your product has been added!');
 }
