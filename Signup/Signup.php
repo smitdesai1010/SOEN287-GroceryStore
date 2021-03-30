@@ -39,8 +39,12 @@
         $user->addChild('ROLE',$mode);
     
         $myfile->asXML('../DataBase/user.xml');
-    
-        header('location: /Login/login.html');
+        
+        if ($redirect == 'user')
+            header('location: /Login/login.html');
+        
+        else 
+            header('location: /Admin/UserList/EditUser/EditUser.html?message=Successfully added user');
         exit();
     }
 
