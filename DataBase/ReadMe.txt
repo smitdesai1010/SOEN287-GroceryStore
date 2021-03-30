@@ -53,12 +53,14 @@
 
     <ROOT>
         <CATEGORY>
+            <PRODUCT>
                     Title
                     Image
                     Thumbnail
                     Price
                     Description
                     More-Info
+            </PRODUCT>
         </CATEGORY>
     </ROOT>
 
