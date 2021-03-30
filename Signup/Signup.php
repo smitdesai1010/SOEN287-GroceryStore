@@ -3,6 +3,16 @@
     $name = $_POST['name'];
     $email = $_POST['email'];
     $password = $_POST['password'];
+    $mode = 'USER';
+    $redirect = 'login';    //means added user from the Signup page
+
+    if (isset($_POST['mode']))
+    {
+        $mode = $_POST['mode'];
+        $redirect = 'admin';    //added user from the Admin page
+    }
+
+    echo $redirect;
     
     $myfile = simplexml_load_file('../DataBase/user.xml');
     $ispresent = false;
@@ -26,7 +36,7 @@
         $user->addChild('NAME',$name);
         $user->addChild('EMAIL',$email);
         $user->addChild('PASSWORD',$password);
-        $user->addChild('ROLE','USER');
+        $user->addChild('ROLE',$mode);
     
         $myfile->asXML('../DataBase/user.xml');
     
