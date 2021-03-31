@@ -34,6 +34,7 @@
     <div class="container-fluid">
         <div class="row flex-xl-nowrap">
             <main class="container col">
+
                 <div class="main-header mt-5 mb-5">
                     <div class="d-flex justify-content-between">
                         <h3>Add User</h3>
@@ -44,7 +45,8 @@
                     </div>
                     
                 </div>
-                <form class="edit-user-information">
+                
+                <form id="form" action="../../../Signup/Signup.php" method="POST" class="edit-user-information">
                     <div class="container title-description border rounded p-4 pb-4 mb-4">
                         <h5 class="mb-3">Information</h5>
                         <hr>
@@ -69,12 +71,13 @@
                                 <div class="col-md-3 mt-3">
                                     <label for="mode" class="form-label">User Type</label>
                                     <select name="mode" class="form-control" id="mode">
-                                        <option value="ADMIN">Admin</option>
                                         <option value="USER">User</option>
+                                        <option value="ADMIN">Admin</option>
                                       </select>
                                 </div>
-                                <a class="form-control d-inline btn btn-outline-success pr-5 pl-5 mt-5 ml-3 mr-3" href="#">Add New
-                                    User</a>
+                                <button onclick="submitForm()" class="form-control d-inline btn btn-outline-success pr-5 pl-5 mt-5 ml-3 mr-3" href="#">
+                                    Add New User
+                                </button>
                             </div>
                         </div>
                     </div>
@@ -86,6 +89,57 @@
         </div>
     </div>
     <script src="../../../Navbar/navbar-admin.js" abspath="../../../"></script>
+
+    <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        const message = urlParams.get('message');
+        
+        if ( message != null )
+            alert(message);
+        
+        
+        function submitForm(){
+            var name = document.getElementById('name').value;
+            var email = document.getElementById('email').value;
+            var password = document.getElementById('password').value;
+            var confirm_password = document.getElementById('confirm-password').value;
+
+            document.getElementById("form").addEventListener("submit", (event) => event.preventDefault() );   
+
+            if ( name == '' )
+            {
+                alert('Please enter a Name');
+                return;
+            }
+
+            if ( email == '' )
+            {
+                alert('Please enter a Email');
+                return;
+            }
+
+            if ( password == '' )
+            {
+                alert('Please enter a Password');
+                return;
+            }
+
+            if ( confirm_password == '' )
+            { 
+                alert('Please confirm password');
+                return;
+            }
+
+            if ( password !== confirm_password )
+            {
+                alert('Passwords do not match')
+                return;
+            }
+
+            document.getElementById('form').submit();
+        }
+
+    </script>
 </body>
 
 </html>
