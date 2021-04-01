@@ -11,41 +11,39 @@
         $mode = $_POST['mode'];
         $redirect = 'admin';    //added user from the Admin page
     }
-
-    echo $redirect;
     
     $myfile = simplexml_load_file('../DataBase/user.xml');
-    $ispresent = false;
 
     //----------Check if the given record exists-----------
     foreach ($myfile->USER as $user)
     {   
       if ( trim($user->EMAIL) == $email )
       {
-          $ispresent = true;
-          echo "<h2>Record already exist</h2>";
-          break;
+        if ($redirect == 'user')
+        header('location: /Signup/Signup.html/message=Profile already exists');
+    
+        else 
+            header('location: /Admin/UserList/EditUser/EditUser.html?message=Profile already exists');
+        exit();
       }  
     }    
 
     //-----------------------------------------------------
     
-    if (!$ispresent)
-    {
-        $user = $myfile->addChild('USER');
-        $user->addChild('NAME',$name);
-        $user->addChild('EMAIL',$email);
-        $user->addChild('PASSWORD',$password);
-        $user->addChild('ROLE',$mode);
+    $user = $myfile->addChild('USER');
+    $user->addChild('NAME',$name);
+    $user->addChild('EMAIL',$email);
+    $user->addChild('PASSWORD',$password);
+    $user->addChild('ROLE',$mode);
+
+    $myfile->asXML('../DataBase/user.xml');
     
-        $myfile->asXML('../DataBase/user.xml');
-        
-        if ($redirect == 'user')
-            header('location: /Login/login.html');
-        
-        else 
-            header('location: /Admin/UserList/EditUser/EditUser.html?message=Successfully added user');
-        exit();
-    }
+    if ($redirect == 'user')
+        header('location: /Login/login.html');
+    
+    else 
+        header('location: /Admin/UserList/EditUser/EditUser.html?message=Successfully added user');
+    exit();
+    
 
 ?>

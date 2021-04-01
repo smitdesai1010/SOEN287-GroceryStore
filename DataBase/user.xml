@@ -1,6 +1,4 @@
 <?xml version="1.0"?>
-
-
 <USERS>
 	<USER>
 		<NAME>
@@ -16,5 +14,4 @@
 			ADMIN
 		</ROLE>
 	</USER>
-	
 </USERS>
