@@ -34,54 +34,54 @@
                     role="button">Product List</a>
             </div>
         </header>
-        <main class="container-fluid flex-xl-nowrap row">
-            <div class="ttl-dscr-img d-flex flex-column col-sm-6 border rounded m-4">
-                <form class="new-product-info-group" action="addproduct.php" method="POST">
-                    <div class="container title-description pt-4 pb-4 mb-4">
-                        <h5 class="mb-3">Basic Information</h5>
-                        <div class="title-group mb-3 ">
-                            <label for="ProductName">Product Name</label>
-                            <input type="text" class="form-control" id="ProductName" placeholder="Enter Product Name">
+        <main class="container-fluid flex-xl-nowrap">
+            <form id="products" action="addproduct.php" method="POST">
+                <div class="row">
+                    <div class="ttl-dscr-img col border rounded m-4">
+                        <div class="container title-description pt-4 pb-4 mb-4">
+                            <h5 class="mb-3">Basic Information</h5>
+                            <div class="title-group mb-3 ">
+                                <label for="ProductName">Product Name</label>
+                                <input type="text" class="form-control" id="ProductName" name="ProductName"
+                                    placeholder="Enter Product Name">
+                            </div>
+
+                            <div class="description-group">
+                                <label for="Description">Description</label>
+                                <textarea class="form-control" id="Description" name="Description"
+                                    placeholder="Enter Description"></textarea>
+                            </div>
                         </div>
-
-                        <div class="description-group">
-                            <label for="Description">Description</label>
-                            <textarea class="form-control" id="Description" placeholder="Enter Description"></textarea>
-                        </div>
-                    </div>
-                    <hr />
-                    <div class="container add-images-group pb-4">
-                        <h5 class="mb-4">Images</h5>
-                        <!--Use an image instead of a button?-->
-                        <label for="exampleFormControlFile1">Add Image</label>
-                        <input type="text" class="form-control" id="imageURL" placeholder="Enter a URL">
-                    </div>
-                </form>
-            </div>
-
-
-            <div class="organization-tags d-flex flex-column col-sm-4 border rounded m-4 justify-content-right">
-                <form class="type-vendor-tag" action="addproduct.php" method="POST">
-                    <div class="organization pt-4">
-                        <h5>Organization</h5>
-                        <select class="custom-select my-2" id="foodType">
-                            <option>Food Type</option>
-                            <option value="f">Fruit</option>
-                            <option value="v">Vegetable</option>
-                            <option value="m">Meat</option>
-                            <option value="d">Dairy</option>
-                            <option value="p">Pastry</option>
-                          </select>
-                        <div class="pt-4">
-                            <label for="productVendor">Vendor</label>
-                            <input type="product-vendor" class="form-control" id="productVendor"
-                                placeholder="e.g. Franklin's Farms">
+                        <hr />
+                        <div class="container add-images-group pb-4">
+                            <h5 class="mb-4">Images</h5>
+                            <!--Use an image instead of a button?-->
+                            <label for="exampleFormControlFile1">Add Image</label>
+                            <input type="text" class="form-control" id="imageURL" name="imageURL" placeholder="Enter a URL">
                         </div>
                     </div>
-                </form>
-            </div>
+                    <div class="organization-tags border col rounded m-4 justify-content-right">
+                        <div class="organization pt-4">
+                            <h5>Organization</h5>
+                            <select class="custom-select my-2" id="foodType" name="foodType">
+                                <option>Food Type</option>
+                                <option value="f">Fruit</option>
+                                <option value="v">Vegetable</option>
+                                <option value="m">Meat</option>
+                                <option value="d">Dairy</option>
+                                <option value="p">Pastry</option>
+                            </select>
+                            <div class="pt-4">
+                                <label for="productVendor">Vendor</label>
+                                <input type="product-vendor" class="form-control" name="productVendor" id="productVendor"
+                                    placeholder="e.g. Franklin's Farms">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
         </main>
-        <div><a class="btn btn-outline-primary px-5 my-4 ml-5" href="#" role="button" onclick="submitProduct()">Add New
+        <div><a class="btn btn-outline-success px-5 my-4 ml-5" href="#" role="button" onclick="submitProduct()">Add New
                 Product</a></div>
     </div>
     <script src="..\..\..\Navbar\navbar-admin.js" abspath="..\..\..\"></script>
