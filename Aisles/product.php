@@ -43,9 +43,7 @@
 
                 <div class='card py-5 col-12 col-md-8'>
                     <h3>
-                        <b> 
-                            <?php echo $PRODUCT->TITLE; ?>
-                        </b>
+                        <b><?php echo $PRODUCT->TITLE; ?></b>
                     </h3>
                     
                     <div class='d-flex justify-content-between'>
