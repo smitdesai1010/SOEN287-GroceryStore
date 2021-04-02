@@ -16,6 +16,6 @@ function submitProduct(){
         return;
     }
 
-    document.getElementById('form').submit();
+    document.getElementById('products').submit();
     alert('Your product has been added!');
 }
