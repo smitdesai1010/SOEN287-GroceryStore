@@ -10,8 +10,8 @@ var script2src = path + "assets/bootstrap/js/bootstrap.min.js";
 var login = path + "Login/login.html";
 var signup = path + "Signup/Signup.html";
 
-var Products = path + "Admin/ProductList/productlist.html";
-var Customers = path + "Admin/UserList/UserList.html";
+var Products = path + "Admin/ProductList/productlist.php";
+var Customers = path + "Admin/UserList/UserList.php";
 var Orders = path + "Admin/Orders/OrderInfo.html";
 
 var admin = path + "Admin/administration.php";
