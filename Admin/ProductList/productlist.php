@@ -101,12 +101,12 @@
                                     <?php
                                         $myfile = simplexml_load_file('../../DataBase/products.xml');
                                         $i = 0;
-                                            foreach ($myfile->children() as $category) {
-                                                foreach ($category->PRODUCT as $prod) {
+                                            foreach ($myfile->children() as $categoryName => $categoryProducts) {
+                                                foreach ($categoryProducts->PRODUCT as $prod) {
                                                     echo "<tr>
                                                     <th scope='row'>" . ++$i . "</td>
                                                     <td scope='col'>$prod->TITLE</td>
-                                                    <td scope='col'>$category</td>
+                                                    <td scope='col'>$categoryName</td>
                                                     <td scope='col'>$prod->PRICE</td>
                                                     <td scope='col'>
                                                     <a href='AddProduct\addproduct.html' style='font-size:11px'
