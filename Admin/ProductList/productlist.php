@@ -98,7 +98,7 @@
                                                     <td scope='col'>
                                                     <a href='AddProduct\addproduct.html' style='font-size:11px'
                                                         class='btn btn-outline-primary btn-sm pl-3 pr-3 mr-1' href='#'
-                                                        role='button'>Edit</a>
+                                                        role='button' onclick='edit(event)'>Edit</a>
                                                     <a style='font-size:11px' class='btn btn-outline-danger btn-sm pl-3 pr-3'
                                                         href='#' role='button'>Delete</a>
                                                     </td>
@@ -118,6 +118,12 @@
         </div>
     </div>
     <script src="../../Navbar/navbar-admin.js" abspath="../../"></script>
+    <script>
+        function edit() {
+            window.open("AddProduct/addproduct.html?name=samuel")
+        }
+
+    </script>
 </body>
 
 </html>
