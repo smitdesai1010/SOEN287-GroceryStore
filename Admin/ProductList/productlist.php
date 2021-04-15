@@ -41,19 +41,6 @@
                         class="d-inline btn btn-success float-right text-white">Add
                         Product</a>
                 </div>
-
-                <!--Product Viewer-->
-                <div class="product-viewer mr-4 mb-5">
-                    <div class="genres row border rounded-top">
-                        <div class="col-1 text-center m-3"><a href="">All</a></div>
-                        <div class="col-1 text-center m-3"><a href="">Fruits</a></div>
-                        <div class="col-1 text-center m-3"><a href="">Vegetables</a></div>
-                        <div class="col-1 text-center m-3"><a href="">Meat</a></div>
-                        <div class="col-1 text-center m-3"><a href="">Dairy</a></div>
-                        <div class="col-1 text-center m-3"><a href="">Pastry</a></div>
-                    </div> 
-
-
                     <div class="border row rounded-bottom">
                         <!--Search Bar-->
                         <div class="filter-search container-fluid input-group p-3">
@@ -118,6 +105,7 @@
                                                   </tr>";
                                                 }
                                             }
+                                        }
                                     ?>
                                 </tbody>
 
