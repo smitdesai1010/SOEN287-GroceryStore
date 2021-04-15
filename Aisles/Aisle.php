@@ -34,8 +34,27 @@
                         echo "</div>";
                         echo $row;
                     }
-
-                    echo "
+                    if($prod->SPECIAL == 1) {
+                        echo "
+                        <div class='column m-4' >
+                            <div class='cardwidth card'>
+                                <img class='crdimagesize card-img-top' src=$prod->THUMBNAIL alt='Card image cap'>
+                                <div class='card-body'>
+                                    <h5 class='card-title'>$prod->TITLE</h5>
+                                    <span class='card-text d-flex justify-content-between'>
+                                        <p> $$prod->SPECIALPRICE/lb </p>
+                                        <input price=$prod->SPECIALPRICE placeholder='Quantity' id='demoInput' type='number' min='0' max='20' style='text-align: center;width: 40%; height: 75%'>            
+                                    </span>
+                                    <a id='add' style='background-color: #46B510 !important; border-color: #46B510 !important;' class='btn btn-primary'>Add to cart</a><!-- add reference to cart? --> 
+                                    <a href='product.php?category=$category&name=$prod->TITLE' style='background-color: #46B510 !important; border-color: #46B510 !important;' class='btn btn-primary'>More details</a>
+                                </div>
+                            </div>
+                        </div>        
+                        ";
+                        ++$ctr;     
+                    }
+                    else {
+                      echo "
                     <div class='column m-4' >
                         <div class='cardwidth card'>
                             <img class='crdimagesize card-img-top' src=$prod->THUMBNAIL alt='Card image cap'>
@@ -53,8 +72,8 @@
                         </div>
                     </div>        
                     ";
-                    
-                    ++$ctr;
+                    ++$ctr;  
+                    }
                 }
 
                 echo "</div>";

@@ -2,10 +2,12 @@
 <ROOT>
 	<FRUITS>
 		<PRODUCT>
+			<SPECIAL>1</SPECIAL>
 			<TITLE>APPLE</TITLE>
 			<IMAGE>https://i5.walmartimages.ca/images/Enlarge/094/514/6000200094514.jpg</IMAGE>
 			<THUMBNAIL>https://images.unsplash.com/photo-1560806887-1e4cd0b6cbd6?ixlib=rb-1.2.1&amp;amp;ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mnx8YXBwbGV8ZW58MHx8MHw%3D&amp;amp;auto=format&amp;amp;fit=crop&amp;amp;w=500&amp;amp;q=60</THUMBNAIL>
 			<PRICE>2.99</PRICE>
+			<SPECIALPRICE>2.00</SPECIALPRICE>
 			<DESCRIPTION>Apples are locally grown in Canada, with a wide selection of apples. Granny smith, gala, macintosh, honey crisp, and many more!</DESCRIPTION>
 			<MOREINFO>
 				<P>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</P>
@@ -14,10 +16,12 @@
 		</PRODUCT>
 
 		<PRODUCT>
+			<SPECIAL>1</SPECIAL>
 			<TITLE>BANANA</TITLE>
 			<IMAGE>https://images-na.ssl-images-amazon.com/images/I/61fZ%2BYAYGaL._SL1500_.jpg</IMAGE>
 			<THUMBNAIL>https://images.unsplash.com/photo-1555133036-b32b5dcfce73?ixlib=rb-1.2.1&amp;ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&amp;auto=format&amp;fit=crop&amp;w=1267&amp;q=80</THUMBNAIL>
 			<PRICE>0.57</PRICE>
+			<SPECIALPRICE>0.45</SPECIALPRICE>
 			<DESCRIPTION>Bananas are imported from the best farms of Ecuador. Our prices are the most affordable when compared to our competitors.</DESCRIPTION>
 			<MOREINFO>
 				<P>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</P>
@@ -26,10 +30,12 @@
 		</PRODUCT>
 		
 		<PRODUCT>
+			<SPECIAL>0</SPECIAL>
 			<TITLE>MANGO</TITLE>
 			<IMAGE>https://target.scene7.com/is/image/Target/GUEST_2a6eed58-0050-498c-874f-b7c0b95d7139?wid=488&amp;hei=488&amp;fmt=pjpeg</IMAGE>
 			<THUMBNAIL>https://images.unsplash.com/photo-1605027990121-cbae9e0642df?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=1350&amp;q=80</THUMBNAIL>
 			<PRICE>4.99</PRICE>
+			<SPECIALPRICE>0</SPECIALPRICE>
 			<DESCRIPTION>Mangoes are imported Mexico. Caraboa is our most popular mango, which is famous for its sweet flavor.</DESCRIPTION>
 			<MOREINFO>
 				<P>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</P>
@@ -38,10 +44,12 @@
 		</PRODUCT>
 
 		<PRODUCT>
+			<SPECIAL>0</SPECIAL>
 			<TITLE>PEACH</TITLE>
 			<IMAGE>https://i.stack.imgur.com/Nqx6J.png</IMAGE>
 			<THUMBNAIL>https://images.unsplash.com/photo-1607527223313-0d89e6b8b0ab?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=1350&amp;q=80</THUMBNAIL>
 			<PRICE>2.99</PRICE>
+			<SPECIALPRICE>0</SPECIALPRICE>
 			<DESCRIPTION>Peaches are locally grown in Ontario, Canada. Yellow peaches are our most popular fruit during the month of May.</DESCRIPTION>
 			<MOREINFO>
 				<P>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</P>
@@ -51,10 +59,12 @@
 
 
 		<PRODUCT>
+			<SPECIAL>1</SPECIAL>
 			<TITLE>PEARS</TITLE>
 			<IMAGE>https://i5.walmartimages.ca/images/Enlarge/094/521/6000200094521.jpg</IMAGE>
 			<THUMBNAIL>https://images.unsplash.com/photo-1514756331096-242fdeb70d4a?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=1350&amp;q=80</THUMBNAIL>
 			<PRICE>2.99</PRICE>
+			<SPECIALPRICE>2.00</SPECIALPRICE>
 			<DESCRIPTION>Pears are locally grown in Canada. Imported from British Colombia and Nova Scotia. They are handpicked and shipped to our locations in less than 4 days.</DESCRIPTION>
 			<MOREINFO>
 				<P>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</P>
@@ -64,10 +74,12 @@
 
 
 		<PRODUCT>
+			<SPECIAL>0</SPECIAL>
 			<TITLE>STRAWBERRY</TITLE>
 			<IMAGE>https://www.naturipefarms.com/wp-content/uploads/2014/01/NF-Conv_Straw_1lb.jpg</IMAGE>
 			<THUMBNAIL>https://images.unsplash.com/photo-1543528176-61b239494933?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=1353&amp;q=80</THUMBNAIL>
 			<PRICE>4.99</PRICE>
+			<SPECIALPRICE>0</SPECIALPRICE>
 			<DESCRIPTION>Strawberries are locally grown in Canada. Imported from locations like Quebec, Ontario and British Colombia.</DESCRIPTION>
 			<MOREINFO>
 				<P>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</P>
@@ -80,10 +92,12 @@
 
 	<VEGETABLES>
 		<PRODUCT>
+			<SPECIAL>0</SPECIAL>
 			<TITLE>BROCCOLI</TITLE>
 			<IMAGE>https://i5.walmartimages.ca/images/Enlarge/094/505/6000200094505.jpg</IMAGE>
 			<THUMBNAIL>https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/full-frame-shot-of-broccoli-royalty-free-image-571248799-1532377854.jpg?crop=1.00xw:0.669xh;0,0.0641xh&amp;resize=640:*</THUMBNAIL>
 			<PRICE>2.99</PRICE>
+			<SPECIALPRICE>0</SPECIALPRICE>
 			<DESCRIPTION>Broccoli is harvested in areas all around Canada. From region like Quebec, Ontario and British Colombia.</DESCRIPTION>
 			<MOREINFO>
 				<P>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</P>
@@ -92,10 +106,12 @@
 		</PRODUCT>
 
 		<PRODUCT>
+			<SPECIAL>0</SPECIAL>
 			<TITLE>CARROT</TITLE>
 			<IMAGE>https://www.euroharvest.co.uk/wp-content/uploads/2020/07/carrots_.png</IMAGE>
 			<THUMBNAIL>https://images.unsplash.com/photo-1447175008436-054170c2e979?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=1461&amp;q=80</THUMBNAIL>
 			<PRICE>1.29</PRICE>
+			<SPECIALPRICE>0</SPECIALPRICE>
 			<DESCRIPTION>Carrots are locally grown in Ontario, Canada. Widely available during late spring and fall.</DESCRIPTION>
 			<MOREINFO>
 				<P>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</P>
@@ -104,10 +120,12 @@
 		</PRODUCT>
 
 		<PRODUCT>
+			<SPECIAL>1</SPECIAL>
 			<TITLE>CELERY</TITLE>
 			<IMAGE>https://www.markon.com/sites/default/files/styles/large/public/pi_photos/Celery_Stalks_MFC_Hero.jpg</IMAGE>
 			<THUMBNAIL>https://www.almanac.com/sites/default/files/image_nodes/celery-close-up-shutterstock_110543273.jpg</THUMBNAIL>
 			<PRICE>2.99</PRICE>
+			<SPECIALPRICE>1.49</SPECIALPRICE>
 			<DESCRIPTION>Celery is mostly grown in parts of Canada, mainly Ontario and Quebec.</DESCRIPTION>
 			<MOREINFO>
 				<P>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</P>
@@ -116,10 +134,12 @@
 		</PRODUCT>
 
 		<PRODUCT>
+			<SPECIAL>1</SPECIAL>
 			<TITLE>CUCUMBER</TITLE>
 			<IMAGE>https://www.creedfoodservice.co.uk/media/catalog/product/cache/4fcff385a20ca2e78922e9f7a76fb930/7/4/749404fdb0ff96ea481c9ac43bc16cb1_1.jpg</IMAGE>
 			<THUMBNAIL>https://images.unsplash.com/photo-1449300079323-02e209d9d3a6?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=967&amp;q=80</THUMBNAIL>
 			<PRICE>1.99</PRICE>
+			<SPECIALPRICE>0.99</SPECIALPRICE>
 			<DESCRIPTION>Cucumbers are imported from Florida. They are shipped to our locations within 3 days of being harvested.</DESCRIPTION>
 			<MOREINFO>
 				<P>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</P>
@@ -128,10 +148,12 @@
 		</PRODUCT>
 		
 		<PRODUCT>
+			<SPECIAL>0</SPECIAL>
 			<TITLE>ONION</TITLE>
 			<IMAGE>https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Onion_on_White.JPG/1200px-Onion_on_White.JPG</IMAGE>
 			<THUMBNAIL>https://images.unsplash.com/photo-1580201092675-a0a6a6cafbb1?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=1350&amp;q=80</THUMBNAIL>
 			<PRICE>1.99</PRICE>
+			<SPECIALPRICE>0</SPECIALPRICE>
 			<DESCRIPTION>Onions are locally grown in Canada, mainly Quebec and Ontario.</DESCRIPTION>
 			<MOREINFO>
 				<P>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</P>
@@ -140,10 +162,12 @@
 		</PRODUCT>
 		
 		<PRODUCT>
+			<SPECIAL>0</SPECIAL>
 			<TITLE>POTATO</TITLE>
 			<IMAGE>https://freshpointlocal.co.uk/wp-content/uploads/2018/12/BakingPotato.jpg</IMAGE>
 			<THUMBNAIL>https://images.unsplash.com/photo-1518977676601-b53f82aba655?ixlib=rb-1.2.1&amp;ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&amp;auto=format&amp;fit=crop&amp;w=1350&amp;q=80</THUMBNAIL>
 			<PRICE>1.99</PRICE>
+			<SPECIALPRICE>0</SPECIALPRICE>
 			<DESCRIPTION>Potatoes are grown in Canada. From Prince Edward Island, Manitoba, New Brunswick and Alberta.</DESCRIPTION>
 			<MOREINFO>
 				<P>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</P>
@@ -154,10 +178,12 @@
 
 	<MEAT>
 		<PRODUCT>
+			<SPECIAL>0</SPECIAL>
 			<TITLE>CHICKEN</TITLE>
 			<IMAGE>https://i5.walmartimages.ca/images/Large/889/160/6000201889160.jpg</IMAGE>
 			<THUMBNAIL>https://images.eatthismuch.com/site_media/img/451_erin_m_d7cfcfcd-642a-4d6b-b6e8-0adf3eabbff7.png</THUMBNAIL>
 			<PRICE>18.99</PRICE>
+			<SPECIALPRICE>0</SPECIALPRICE>
 			<DESCRIPTION>Chickens are locally raised in Canada. Sold in packs of 4.</DESCRIPTION>
 			<MOREINFO>
 				<P>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</P>
@@ -166,10 +192,12 @@
 		</PRODUCT>
 
 		<PRODUCT>
+			<SPECIAL>1</SPECIAL>
 			<TITLE>FISH</TITLE>
 			<IMAGE>https://i5.walmartimages.ca/images/Enlarge/094/514/6000200094514.jpg</IMAGE>
 			<THUMBNAIL>https://harborfish.com/wp-content/uploads/2017/05/SalmonFaroe.r1@025x.jpg</THUMBNAIL>
 			<PRICE>11.99</PRICE>
+			<SPECIALPRICE>8.99</SPECIALPRICE>
 			<DESCRIPTION>Freshlly caught in part of the North Atlantic and Pacific Ocean.</DESCRIPTION>
 			<MOREINFO>
 				<P>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</P>
@@ -178,10 +206,12 @@
 		</PRODUCT>
 
 		<PRODUCT>
+			<SPECIAL>0</SPECIAL>
 			<TITLE>LAMB</TITLE>
 			<IMAGE>https://packreate.com/wp-content/uploads/edd/2018/08/meat-black-tray-label-lamb-cutlet-01.jpg</IMAGE>
 			<THUMBNAIL>https://image.freepik.com/free-photo/raw-lamb-chops-mutton-cuts-sheep-ribs-isolated_162695-101.jpg</THUMBNAIL>
 			<PRICE>14.99</PRICE>
+			<SPECIALPRICE>0</SPECIALPRICE>
 			<DESCRIPTION>Sheep locally raised in Canada. Sold in packs of 5.</DESCRIPTION>
 			<MOREINFO>
 				<P>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</P>
@@ -190,10 +220,12 @@
 		</PRODUCT>
 
 		<PRODUCT>
+			<SPECIAL>0</SPECIAL>
 			<TITLE>PORK</TITLE>
 			<IMAGE>https://target.scene7.com/is/image/Target/GUEST_f691917f-9f63-416b-a0e4-d84578a5566d?wid=488&amp;hei=488&amp;fmt=pjpeg</IMAGE>
 			<THUMBNAIL>https://media.istockphoto.com/photos/uncooked-pork-loin-chop-bone-on-a-white-background-picture-id984761542?k=6&amp;m=984761542&amp;s=612x612&amp;w=0&amp;h=8BM8yeMbWhNZ6eaIKC-ld5YyPtuy6Wdp5JGW2dZ_-zw=</THUMBNAIL>
 			<PRICE>13.99</PRICE>
+			<SPECIALPRICE>0</SPECIALPRICE>
 			<DESCRIPTION>Pork from locally raised pigs in Canada. Sold in packs of 10.</DESCRIPTION>
 			<MOREINFO>
 				<P>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</P>
@@ -202,10 +234,12 @@
 		</PRODUCT>
 
 		<PRODUCT>
+			<SPECIAL>1</SPECIAL>
 			<TITLE>STEAK</TITLE>
 			<IMAGE>https://sage.blob.core.windows.net/media/576021b0c8ecc79afb7429be_naturesrancher_beefribeye.1.jpg</IMAGE>
 			<THUMBNAIL>https://parade.com/wp-content/uploads/2017/08/raw-meat-black-eye-advice-ask-marilyn-ftr.jpg</THUMBNAIL>
 			<PRICE>16.49</PRICE>
+			<SPECIALPRICE>13.99</SPECIALPRICE>
 			<DESCRIPTION>Steak from locally raised cows in Canada.</DESCRIPTION>
 			<MOREINFO>
 				<P>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</P>
@@ -214,10 +248,12 @@
 		</PRODUCT>
 
 		<PRODUCT>
+			<SPECIAL>0</SPECIAL>
 			<TITLE>TURKEY</TITLE>
 			<IMAGE>https://www.perdue.com/productphoto/805_640_PK_805_ITD0718_FV_clean_640.jpg</IMAGE>
 			<THUMBNAIL>https://ajp.com.au/wp-content/uploads/2015/12/6219570_l.jpg</THUMBNAIL>
 			<PRICE>0.99</PRICE>
+			<SPECIALPRICE>0</SPECIALPRICE>
 			<DESCRIPTION>Turkey locally raised in Canada. Prices range between $10 - $35.</DESCRIPTION>
 			<MOREINFO>
 				<P>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</P>
@@ -228,10 +264,12 @@
 
 	<DAIRY>
 		<PRODUCT>
+			<SPECIAL>1</SPECIAL>
 			<TITLE>BUTTER</TITLE>
 			<IMAGE>https://i5.walmartimages.ca/images/Enlarge/123/320/999999-66096123320.jpg</IMAGE>
 			<THUMBNAIL>https://cdn.kitchensanity.com/wp-content/uploads/sticks-of-butter.jpg</THUMBNAIL>
 			<PRICE>4.49</PRICE>
+			<SPECIALPRICE>3.99</SPECIALPRICE>
 			<DESCRIPTION>Butter from locally raised cows.</DESCRIPTION>
 			<MOREINFO>
 				<P>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</P>
@@ -240,10 +278,12 @@
 		</PRODUCT>
 
 		<PRODUCT>
+			<SPECIAL>0</SPECIAL>
 			<TITLE>CHEESE</TITLE>
 			<IMAGE>https://i5.walmartimages.ca/images/Enlarge/tec/hed/999999-68100894608-CB_MedWhiteChed.jpg</IMAGE>
 			<THUMBNAIL>https://www.pcrm.org/sites/default/files/2020-07/cheddar-cheese.jpg</THUMBNAIL>
 			<PRICE>7.99</PRICE>
+			<SPECIALPRICE>0</SPECIALPRICE>
 			<DESCRIPTION>Cheese from locally raised cows.</DESCRIPTION>
 			<MOREINFO>
 				<P>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</P>
@@ -253,10 +293,12 @@
 
 
 		<PRODUCT>
+			<SPECIAL>0</SPECIAL>
 			<TITLE>ICE CREAM</TITLE>
 			<IMAGE>https://www.kroger.com/product/images/large/right/0007756722600</IMAGE>
 			<THUMBNAIL>https://www.breyers.com/sk-eu/content/dam/brands/breyers/global_use/2070747-creamery-style-final-dropdown-menu.jpg.rendition.1338.1338.jpg</THUMBNAIL>
 			<PRICE>6.99</PRICE>
+			<SPECIALPRICE>0</SPECIALPRICE>
 			<DESCRIPTION>The #1 ice cream in Canada.</DESCRIPTION>
 			<MOREINFO>
 				<P>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</P>
@@ -266,10 +308,12 @@
 
 
 		<PRODUCT>
+			<SPECIAL>1</SPECIAL>
 			<TITLE>MILK</TITLE>
 			<IMAGE>http://hilanddairy.com/image-library/sites/default/files/Hiland1percentLowFatHfPint.jpg</IMAGE>
 			<THUMBNAIL>https://www.kelownanow.com/files/files/images/Natrel1.JPG</THUMBNAIL>
 			<PRICE>4.39</PRICE>
+			<SPECIALPRICE>3.29</SPECIALPRICE>
 			<DESCRIPTION>Milk from locally raised cows. Milk from 1%, 2%, 3% and 3.5%.</DESCRIPTION>
 			<MOREINFO>
 				<P>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</P>
@@ -278,10 +322,12 @@
 		</PRODUCT>
 
 		<PRODUCT>
+			<SPECIAL>0</SPECIAL>
 			<TITLE>SOUR CREAM</TITLE>
 			<IMAGE>https://www.angelosbakery.com/wp-content/uploads/2020/05/GayLea_Sour-Cream_500mL_Original_ENG_600x600.png</IMAGE>
 			<THUMBNAIL>https://i5.walmartimages.ca/images/Enlarge/375/648/6000200375648.jpg</THUMBNAIL>
 			<PRICE>2.49</PRICE>
+			<SPECIALPRICE>0</SPECIALPRICE>
 			<DESCRIPTION>Sour cream from locally raised cows.</DESCRIPTION>
 			<MOREINFO>
 				<P>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</P>
@@ -290,10 +336,12 @@
 		</PRODUCT>
 
 		<PRODUCT>
+			<SPECIAL>0</SPECIAL>
 			<TITLE>YOGURT</TITLE>
 			<IMAGE>https://i5.walmartimages.ca/images/Enlarge/710/026/6000201710026.jpg</IMAGE>
 			<THUMBNAIL>https://u92-iogo.s3.amazonaws.com/wp-content/uploads/sites/2/2016/12/650g_OrigTub_Strawberry_SWOP-CRI-564x467.png</THUMBNAIL>
 			<PRICE>2.99</PRICE>
+			<SPECIALPRICE>0</SPECIALPRICE>
 			<DESCRIPTION>Yogurt from locally raised cows.</DESCRIPTION>
 			<MOREINFO>
 				<P>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</P>
@@ -303,11 +351,13 @@
 	</DAIRY>
 
 	<PASTRY>
-		<PRODUCT>
+		<PRODUCT> 
+			<SPECIAL>0</SPECIAL>
 			<TITLE>BAGEL</TITLE>
 			<IMAGE>https://www.kroger.com/product/images/large/front/0004812127707</IMAGE>
 			<THUMBNAIL>https://www.biggerbolderbaking.com/wp-content/uploads/2020/04/Easy-New-York-Style-Bagel-Recipe-WS-Thumbnail-2.jpg</THUMBNAIL>
 			<PRICE>3.49</PRICE>
+			<SPECIALPRICE>0</SPECIALPRICE>
 			<DESCRIPTION>Bagels are made in Montreal. Sesame seed bagels, poppy seed bagel, plain bagel and many more! All for the same price of $3.49.</DESCRIPTION>
 			<MOREINFO>
 				<P>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</P>
@@ -316,10 +366,12 @@
 		</PRODUCT>
 
 		<PRODUCT>
+			<SPECIAL>1</SPECIAL>
 			<TITLE>BAGUETTE</TITLE>
 			<IMAGE>https://www.bakersdelight.com.au/wp-content/uploads/2018/10/9650.jpg</IMAGE>
 			<THUMBNAIL>https://images.unsplash.com/photo-1597079910443-60c43fc4f729?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=1489&amp;q=80</THUMBNAIL>
 			<PRICE>1.49</PRICE>
+			<SPECIALPRICE>0.99</SPECIALPRICE>
 			<DESCRIPTION>Baguettes are freshlly made in store everyday.</DESCRIPTION>
 			<MOREINFO>
 				<P>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</P>
@@ -328,10 +380,12 @@
 		</PRODUCT>
 
 		<PRODUCT>
+			<SPECIAL>0</SPECIAL>
 			<TITLE>CROISSANT</TITLE>
 			<IMAGE>https://d2lnr5mha7bycj.cloudfront.net/product-image/file/large_de1d28db-2dba-4247-8948-501b52ccb9bc.jpeg</IMAGE>
 			<THUMBNAIL>https://images.unsplash.com/photo-1574694571857-6e28ed21dfe2?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=1350&amp;q=80</THUMBNAIL>
 			<PRICE>6.99</PRICE>
+			<SPECIALPRICE>0</SPECIALPRICE>
 			<DESCRIPTION>Croissants are freshlly made in store everyday. Sold in packs of 12.</DESCRIPTION>
 			<MOREINFO>
 				<P>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</P>
@@ -340,10 +394,12 @@
 		</PRODUCT>
 
 		<PRODUCT>
+			<SPECIAL>1</SPECIAL>
 			<TITLE>DONUT</TITLE>
 			<IMAGE>https://www.krispykreme.ie/media/catalog/product/cache/207e23213cf636ccdef205098cf3c8a3/o/r/original_glazed_td_22.png</IMAGE>
 			<THUMBNAIL>https://images.unsplash.com/photo-1527515545081-5db817172677?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=1350&amp;q=80</THUMBNAIL>
 			<PRICE>7.89</PRICE>
+			<SPECIALPRICE>6.00</SPECIALPRICE>
 			<DESCRIPTION>Krispy Kreme Donuts made locally from Krispy Kreme, Montreal. Sold by the dozen.</DESCRIPTION>
 			<MOREINFO>
 				<P>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</P>
@@ -352,10 +408,12 @@
 		</PRODUCT>
 
 		<PRODUCT>
+			<SPECIAL>0</SPECIAL>
 			<TITLE>ENGLISH MUFFIN</TITLE>
 			<IMAGE>https://images.heb.com/is/image/HEBGrocery/000398531</IMAGE>
 			<THUMBNAIL>https://theviewfromgreatisland.com/wp-content/uploads/2013/02/how-to-make-easy-English-muffins-image-4.jpg</THUMBNAIL>
 			<PRICE>2.19</PRICE>
+			<SPECIALPRICE>0</SPECIALPRICE>
 			<DESCRIPTION>English muffins are sold in packs of 3.</DESCRIPTION>
 			<MOREINFO>
 				<P>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</P>
@@ -364,10 +422,12 @@
 		</PRODUCT>
 
 		<PRODUCT>
+			<SPECIAL>0</SPECIAL>
 			<TITLE>WHITE BREAD</TITLE>
 			<IMAGE>https://images.heb.com/is/image/HEBGrocery/002135344</IMAGE>
 			<THUMBNAIL>https://butterwithasideofbread.com/wp-content/uploads/2019/07/White-Bread_10.bsb_.jpg</THUMBNAIL>
 			<PRICE>3.39</PRICE>
+			<SPECIALPRICE>0</SPECIALPRICE>
 			<DESCRIPTION>Wonder: White bread loaf</DESCRIPTION>
 			<MOREINFO>
 				<P>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</P>
