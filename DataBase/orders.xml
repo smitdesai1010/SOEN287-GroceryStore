@@ -1,8 +1,6 @@
 <?xml version="1.0"?>
 <ROOT>
-	<ID>
-		2
-	</ID>
+	<ID>5</ID>
 	<ORDERS>
 		<ORDER>
 			<ID>
@@ -43,6 +41,225 @@
 			</TAX>
 			<TOTAL>
 				74.78
+			</TOTAL>
+		</ORDER>
+
+		<ORDER>
+
+			<ID>
+				2
+			</ID>
+			<NAME>
+				Swaraj Mann
+			</NAME>
+			<EMAIL>
+				swarajmann01@gmail.com
+			</EMAIL>
+			<PRODUCTS>
+				<PRODUCT>
+					<PRODUCTNAME>
+						CHICKEN
+					</PRODUCTNAME>
+					<PRICE>
+						18.99
+					</PRICE>
+					<QUANTITY>
+						2
+					</QUANTITY>
+				</PRODUCT>
+				<PRODUCT>
+					<PRODUCTNAME>
+						BUTTER
+					</PRODUCTNAME>
+					<PRICE>
+						4.49
+					</PRICE>
+					<QUANTITY>
+						1
+					</QUANTITY>
+				</PRODUCT>
+				<PRODUCT>
+					<PRODUCTNAME>
+						BANANA
+					</PRODUCTNAME>
+					<PRICE>
+						0.57
+					</PRICE>
+					<QUANTITY>
+						10
+					</QUANTITY>
+				</PRODUCT>
+			</PRODUCTS>
+			<TAX>
+				19
+			</TAX>
+			<TOTAL>
+				67.17
+			</TOTAL>
+		</ORDER>
+
+
+		<ORDER>
+
+			<ID>
+				3
+			</ID>
+			<NAME>
+				John Doe
+			</NAME>
+			<EMAIL>
+				Johndoe@gmail.com
+			</EMAIL>
+			<PRODUCTS>
+				<PRODUCT>
+					<PRODUCTNAME>
+						MANGO
+					</PRODUCTNAME>
+					<PRICE>
+						4.99
+					</PRICE>
+					<QUANTITY>
+						6
+					</QUANTITY>
+				</PRODUCT>
+				<PRODUCT>
+					<PRODUCTNAME>
+						PEARS
+					</PRODUCTNAME>
+					<PRICE>
+						2.99
+					</PRICE>
+					<QUANTITY>
+						10
+					</QUANTITY>
+				</PRODUCT>
+				<PRODUCT>
+					<PRODUCTNAME>
+						ONION
+					</PRODUCTNAME>
+					<PRICE>
+						2.99
+					</PRICE>
+					<QUANTITY>
+						3
+					</QUANTITY>
+				</PRODUCT>
+			</PRODUCTS>
+			<TAX>
+				13
+			</TAX>
+			<TOTAL>
+				81.81
+			</TOTAL>
+		</ORDER>
+
+
+
+
+		<ORDER>
+			<ID>
+		4
+			</ID>
+			<NAME>
+			Name4
+			</NAME>
+			
+			<EMAIL>
+			name4@gmail.com
+			</EMAIL>
+			
+			<PRODUCTS>
+				
+				<PRODUCT>
+					<PRODUCTNAME>
+						CHEESE
+					</PRODUCTNAME>
+					<PRICE>
+						7.99
+					</PRICE>
+					
+					<QUANTITY>
+						4
+					</QUANTITY>
+				</PRODUCT>
+				
+				<PRODUCT>
+					<PRODUCTNAME>
+						YOGURT
+					</PRODUCTNAME>
+					
+					<PRICE>
+						2.99
+					</PRICE>
+					
+					<QUANTITY
+					>3
+					</QUANTITY>
+				</PRODUCT>
+			
+			</PRODUCTS>
+			
+			<TAX>
+			9
+			</TAX>
+			
+			<TOTAL>
+			49.93
+			
+			</TOTAL>
+		</ORDER>
+
+
+		<ORDER>
+			<ID>
+		4
+			</ID>
+			<NAME>
+			Name5
+			</NAME>
+			
+			<EMAIL>
+			namefive@gmail.com
+			</EMAIL>
+			
+			<PRODUCTS>
+				
+				<PRODUCT>
+					<PRODUCTNAME>
+						BANANA
+					</PRODUCTNAME>
+					<PRICE>
+						0.57
+					</PRICE>
+					
+					<QUANTITY>
+						1
+					</QUANTITY>
+				</PRODUCT>
+				
+				<PRODUCT>
+					<PRODUCTNAME>
+						BROCCOLI
+					</PRODUCTNAME>
+					
+					<PRICE>
+						2.99
+					</PRICE>
+					
+					<QUANTITY
+					>10
+					</QUANTITY>
+				</PRODUCT>
+			
+			</PRODUCTS>
+			
+			<TAX>
+		13
+			</TAX>
+			
+			<TOTAL>
+			43.47
+			
 			</TOTAL>
 		</ORDER>
 	</ORDERS>

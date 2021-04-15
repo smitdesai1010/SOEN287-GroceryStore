@@ -81,7 +81,7 @@
                                 </tr>
                             </thead>
                             <tbody>
-                                <tr>
+                                <!--<tr>
                                     <td scope="row">#201</td>
                                     <td scope="col">Denis Villeneuve</td>
                                     <td scope="col">denisVill@gmail.com</td>
@@ -127,7 +127,34 @@
                                     <a style="font-size:11px" class="btn btn-outline-danger btn-sm pl-3 pr-3"
                                         href="#" role="button">Delete</a>
                                 </td>
-                                </tr>
+                                </tr>-->
+                                <?php
+                                        $myfile = simplexml_load_file('../../DataBase/orders.xml');
+                                        $i = 0;
+                                        $Orders=$myfile->ORDERS;
+                                        
+                                                 foreach ($Orders->ORDER as $o) {
+                                                    
+                                                     echo "<tr>
+                                                     <th scope='row'>" . ++$i . "</td>
+                                                     <td scope='col'>$o->NAME</td>
+                                                     <td scope='col'>$o->EMAIL</td>
+                                                     <td scope='col'>
+                                                     <a href='CreateOrder.html' style='font-size:11px'
+                                                     class='btn btn-outline-primary btn-sm pl-3 pr-3 mr-1' href='#'
+                                                     role='button'>Products</a>
+                                                     </td>
+                                                     <td scope='col'>
+                                                     <a href='CreateOrder.html' style='font-size:11px'
+                                                         class='btn btn-outline-primary btn-sm pl-3 pr-3 mr-1' href='#'
+                                                         role='button'>Edit</a>
+                                                     <a style='font-size:11px' class='btn btn-outline-danger btn-sm pl-3 pr-3'
+                                                         href='#' role='button'>Delete</a>
+                                                     </td>
+                                                   </tr>";
+                                                
+                                             }
+                                    ?>
                                 
                             </tbody>
 

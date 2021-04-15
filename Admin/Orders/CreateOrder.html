@@ -187,6 +187,58 @@
 
   <script src="../../Navbar/navbar-admin.js" abspath="../../"> </script>
 
+  <!--<script>
+    const urlParams = new URLSearchParams(window.location.search);
+    const message = urlParams.get('message');
+    
+    if ( message != null )
+        alert(message);
+    
+    
+    function submitForm(){
+        var name = document.getElementById('name').value;
+        var email = document.getElementById('email').value;
+        var password = document.getElementById('password').value;
+        var confirm_password = document.getElementById('confirm-password').value;
+
+        document.getElementById("form").addEventListener("submit", (event) => event.preventDefault() );   
+
+        if ( name == '' )
+        {
+            alert('Please enter a Name');
+            return;
+        }
+
+        if ( email == '' )
+        {
+            alert('Please enter a Email'); 
+            return;
+        }
+
+        if ( password == '' )
+        {
+            alert('Please enter a Password');
+            return;
+        }
+
+        if ( confirm_password == '' )
+        { 
+            alert('Please confirm password');
+            return;
+        }
+ 
+        if ( password !== confirm_password )
+        {
+            alert('Passwords do not match')
+            return;
+        }
+
+        document.getElementById('form').submit();
+    }
+
+</script> -->
+
+
 </body>
 
 </html>
