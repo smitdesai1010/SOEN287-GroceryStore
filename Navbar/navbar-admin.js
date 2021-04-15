@@ -12,7 +12,7 @@ var signup = path + "Signup/Signup.html";
 
 var Products = path + "Admin/ProductList/productlist.php";
 var Customers = path + "Admin/UserList/UserList.php";
-var Orders = path + "Admin/Orders/OrderInfo.html";
+var Orders = path + "Admin/Orders/order.php";
 
 var admin = path + "Admin/administration.php";
 var home = path + "index.php";
