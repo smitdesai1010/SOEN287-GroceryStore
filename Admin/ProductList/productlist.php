@@ -41,19 +41,6 @@
                         class="d-inline btn btn-success float-right text-white">Add
                         Product</a>
                 </div>
-
-                <!--Product Viewer-->
-                <div class="product-viewer mr-4 mb-5">
-                    <div class="genres row border rounded-top">
-                        <div class="col-1 text-center m-3"><a href="">All</a></div>
-                        <div class="col-1 text-center m-3"><a href="">Fruits</a></div>
-                        <div class="col-1 text-center m-3"><a href="">Vegetables</a></div>
-                        <div class="col-1 text-center m-3"><a href="">Meat</a></div>
-                        <div class="col-1 text-center m-3"><a href="">Dairy</a></div>
-                        <div class="col-1 text-center m-3"><a href="">Pastry</a></div>
-                    </div> 
-
-
                     <div class="border row rounded-bottom">
                         <!--Search Bar-->
                         <div class="filter-search container-fluid input-group p-3">
@@ -101,23 +88,23 @@
                                     <?php
                                         $myfile = simplexml_load_file('../../DataBase/products.xml');
                                         $i = 0;
-                                            foreach ($myfile->children() as $category) {
-                                                foreach ($category->PRODUCT as $prod) {
-                                                    echo "<tr>
-                                                    <th scope='row'>" . ++$i . "</td>
-                                                    <td scope='col'>$prod->TITLE</td>
-                                                    <td scope='col'>$category</td>
-                                                    <td scope='col'>$prod->PRICE</td>
-                                                    <td scope='col'>
-                                                    <a href='AddProduct\addproduct.html' style='font-size:11px'
-                                                        class='btn btn-outline-primary btn-sm pl-3 pr-3 mr-1' href='#'
-                                                        role='button'>Edit</a>
-                                                    <a style='font-size:11px' class='btn btn-outline-danger btn-sm pl-3 pr-3'
-                                                        href='#' role='button'>Delete</a>
-                                                    </td>
-                                                  </tr>";
-                                                }
+                                        foreach ($myfile->children() as $category => $name) {
+                                            foreach ($name->PRODUCT as $prod) {
+                                                echo "<tr>
+                                                <th scope='row'>" . ++$i . "</td>
+                                                <td scope='col'>$prod->TITLE</td>
+                                                <td scope='col'>$category</td>
+                                                <td scope='col'>$prod->PRICE</td>
+                                                <td scope='col'>
+                                                <a href='AddProduct\addproduct.html' style='font-size:11px'
+                                                    class='btn btn-outline-primary btn-sm pl-3 pr-3 mr-1' href='#'
+                                                    role='button'>Edit</a>
+                                                <a style='font-size:11px' class='btn btn-outline-danger btn-sm pl-3 pr-3'
+                                                    href='#' role='button'>Delete</a>
+                                                </td>
+                                              </tr>";
                                             }
+                                        }
                                     ?>
                                 </tbody>
 
