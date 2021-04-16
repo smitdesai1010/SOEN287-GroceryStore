@@ -21,6 +21,7 @@ var cart = path + "Cart/cart.html" ;
 
 var admin = path + "Admin/administration.php";
 var home = path + "index.php";
+var specials = path + "Aisles/SpecialProduct.php"
 
 var company = path + "About/company.html"
 var team = path + "About/team.html"
@@ -187,6 +188,8 @@ header.innerHTML = `
                 <li><a class="dropdown-item" href="${aisle5}">Pastry</a></li>
             </ul>
             </li>
+
+            <li class="nav-item active"><a class="nav-link" href="${specials}">Specials</a></li>
         </ul>
 
         <ul class="navbar-nav ml-auto">
