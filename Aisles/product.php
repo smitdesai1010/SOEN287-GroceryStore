@@ -48,10 +48,23 @@
                     
                     <div class='d-flex justify-content-between'>
                         <div>
-                            <h5 class='green' id='price' p= <?php echo $PRODUCT->PRICE; ?>>
-                                $<?php echo $PRODUCT->PRICE; ?>/lb
-                            </h5>
-                    
+                            <?php
+                                if($PRODUCT->SPECIAL == 1)
+                                {
+                                    echo 
+                                    "<h5 style='color: red' id='price' p= $PRODUCT->SPECIALPRICE>
+                                        $$PRODUCT->SPECIALPRICE /lb
+                                    </h5>";
+                                }
+
+                                else
+                                {
+                                    echo 
+                                    "<h5 class='green' id='price' p= $PRODUCT->PRICE >
+                                        $$PRODUCT->PRICE /lb
+                                    </h5>";
+                                }
+                            ?>
                             <div class='row mx-1'>
                                 <button onclick='decrement()'>-</button>
                                 <input id='demoInput' type='number' placeholder='1' min='0' max='20' style='text-align: center;'>            
