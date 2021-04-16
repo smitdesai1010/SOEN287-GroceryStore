@@ -11,6 +11,8 @@
 <body>
         <div>
             <h1 style="color: #FF0000; text-align: center;"> S  P  E  C  I  A  L  S </h1>
+            
+            <section class="px-4">
                 <div class="container">
                     <?php
                         $myfile = simplexml_load_file('..\DataBase\products.xml');
@@ -51,6 +53,7 @@
                                 echo "</div>"; 
                     ?>
                 </div>
+            </section>
         </div>
     <script src="../Navbar/navbar.js" abspath="../"></script>
     <script src="../Orders/aisle-order.js"></script>   
