@@ -67,7 +67,7 @@
                             ?>
                             <div class='row mx-1'>
                                 <button onclick='decrement()'>-</button>
-                                <input id='demoInput' type='number' placeholder='1' min='0' max='20' style='text-align: center;'>            
+                                <input id='demoInput' type='number' placeholder='0' min='0' max='20' style='text-align: center;'>            
                                 <button onclick='increment()'>+</button> 
                     
                             </div>
