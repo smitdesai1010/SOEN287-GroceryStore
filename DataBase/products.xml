@@ -44,12 +44,12 @@
 		</PRODUCT>
 
 		<PRODUCT>
-			<SPECIAL>0</SPECIAL>
+			<SPECIAL>1</SPECIAL>
 			<TITLE>PEACH</TITLE>
 			<IMAGE>https://i.stack.imgur.com/Nqx6J.png</IMAGE>
 			<THUMBNAIL>https://images.unsplash.com/photo-1607527223313-0d89e6b8b0ab?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=1350&amp;q=80</THUMBNAIL>
 			<PRICE>2.99</PRICE>
-			<SPECIALPRICE>0</SPECIALPRICE>
+			<SPECIALPRICE>1.89</SPECIALPRICE>
 			<DESCRIPTION>Peaches are locally grown in Ontario, Canada. Yellow peaches are our most popular fruit during the month of May.</DESCRIPTION>
 			<MOREINFO>
 				<P>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</P>
@@ -194,7 +194,7 @@
 		<PRODUCT>
 			<SPECIAL>1</SPECIAL>
 			<TITLE>FISH</TITLE>
-			<IMAGE>https://i5.walmartimages.ca/images/Enlarge/094/514/6000200094514.jpg</IMAGE>
+			<IMAGE>https://assets.shop.loblaws.ca/products_jpeg/20864889/en/20864889_lrg_1_@1x.jpg</IMAGE>
 			<THUMBNAIL>https://harborfish.com/wp-content/uploads/2017/05/SalmonFaroe.r1@025x.jpg</THUMBNAIL>
 			<PRICE>11.99</PRICE>
 			<SPECIALPRICE>8.99</SPECIALPRICE>

@@ -42,7 +42,7 @@
                                 <div class='card-body'>
                                     <h5 class='card-title'>$prod->TITLE</h5>
                                     <span class='card-text d-flex justify-content-between'>
-                                        <p> $$prod->SPECIALPRICE/lb </p>
+                                        <p style='color: red'><b> $$prod->SPECIALPRICE/lb </b></p>
                                         <input price=$prod->SPECIALPRICE placeholder='Quantity' id='demoInput' type='number' min='0' max='20' style='text-align: center;width: 40%; height: 75%'>            
                                     </span>
                                     <a id='add' style='background-color: #46B510 !important; border-color: #46B510 !important;' class='btn btn-primary'>Add to cart</a><!-- add reference to cart? --> 
@@ -51,7 +51,7 @@
                             </div>
                         </div>        
                         ";
-                        ++$ctr;     
+                        ++$ctr;    
                     }
                     else {
                       echo "
