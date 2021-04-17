@@ -94,7 +94,7 @@
                                                         class='btn btn-outline-primary btn-sm pl-3 pr-3 mr-1' href='#'
                                                         role='button' onclick='edit(this)'>Edit</a>
                                                     <a style='font-size:11px' class='btn btn-outline-danger btn-sm pl-3 pr-3'
-                                                        href='#' role='button'>Delete</a>
+                                                        href='#' role='button' onclick='remove(this)'>Delete</a>
                                                     </td>
                                                   </tr>";
                                     }

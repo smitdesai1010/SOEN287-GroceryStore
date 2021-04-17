@@ -1,22 +1,38 @@
-function edit(id) {
-    productProperties = id.parentElement.parentElement.getElementsByTagName("td");
-    productName = productProperties[0].innerHTML;
-    categoryName = productProperties[1].innerHTML;
-    loadDoc(productName, categoryName);
+function remove(id) {
+    product = data(id);
+    if (confirm("Are you sure you want to delete " + product.productName + " from the store?")) {
+        const xhttp = new XMLHttpRequest();
+        xhttp.open("POST", `deleteproduct.php`, true);
+        xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+        xhttp.send(`title=${product.productName}&category=${product.categoryName}`);
+        alert("Product deleted!");
+        location.reload();
+    }
+    
 }
 
-function loadDoc(productName, categoryName) {
+function edit(id) {
+    const product = data(id);
     const xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function () {
         if (this.readyState == 4 && this.status == 200) {
-            obtainProductData(this, productName, categoryName);
+            redirectWithData(this, product.productName, product.categoryName);
         }
     };
     xhttp.open("GET", "../../DataBase/products.xml", true);
     xhttp.send();
 }
 
-function obtainProductData(xml, productName, categoryName) {
+function data(id) {
+    const productData = id.parentElement.parentElement.getElementsByTagName("td");
+    const productProperties = {
+        productName: productData[0].innerHTML,
+        categoryName: productData[1].innerHTML
+    };
+    return productProperties;
+}
+
+function redirectWithData(xml, productName, categoryName) {
     // console.log("The category name is: " + categoryName);
     // console.log("The product name is: " + productName);
     const category = xml.responseXML.getElementsByTagName(categoryName);
@@ -43,6 +59,6 @@ function obtainProductData(xml, productName, categoryName) {
             break;
         }
         else
-        console.log("Query failed");
+            console.log("Query failed");
     };
 }
