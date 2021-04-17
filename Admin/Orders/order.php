@@ -38,7 +38,7 @@
             <main class="container col ml-4">
                 <div class="main-header mt-5 mb-5">
                     <h3 class="d-inline">Orders</h3>
-                    <a href="CreateOrder.html" class="d-inline btn btn-success float-right text-white">Create New Order</a>
+                    <a href="CreateOrder/CreateOrder.html" class="d-inline btn btn-success float-right text-white">Create New Order</a>
                 </div>
 
                
@@ -76,83 +76,105 @@
                                     <th scope="row">Order ID</th>
                                     <th scope="col">Name</th>
                                     <th scope="col">Email</th>
-                                    <th scope="col">Product</th>
+                                    <!--<td style="height:100px;width:100px">50</td>-->
+                                    <th scope="col" >Product</th>
+                                    <th scope="col">Total Price</th>
                                     <th scope="col"></th>
                                 </tr>
                             </thead>
                             <tbody>
-                                <!--<tr>
-                                    <td scope="row">#201</td>
-                                    <td scope="col">Denis Villeneuve</td>
-                                    <td scope="col">denisVill@gmail.com</td>
-                                    <td scope="col">
-                                        <a href="Orders\CreateOrder.html" style="font-size:11px"
-                                            class="btn btn-outline-success btn-sm pl-3 pr-3 mr-1" href="#"
-                                            role="button">Products</a>
-                                            </td>
-                                    <td scope="col">
-                                        <a href="CreateOrder.html" style="font-size:11px"
-                                            class="btn btn-outline-primary btn-sm pl-3 pr-3 mr-1" href="#"
-                                            role="button">Edit</a>
-                                        <a style="font-size:11px" class="btn btn-outline-danger btn-sm pl-3 pr-3"
-                                            href="#" role="button">Delete</a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td scope="row">#245</td>
-                                    <td scope="col">Alfonso Cuaron</td>
-                                    <td scope="col">Ac@yahoo.com</td>
-                                    <td scope="col"> <a href="Orders\CreateOrder.html" style="font-size:11px"
-                                        class="btn btn-outline-success btn-sm pl-3 pr-3 mr-1" href="#"
-                                        role="button">Products</a></td>
-                                    <td scope="col">
-                                        <a href="CreateOrder.html" style="font-size:11px"
-                                            class="btn btn-outline-primary btn-sm pl-3 pr-3 mr-1" href="#"
-                                            role="button">Edit</a>
-                                        <a style="font-size:11px" class="btn btn-outline-danger btn-sm pl-3 pr-3"
-                                            href="#" role="button">Delete</a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                  <td scope="row">#17</td>
-                                  <td>Inarritu</td>
-                                  <td>inarit1997@gmail.com</td>
-                                  <td> <a href="Orders\CreateOrder.html" style="font-size:11px"
-                                    class="btn btn-outline-success btn-sm pl-3 pr-3 mr-1" href="#"
-                                    role="button">Products</a></td>
-                                  <td scope="col">
-                                    <a href="CreateOrder.html" style="font-size:11px"
-                                        class="btn btn-outline-primary btn-sm pl-3 pr-3 mr-1" href="#"
-                                        role="button">Edit</a>
-                                    <a style="font-size:11px" class="btn btn-outline-danger btn-sm pl-3 pr-3"
-                                        href="#" role="button">Delete</a>
-                                </td>
-                                </tr>-->
+
+
+                                <!--
+                            
+                                                        //<b>Products:</b> $product </t> <b>Price </b>$price </t> <b>Quantity:</b> $quantity
+                            
+                            
+                            
+                            
+                            -->
+
+
+
+                                
+
+
                                 <?php
+                                        
                                         $myfile = simplexml_load_file('../../DataBase/orders.xml');
                                         $i = 0;
                                         $Orders=$myfile->ORDERS;
-                                        
+                                        $product="";
+                                        $price="";
+                                        $quantity="";
+
                                                  foreach ($Orders->ORDER as $o) {
-                                                    
+                                                     
+                                                     foreach ( $o->PRODUCTS->PRODUCT as $prod){
+                                                        $product .= "<p>$prod->PRODUCTNAME</p>";
+                                                        $price .= "<p>$prod->PRICE</p>";
+                                                        $quantity .= "<p>$prod->QUANTITY</p>";    
+                                                    }
                                                      echo "<tr>
-                                                     <th scope='row'>" . ++$i . "</td>
+                                                     <th scope='row'>$o->ID</td>
                                                      <td scope='col'>$o->NAME</td>
                                                      <td scope='col'>$o->EMAIL</td>
                                                      <td scope='col'>
-                                                     <a href='CreateOrder.html' style='font-size:11px'
-                                                     class='btn btn-outline-primary btn-sm pl-3 pr-3 mr-1' href='#'
-                                                     role='button'>Products</a>
-                                                     </td>
-                                                     <td scope='col'>
-                                                     <a href='CreateOrder.html' style='font-size:11px'
-                                                         class='btn btn-outline-primary btn-sm pl-3 pr-3 mr-1' href='#'
-                                                         role='button'>Edit</a>
-                                                     <a style='font-size:11px' class='btn btn-outline-danger btn-sm pl-3 pr-3'
-                                                         href='#' role='button'>Delete</a>
-                                                     </td>
+
+                                                        <p align ='left'>
+                                                            <button class='btn btn-success' type='button' data-toggle='collapse' data-target='#collapseExample$i' aria-expanded='false' aria-controls='collapseExample'>
+                                                            Products
+                                                            </button>
+                                                        </p>
+                                                        
+                                                    <div class='container-fluid'>
+                                                        <div class='collapse' id='collapseExample$i'>
+                                                        
+                                                        
+                                                        
+                                                        <table class='table'>
+                                                                <thead>
+                                                                    <tr>
+                                                                   
+                                                                    <th scope='col'>Products</th>
+                                                                    <th scope='col'>Price</th>
+                                                                    <th scope='col'>Quantity</th>
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody>
+                                                                    <tr>
+                                                                    
+                                                                    <td>$product</td>
+                                                                    <td>$price</td>
+                                                                    <td>$quantity</td>
+                                                                    </tr>
+                                                                   
+                                                                </tbody>
+                                                                </table>   
+                                                                                                
+                                                                                                                                                                                                                         
+                                                                                                               
+                                                                                                                   
+                                                        </div>
+                                                    </div>
+
+                                                    </td>
+                                                    <td scope='col'>$$o->TOTAL</td>   
+
+                                                    <td scope='col'>
+                                                        <a href='CreateOrder/CreateOrder.html' style='font-size:11px'
+                                                            class='btn btn-outline-primary btn-sm pl-3 pr-3 mr-1' href='#'
+                                                            role='button'>Edit</a>
+                                                        <a style='font-size:11px' class='btn btn-outline-danger btn-sm pl-3 pr-3'
+                                                            href='#' role='button'>Delete</a>
+                                                    </td>
                                                    </tr>";
                                                 
+                                                   ++$i;
+                                                   $product = "";
+                                                   $price="";
+                                                   $quantity="";
+                                                     
                                              }
                                     ?>
                                 
