@@ -55,8 +55,10 @@
                         <hr />
                         <div class="container add-images-group pb-4">
                             <h5 class="mb-4">Images</h5>
-                            <label for="exampleFormControlFile1">Add Image</label>
+                            <label for="imageURL">Add Image</label>
                             <input type="text" class="form-control" id="imageURL" name="imageURL" placeholder="Enter a URL">
+                            <label for="thumbnailURL" class="mt-2">Add Thumbnail</label>
+                            <input type="text" class="form-control" id="thumbnailURL" name="thumbnailURL" placeholder="Enter a URL">
                         </div>
                     </div>
                     <div class="organization-tags border col rounded m-4 justify-content-right">
@@ -64,17 +66,26 @@
                             <h5>Organization</h5>
                             <select class="custom-select my-2" id="foodType" name="foodType">
                                 <option>Food Type</option>
-                                <option value="f">Fruit</option>
-                                <option value="v">Vegetable</option>
-                                <option value="m">Meat</option>
-                                <option value="d">Dairy</option>
-                                <option value="p">Pastry</option>
+                                <option value="FRUITS">Fruit</option>
+                                <option value="VEGETABLES">Vegetable</option>
+                                <option value="MEAT">Meat</option>
+                                <option value="DAIRY">Dairy</option>
+                                <option value="PASTRY">Pastry</option>
                             </select>
-                            <div class="pt-4">
-                                <label for="productVendor">Vendor</label>
-                                <input type="product-vendor" class="form-control" name="productVendor" id="productVendor"
-                                    placeholder="e.g. Franklin's Farms">
+                            <div class="py-4">
+                                <label for="price">Price</label>
+                                <input type="price" class="form-control" name="price" id="price"
+                                    placeholder="$6.99">
                             </div>
+                            <div class="py-4">
+                                <label for="specialPrice">Special Price</label>
+                                <input type="product-vendor" class="form-control" name="specialPrice" id="specialPrice"
+                                    placeholder="$2.99">
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="onSpecial" value="1">
+                                <label class="form-check-label" for="onSpecial">Is this item on special?</label>
+                              </div>
                         </div>
                     </div>
                 </div>

@@ -3,8 +3,11 @@
     $product_name = $_POST['ProductName'];
     $description = $_POST['Description'];
     $image_URL = $_POST['imageURL'];
+    $thumbnail_URL = $_POST['thumbnailURL'];
     $category = $_POST['foodType'];
-    $vendor = $_POST['productVendor'];
+    $price = $_POST['price'];
+    $specialPrice = $_POST['specialPrice'];
+    $onSpecial = $_POST['onSpecial'];
     
     $myfile = simplexml_load_file('../../../DataBase/products.xml');
     $ispresent = false;
@@ -29,8 +32,11 @@
         $product->addChild('NAME', $product_name);
         $product->addChild('DESCRIPTION', $description);
         $product->addChild('IMAGE', $image_URL);
+        $product->addChild('THUMBNAIL', $thumbnail_URL);
         $product->addChild('TYPE', $category);
-        $product->addChild('VENDOR', $vendor);
+        $product->addChild('PRICE', $price);
+        $product->addChild('SPECIAL', $onSpecial);
+        $product->addChild('SPECIALPRICE', $specialPrice);
     
         $myfile->asXML('../../../DataBase/products.xml');
     
