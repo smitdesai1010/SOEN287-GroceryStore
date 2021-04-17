@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <ROOT>
-	<ID>5</ID>
+	<ID>6</ID>
 	<ORDERS>
 		<ORDER>
 			<ID>
@@ -192,8 +192,7 @@
 						2.99
 					</PRICE>
 					
-					<QUANTITY
-					>3
+					<QUANTITY>3
 					</QUANTITY>
 				</PRODUCT>
 			
@@ -246,8 +245,7 @@
 						2.99
 					</PRICE>
 					
-					<QUANTITY
-					>10
+					<QUANTITY>10
 					</QUANTITY>
 				</PRODUCT>
 			
@@ -262,5 +260,5 @@
 			
 			</TOTAL>
 		</ORDER>
-	</ORDERS>
+	<ORDER><ID>5</ID><NAME>SPD</NAME><EMAIL>grocerystore@soen287.com</EMAIL><PRODUCTS><PRODUCT><PRODUCTNAME>APPLE</PRODUCTNAME><PRICE>2.00</PRICE><QUANTITY>3</QUANTITY></PRODUCT></PRODUCTS><TAX>9</TAX><TOTAL>15</TOTAL></ORDER></ORDERS>
 </ROOT>
