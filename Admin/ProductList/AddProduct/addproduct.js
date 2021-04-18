@@ -12,6 +12,7 @@ urlParams.forEach(function (value, key) {
         case key == 'name': ProductName = value;
             document.getElementById("ProductName").value = ProductName;
             document.getElementById("ProductName").disabled = true;
+            document.getElementsByTagName("h1")[0].innerHTML = "Edit Product";
             break;
         case key == 'desc': Description = value;
             document.getElementById("Description").value = Description;
