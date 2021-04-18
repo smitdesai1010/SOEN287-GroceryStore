@@ -94,7 +94,17 @@
                             
                             -->
 
+/*
+                currID = order to delete
+                myfile = load(orders.xml);
+                $orders = myfile->ORDERS
 
+                foreach($orders->ORDER as $o)
+                    if ($o->ID == currID)
+                        $o->parentNode->removeChild($o);
+
+
+*/
 
                                 
 
