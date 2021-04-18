@@ -11,7 +11,7 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-    <script src="productlist.js"></script>
+    
     <!--Our Imports-->
     <link rel="stylesheet" href="productlist.css">
     <style>
@@ -38,16 +38,14 @@
                     <!--Search Bar-->
                     <div class="filter-search container-fluid input-group p-3">
                         <div class="input-group-prepend">
-                            <button class="btn btn-outline-success dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Filter</button>
+                            <button class="btn btn-outline-success dropdown-toggle" id="dropdownHeader" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Filter By</button>
                             <div class="dropdown-menu">
-                                <a class="dropdown-item" href="#">Products: A-Z</a>
-                                <a class="dropdown-item" href="#">Food Types: A-Z</a>
-                                <a class="dropdown-item" href="#">Price: High to Low</a>
-                                <a class="dropdown-item" href="#">Price: Low to High</a>
-                                <a class="dropdown-item" href="#">Pastry</a>
+                                <a class="dropdown-item" id="0" onclick="setfilter(this)" href="#">Products</a>
+                                <a class="dropdown-item" id="1" onclick="setfilter(this)" href="#">Food Type</a>
+                                <a class="dropdown-item" id="2" onclick="setfilter(this)" href="#">Price</a>
                             </div>
                         </div>
-                        <input type="text" class="form-control" aria-label="Text input with dropdown button" placeholder="Search...">
+                        <input type="text" class="form-control" id="filtersearchbar" aria-label="Text input with dropdown button" onkeyup="filter()"  placeholder="Search...">
                     </div>
 
                     <!--Product Table-->
@@ -111,7 +109,7 @@
     </div>
     </div>
     <script src="../../Navbar/navbar-admin.js" abspath="../../"></script>
-    
+    <script src="productlist.js"></script>
 </body>
 
 </html>
