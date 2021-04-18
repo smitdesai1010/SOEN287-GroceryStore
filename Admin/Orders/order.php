@@ -123,7 +123,7 @@
                                                      foreach ( $o->PRODUCTS->PRODUCT as $prod){
                                                         $product .= "<p>$prod->PRODUCTNAME</p>";
                                                         $price .= "<p>$prod->PRICE</p>";
-                                                        $quantity .= "<p>$prod->QUANTITY</p>";    
+                                                        $quantity .= "<p><input type='text' class='qty' min='0' placeholder=$prod->QUANTITY/></p>";  
                                                     }
                                                      echo "<tr>
                                                      <th scope='row'>$o->ID</td>
