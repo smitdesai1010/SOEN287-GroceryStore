@@ -38,7 +38,7 @@
 
     $myfile->asXML('../DataBase/user.xml');
     
-    if ($redirect == 'user')
+    if ($redirect == 'login')
         header('location: /Login/login.html');
     
     else 
