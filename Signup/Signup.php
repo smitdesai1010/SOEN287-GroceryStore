@@ -19,8 +19,8 @@
     {   
       if ( trim($user->EMAIL) == $email )
       {
-        if ($redirect == 'user')
-        header('location: /Signup/Signup.html/message=Profile already exists');
+        if ($redirect == 'login')
+            header('location: /Signup/Signup.html?message=Profile already exists');
     
         else 
             header('location: /Admin/UserList/EditUser/EditUser.html?message=Profile already exists');

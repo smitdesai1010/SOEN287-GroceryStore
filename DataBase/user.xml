@@ -14,7 +14,32 @@
 			ADMIN
 		</ROLE>
 	</USER>
-<USER>
-<NAME/><EMAIL/><PASSWORD/><ROLE>USER</ROLE>
-</USER>
-<USER><NAME>Paavan patel</NAME><EMAIL>pk@gmail.com</EMAIL><PASSWORD>pk</PASSWORD><ROLE>USER</ROLE></USER><USER><NAME>Adit patel</NAME><EMAIL>ap@gmail.com</EMAIL><PASSWORD>2411</PASSWORD><ROLE>USER</ROLE></USER></USERS>
+	<USER>
+		<NAME>
+			Paavan patel
+		</NAME>
+		<EMAIL>
+			pk@gmail.com
+		</EMAIL>
+		<PASSWORD>
+			pk
+		</PASSWORD>
+		<ROLE>
+			USER
+		</ROLE>
+	</USER>
+	<USER>
+		<NAME>
+			Adit patel
+		</NAME>
+		<EMAIL>
+			ap@gmail.com
+		</EMAIL>
+		<PASSWORD>
+			2411
+		</PASSWORD>
+		<ROLE>
+			USER
+		</ROLE>
+	</USER>
+</USERS>
