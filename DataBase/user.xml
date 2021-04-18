@@ -14,4 +14,4 @@
 			ADMIN
 		</ROLE>
 	</USER>
-</USERS>
+<USER><NAME>Jonah Ball</NAME><EMAIL>jonahball5@hotmail.com</EMAIL><PASSWORD>asd</PASSWORD><ROLE>USER</ROLE></USER></USERS>
