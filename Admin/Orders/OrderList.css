@@ -4,3 +4,9 @@
     max-height: 75%;
     min-width: 99%;
 }
+
+.box {
+    display: flex;
+    flex-flow: column;
+    min-height: 70.7%;     
+}
