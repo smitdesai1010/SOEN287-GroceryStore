@@ -38,36 +38,10 @@
             <main class="container col ml-4">
                 <div class="main-header mt-5 mb-5">
                     <h3 class="d-inline">Orders</h3>
-                    <a href="CreateOrder/CreateOrder.html" class="d-inline btn btn-success float-right text-white">Create New Order</a>
                 </div>
-
                
                 <div class="order-view mr-4 mb-5">
-                    <div class="genres row border rounded-top">
-                        <div class="col-2 text-center m-3"> <a href="">All</a></div>
-                        <div class="col-2 text-center m-3"><a href="">Open</a></div>
-                        <div class="col-2 text-center m-3"><a href="">Unpaid</a></div>
-                        <div class="col-2 text-center m-3"><a href="">Unfulfilled</a></div>
-                        <div class="col-2 text-center m-3"><a href="">Overdue</a></div>
-                    </div>
-
-                    
-                    <div class="border row rounded-bottom">
-                        <div class="filter-search container-fluid input-group p-3">
-                            <div class="input-group-prepend">
-                                <button class="btn btn-outline-success dropdown-toggle" type="button"
-                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Filter</button>
-                                <div class="dropdown-menu">
-                                    <a class="dropdown-item" href="#">Order </a>
-                                    <a class="dropdown-item" href="#">Customer ID</a>
-                                    <a class="dropdown-item" href="#">Price</a>
-                                   
-                                </div>
-                            </div>
-                            <input type="text" class="form-control" aria-label="search-input"
-                                placeholder="Enter order to search">
-                        </div>
-
+                   
                       <!--order list -->
                       <div class="product-table border rounded"></div>
                         <table class="order-list table ">
@@ -96,7 +70,7 @@
                                                      foreach ( $o->PRODUCTS->PRODUCT as $prod){
                                                         $product .= "<p>$prod->PRODUCTNAME</p>";
                                                         $price .= "<p>$prod->PRICE</p>";
-                                                        $quantity .= "<p><input type='text' class='qty' min='0' placeholder=$prod->QUANTITY/></p>";  
+                                                        $quantity .= "<p>$prod->QUANTITY</p>";  
                                                     }
                                                      echo "<tr>
                                                      <th scope='row'>$o->ID</td>
@@ -141,19 +115,15 @@
                                                     <td scope='col'>$$o->TOTAL</td>   
 
                                                     <td scope='col'>
-                                                        <a href='CreateOrder/CreateOrder.html' style='font-size:11px'
-                                                            class='btn btn-outline-primary btn-sm pl-3 pr-3 mr-1' href='#'
-                                                            role='button'>Edit</a>
                                                         <a style='font-size:11px' class='btn btn-outline-danger btn-sm pl-3 pr-3'
-                                                            href='#' role='button'>Delete</a>
+                                                            onclick='deleteOrder($o->ID)' role='button'>Delete</a>
                                                     </td>
                                                    </tr>";
                                                 
                                                    ++$i;
                                                    $product = "";
                                                    $price="";
-                                                   $quantity="";
-                                                     
+                                                   $quantity="";                                                     
                                              }
                                     ?>
                                 
@@ -169,6 +139,22 @@
         </div>
     </div>
     <script src="../../Navbar/navbar-admin.js" abspath="../../"></script>
+    <script>
+        function deleteOrder(OrderId)
+        {
+            
+            var confirmDelete = confirm("Do you want to Order Id "+OrderId+"?");
+
+            if ( !confirmDelete )
+                return;
+
+            fetch('deleteorder.php',{
+                method:'POST',
+                body: JSON.stringify({'orderId': OrderId})
+            })
+            .catch(error => console.log(error))
+        }
+    </script>
 </body>
 
 </html>

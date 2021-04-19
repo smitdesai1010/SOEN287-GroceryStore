@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <ROOT>
-	<ID>6</ID>
+	<ID>7</ID>
 	<ORDERS>
 		<ORDER>
 			<ID>
@@ -209,56 +209,6 @@
 		</ORDER>
 
 
-		<ORDER>
-			<ID>
-		5
-			</ID>
-			<NAME>
-			Name5
-			</NAME>
-			
-			<EMAIL>
-			namefive@gmail.com
-			</EMAIL>
-			
-			<PRODUCTS>
-				
-				<PRODUCT>
-					<PRODUCTNAME>
-						BANANA
-					</PRODUCTNAME>
-					<PRICE>
-						0.57
-					</PRICE>
-					
-					<QUANTITY>
-						1
-					</QUANTITY>
-				</PRODUCT>
-				
-				<PRODUCT>
-					<PRODUCTNAME>
-						BROCCOLI
-					</PRODUCTNAME>
-					
-					<PRICE>
-						2.99
-					</PRICE>
-					
-					<QUANTITY>10
-					</QUANTITY>
-				</PRODUCT>
-			
-			</PRODUCTS>
-			
-			<TAX>
-		13
-			</TAX>
-			
-			<TOTAL>
-			43.47
-			
-			</TOTAL>
-		</ORDER>
-	<ORDER><ID>5</ID><NAME>SPD</NAME><EMAIL>grocerystore@soen287.com</EMAIL><PRODUCTS><PRODUCT><PRODUCTNAME>APPLE</PRODUCTNAME><PRICE>2.00</PRICE><QUANTITY>3</QUANTITY></PRODUCT></PRODUCTS><TAX>9</TAX><TOTAL>15</TOTAL></ORDER></ORDERS>
+		
+	</ORDERS>
 </ROOT>
