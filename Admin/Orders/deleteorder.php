@@ -6,6 +6,7 @@
     
     $xml = new DOMDocument;
     $xml->load('../../DataBase/orders.xml');
+    
     $database = $xml->documentElement;
     $OrderId = $database->getElementsByTagName("ID");
     $amountOfOrderId = $OrderId->length;

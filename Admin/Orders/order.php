@@ -50,6 +50,9 @@
                                                         $product .= "<p>$prod->PRODUCTNAME</p>";
                                                         $price .= "<p>$prod->PRICE</p>";
                                                         $quantity .= "<p>$prod->QUANTITY</p>";  
+                                                        $delete .=  "<div class='cartSection removeWrap'>
+                                                                        <a class='remove' onclick='deleteItem($o->ID,`$prod->PRODUCTNAME`)'>x</a>
+                                                                    </div>";
                                                     }
                                                      echo "<tr>
                                                      <th scope='row'>$o->ID</td>
@@ -82,6 +85,7 @@
                                                                     <td>$product</td>
                                                                     <td>$price</td>
                                                                     <td>$quantity</td>
+                                                                    <td>$delete</td>
                                                                     </tr>
                                                                    
                                                                 </tbody>
@@ -102,7 +106,8 @@
                                                    ++$i;
                                                    $product = "";
                                                    $price="";
-                                                   $quantity="";                                                     
+                                                   $quantity="";   
+                                                   $delete = "";                                                  
                                              }
                                     ?>
                                 
@@ -120,8 +125,7 @@
     <script src="../../Navbar/navbar-admin.js" abspath="../../"></script>
     <script>
         function deleteOrder(OrderId)
-        {
-            
+        {   
             var confirmDelete = confirm("Do you want to Order Id "+OrderId+"?");
 
             if ( !confirmDelete )
@@ -130,6 +134,21 @@
             fetch('deleteorder.php',{
                 method:'POST',
                 body: JSON.stringify({'orderId': OrderId})
+            })
+            .catch(error => console.log(error))
+        }
+
+
+        function deleteItem(OrderId,ProductName)
+        {
+            var confirmDelete = confirm("Do you want to Item: "+ProductName.trim()+"?");
+
+            if ( !confirmDelete )
+                return;
+
+            fetch('deleteorderItem.php',{
+                method:'POST',
+                body: JSON.stringify({'orderId': OrderId,'productName': ProductName.trim()})
             })
             .catch(error => console.log(error))
         }
