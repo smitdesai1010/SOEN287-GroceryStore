@@ -76,7 +76,6 @@
                                     <th scope="row">Order ID</th>
                                     <th scope="col">Name</th>
                                     <th scope="col">Email</th>
-                                    <!--<td style="height:100px;width:100px">50</td>-->
                                     <th scope="col" >Product</th>
                                     <th scope="col">Total Price</th>
                                     <th scope="col"></th>
@@ -84,33 +83,7 @@
                             </thead>
                             <tbody>
 
-
-                                <!--
-                            
-                                                        //<b>Products:</b> $product </t> <b>Price </b>$price </t> <b>Quantity:</b> $quantity
-                            
-                            
-                            
-                            
-                            -->
-
-/*
-                currID = order to delete
-                myfile = load(orders.xml);
-                $orders = myfile->ORDERS
-
-                foreach($orders->ORDER as $o)
-                    if ($o->ID == currID)
-                        $o->parentNode->removeChild($o);
-
-
-*/
-
-                                
-
-
-                                <?php
-                                        
+                                <?php     
                                         $myfile = simplexml_load_file('../../DataBase/orders.xml');
                                         $i = 0;
                                         $Orders=$myfile->ORDERS;
@@ -140,9 +113,8 @@
                                                     <div class='container-fluid'>
                                                         <div class='collapse' id='collapseExample$i'>
                                                         
-                                                        
-                                                        
-                                                        <table class='table'>
+          
+                                                            <table class='table'>
                                                                 <thead>
                                                                     <tr>
                                                                    
@@ -160,10 +132,7 @@
                                                                     </tr>
                                                                    
                                                                 </tbody>
-                                                                </table>   
-                                                                                                
-                                                                                                                                                                                                                         
-                                                                                                               
+                                                            </table>                                                     
                                                                                                                    
                                                         </div>
                                                     </div>
