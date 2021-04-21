@@ -69,11 +69,11 @@
                                                 <td scope='col' ><a href='' class='name'>$user->NAME</a></td>
                                                 <td scope='col'>$user->EMAIL</td>
                                                 <td scope='col'>$user->ROLE</td>
-                                                <td scope='col'><button style='font-size:11px'
-                                                        class='btn btn-outline-primary btn-sm pl-3 pr-3 mr-1' href='#'
-                                                        role='button'>Edit</button><button style='font-size:11px'
-                                                        class='btn btn-outline-danger btn-sm pl-3 pr-3' href='#'
-                                                        role='button'>Delete</button></td>
+                                                <td scope='col'><a style='font-size:11px'
+                                                class='btn btn-outline-primary btn-sm pl-3 pr-3 mr-1' href='#'
+                                                role='button' onclick='edit(this)'>Edit</a>
+                                            <a style='font-size:11px' class='btn btn-outline-danger btn-sm pl-3 pr-3'
+                                                href='#' role='button' onclick='remove(this)'>Delete</a></td>
                                             </tr>";
                                 }
                                 // }
@@ -87,6 +87,7 @@
         </div>
     </div>
     <script src="../../Navbar/navbar-admin.js" abspath="../../"></script>
+    <script src="UserList.js"></script>
 </body>
 
 </html>

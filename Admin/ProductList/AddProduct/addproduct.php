@@ -43,6 +43,6 @@ if (!$ispresent) {
 
     $myfile->asXML('../../../DataBase/products.xml');
 
-    header('location: /Admin/ProductList/productlist.html');
+    header('location: /Admin/ProductList/productlist.php');
     exit();
 }
