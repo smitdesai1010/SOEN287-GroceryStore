@@ -20,7 +20,6 @@ function edit(id) {
 function redirectWithData(xml, userName, userEmail) {
     const users = xml.responseXML.getElementsByTagName('USER');
     let i;
-    console.log(userName);
     for (i = 0; i < users.length; i++) {
         console.log(users[i].getElementsByTagName("NAME")[0].innerHTML);
         
@@ -41,7 +40,6 @@ function redirectWithData(xml, userName, userEmail) {
 }
 function remove(id) {
     user = data(id);
-    console.log(user.userName);
     if (confirm("Are you sure you want to delete " + user.userName.trim() + " from the store?")) {
         const xhttp = new XMLHttpRequest();
         xhttp.open("POST", `DeleteUser.php`, true);
