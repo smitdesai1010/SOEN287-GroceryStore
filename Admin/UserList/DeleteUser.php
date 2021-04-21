@@ -5,7 +5,7 @@ $xml = new DOMDocument;
 $xml->load('../../DataBase/user.xml');
 $database = $xml->documentElement;
 
-$users = $database->getElementsByTagName("name");
+$users = $database->getElementsByTagName("NAME");
 $amountOfUsers = $users->length;
 
 $elementsToDelete = null;
@@ -16,4 +16,4 @@ for ($i = 0; $i < $amountOfUsers; $i++){
 
 $elementToDelete->parentNode->removeChild($elementToDelete);
 
-$xml->save('../../DataBase/products.xml');
+$xml->save('../../DataBase/user.xml');

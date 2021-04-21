@@ -66,7 +66,7 @@
                                 //     echo $category;
                                 foreach ($xml->children() as $user) {
                                     echo "<th scope='row'>" . ++$i .  "</th>
-                                                <td scope='col' ><a href='' class='name'>$user->NAME</a></td>
+                                                <td scope='col' class='name'>$user->NAME</td>
                                                 <td scope='col'>$user->EMAIL</td>
                                                 <td scope='col'>$user->ROLE</td>
                                                 <td scope='col'><a style='font-size:11px'

@@ -14,21 +14,23 @@ function edit(id) {
             redirectWithData(this, user.userName, user.userEmail);
         }
     };
-    xhttp.open("GET", "../../DataBase/products.xml", true);
+    xhttp.open("GET", "../../DataBase/user.xml", true);
     xhttp.send();
 }
 function redirectWithData(xml, userName, userEmail) {
     const users = xml.responseXML.getElementsByTagName('USER');
     let i;
-
+    console.log(userName);
     for (i = 0; i < users.length; i++) {
+        console.log(users[i].getElementsByTagName("NAME")[0].innerHTML);
+        
         if (users[i].getElementsByTagName("NAME")[0].innerHTML == userName && users[i].getElementsByTagName("EMAIL")[0].innerHTML == userEmail) {
 
-            let userName = users[i].getElementsByTagName("NAME").innerHTML;
-            let userEmail = users[i].getElementsByTagName("EMAIL").innerHTML;
-            let userPassword = users[i].getElementsByTagName("PASSWORD").innerHTML;
-            let userRole = users[i].getElementsByTagName("ROLE").innerHTML;
-
+            let userName = users[i].getElementsByTagName("NAME")[0].innerHTML;
+            let userEmail = users[i].getElementsByTagName("EMAIL")[0].innerHTML;
+            let userPassword = users[i].getElementsByTagName("PASSWORD")[0].innerHTML;
+            let userRole = users[i].getElementsByTagName("ROLE")[0].innerHTML;
+            
             
             window.open(`EditUser/EditUser.html?name=${userName}&email=${userEmail}&password=${userPassword}&role=${userRole}`);
             break;
@@ -39,12 +41,13 @@ function redirectWithData(xml, userName, userEmail) {
 }
 function remove(id) {
     user = data(id);
-    if (confirm("Are you sure you want to delete " + user.userName + " from the store?")) {
+    console.log(user.userName);
+    if (confirm("Are you sure you want to delete " + user.userName.trim() + " from the store?")) {
         const xhttp = new XMLHttpRequest();
         xhttp.open("POST", `DeleteUser.php`, true);
         xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
         xhttp.send(`name=${user.userName}&email=${user.userEmail}`);
-        alert("Product deleted!");
+        alert("User deleted!");
         location.reload();
     }
     
