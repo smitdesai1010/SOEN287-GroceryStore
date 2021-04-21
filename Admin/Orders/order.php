@@ -135,6 +135,7 @@
                 method:'POST',
                 body: JSON.stringify({'orderId': OrderId})
             })
+            .then(res => window.location.reload())
             .catch(error => console.log(error))
         }
 
@@ -150,6 +151,7 @@
                 method:'POST',
                 body: JSON.stringify({'orderId': OrderId,'productName': ProductName.trim()})
             })
+            .then(res => window.location.reload())
             .catch(error => console.log(error))
         }
     </script>
