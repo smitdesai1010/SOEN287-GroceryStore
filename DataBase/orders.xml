@@ -35,6 +35,7 @@
 						2
 					</QUANTITY>
 				</PRODUCT>
+				
 			</PRODUCTS>
 			<TAX>
 				9
@@ -80,15 +81,17 @@
 				</PRODUCT>
 				<PRODUCT>
 					<PRODUCTNAME>
-						BANANA
+						CUCUMBER
 					</PRODUCTNAME>
 					<PRICE>
-						0.57
+						1.99
 					</PRICE>
 					<QUANTITY>
 						10
 					</QUANTITY>
 				</PRODUCT>
+
+				
 			</PRODUCTS>
 			<TAX>
 				19
@@ -204,6 +207,88 @@
 			
 			<TOTAL>
 			49.93
+			
+			</TOTAL>
+		</ORDER>
+		
+
+
+		<ORDER>
+			<ID>
+		5
+			</ID>
+			<NAME>
+			Name5
+			</NAME>
+			
+			<EMAIL>
+			name5@gmail.com
+			</EMAIL>
+			
+			<PRODUCTS>
+				
+				<PRODUCT>
+					<PRODUCTNAME>ONION
+						
+					</PRODUCTNAME>
+					<PRICE>
+						2.99
+					</PRICE>
+					
+					<QUANTITY>
+						4
+					</QUANTITY>
+				</PRODUCT>
+				
+				<PRODUCT>
+					<PRODUCTNAME>
+						CHEESE
+					</PRODUCTNAME>
+					
+					<PRICE>
+						7.99
+					</PRICE>
+					
+					<QUANTITY>1
+
+					</QUANTITY>
+				</PRODUCT>
+
+				<PRODUCT>
+					<PRODUCTNAME>
+						CHICKEN
+					</PRODUCTNAME>
+					
+					<PRICE>
+						18.99
+					</PRICE>
+					
+					<QUANTITY>1
+					
+					</QUANTITY>
+				</PRODUCT>
+			
+			<PRODUCT>
+					<PRODUCTNAME>
+						FISH
+					</PRODUCTNAME>
+					
+					<PRICE>
+						11.99
+					</PRICE>
+					
+					<QUANTITY>2
+					
+					</QUANTITY>
+				</PRODUCT>
+			</PRODUCTS>
+			
+			<TAX>
+			9
+			</TAX>
+			
+			<TOTAL>
+			71.92
 			
 			</TOTAL>
 		</ORDER>
