@@ -17,13 +17,13 @@
     //----------Check if the given record exists-----------
     foreach ($myfile->USER as $user)
     {   
-      if ( trim($user->EMAIL) == $email )
+      if ( trim($user->EMAIL) == $email && trim($user->ROLE) == $mode )
       {
         if ($redirect == 'login')
             header('location: /Signup/Signup.html?message=Profile already exists');
     
-        else 
-            header('location: /Admin/UserList/EditUser/EditUser.html?message=Profile already exists');
+        // else 
+            // header('location: /Admin/UserList/EditUser/EditUser.html?message=Profile already exists');
         exit();
       }  
     }    
@@ -42,7 +42,7 @@
         header('location: /Login/login.html');
     
     else 
-        header('location: /Admin/UserList/EditUser/EditUser.html?message=Successfully added user');
+        header('location: /Admin/UserList/UserList.php');
     exit();
     
 

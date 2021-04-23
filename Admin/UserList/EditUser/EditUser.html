@@ -43,9 +43,9 @@
                             <a href="../UserList.php" style="color: white;">Back to User List</a>
                         </button>
                     </div>
-                    
+
                 </div>
-                
+
                 <form id="form" action="../../../Signup/Signup.php" method="POST" class="edit-user-information">
                     <div class="container title-description border rounded p-4 pb-4 mb-4">
                         <h5 class="mb-3">Information</h5>
@@ -54,28 +54,34 @@
                             <div class="row">
                                 <div class="col-md-12">
                                     <label for="name" class="form-label">Name</label>
-                                    <input name="name" type="text" class="form-control" id="name" placeholder="John Smith">
+                                    <input name="name" type="text" class="form-control" id="name"
+                                        placeholder="John Smith">
                                 </div>
                                 <div class="col-md-12 mt-3">
                                     <label for="email" class="form-label">Email</label>
-                                    <input name="email" type="email" class="form-control" id="email" placeholder="someone@anywhere.ca">
+                                    <input name="email" type="email" class="form-control" id="email"
+                                        placeholder="someone@anywhere.ca">
                                 </div>
                                 <div class="col-md-12 mt-3">
                                     <label for="password" class="form-label">Password</label>
-                                    <input name="password" type="password" class="form-control" id="password" placeholder="**********">
+                                    <input name="password" type="password" class="form-control" id="password"
+                                        placeholder="**********">
                                 </div>
                                 <div class="col-md-12 mt-3">
                                     <label for="confirm-password" class="form-label">Confirm Password</label>
-                                    <input name="confirm-password" type="password" class="form-control" id="confirm-password" placeholder="**********">
+                                    <input name="confirm-password" type="password" class="form-control"
+                                        id="confirm-password" placeholder="**********">
                                 </div>
                                 <div class="col-md-3 mt-3">
                                     <label for="mode" class="form-label">User Type</label>
                                     <select name="mode" class="form-control" id="mode">
                                         <option value="USER">User</option>
                                         <option value="ADMIN">Admin</option>
-                                      </select>
+                                    </select>
                                 </div>
-                                <button onclick="submitForm()" class="form-control d-inline btn btn-outline-success pr-5 pl-5 mt-5 ml-3 mr-3" href="#">
+                                <button onclick="submitForm()"
+                                    class="form-control d-inline btn btn-outline-success pr-5 pl-5 mt-5 ml-3 mr-3"
+                                    href="#">
                                     Add New User
                                 </button>
                             </div>
@@ -92,47 +98,54 @@
     <script src="EditUser.js"></script>
 
     <script>
-        // const urlParams = new URLSearchParams(window.location.search);
         const message = urlParams.get('message');
-        
-        if ( message != null )
+
+        if (message != null)
             alert(message);
-        
-        
-        function submitForm(){
+
+
+        function submitForm() {
+            document.getElementById("email").disabled = false;
             var name = document.getElementById('name').value;
             var email = document.getElementById('email').value;
             var password = document.getElementById('password').value;
             var confirm_password = document.getElementById('confirm-password').value;
+            var role = document.getElementById('mode').value;
 
-            document.getElementById("form").addEventListener("submit", (event) => event.preventDefault() );   
+            if (document.getElementsByTagName("h3")[0].innerHTML == "Edit User") {
+                const xhttp = new XMLHttpRequest();
+                xhttp.open("POST", `../DeleteUser.php`, false);
+                xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+                xhttp.send(`email=${email}&`);
+                alert("Delete request was sent.");
+            }
 
-            if ( name == '' )
-            {
+            document.getElementById("form").addEventListener("submit", (event) => event.preventDefault());
+
+            
+
+
+            if (name == '') {
                 alert('Please enter a Name');
                 return;
             }
 
-            if ( email == '' )
-            {
+            if (email == '') {
                 alert('Please enter a Email');
                 return;
             }
 
-            if ( password == '' )
-            {
+            if (password == '') {
                 alert('Please enter a Password');
                 return;
             }
 
-            if ( confirm_password == '' )
-            { 
+            if (confirm_password == '') {
                 alert('Please confirm password');
                 return;
             }
 
-            if ( password !== confirm_password )
-            {
+            if (password !== confirm_password) {
                 alert('Passwords do not match')
                 return;
             }

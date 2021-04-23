@@ -34,20 +34,18 @@
                     <!-- Search Bar -->
                     <div class="container-fluid search input-group mb-3 p-3">
                         <div class="input-group-prepend">
-                            <button class="btn btn-outline-success dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Filter</button>
+                            <button class="btn btn-outline-success dropdown-toggle" id="dropdownHeader" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Filter</button>
                             <div class="dropdown-menu">
-                                <a class="dropdown-item" href="#">Action</a>
-                                <a class="dropdown-item" href="#">Another action</a>
-                                <a class="dropdown-item" href="#">Something else here</a>
-                                <div role="separator" class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="#">Separated link</a>
+                                <a class="dropdown-item" onclick="setfilter(this)" id="0" href="#">Name</a>
+                                <a class="dropdown-item" onclick="setfilter(this)" id="1" href="#">Email</a>
+                                <a class="dropdown-item" onclick="setfilter(this)" id="2"href="#">Role</a>
                             </div>
                         </div>
-                        <input type="text" class="form-control" placeholder="Search" aria-label="Text input with dropdown button">
+                        <input type="text" id="filtersearchbar" onkeyup="filter()" class="form-control" placeholder="Search" aria-label="Text input with dropdown button">
                     </div>
                     <!-- Table -->
                     <div class="user-table border rounded">
-                        <table class="table">
+                        <table class="table" id="userlist">
                             <thead>
                                 <tr>
                                     <th scope="col">#</th>
@@ -61,9 +59,6 @@
                                 <?php
                                 $xml = simplexml_load_file('../../DataBase/user.xml');
                                 $i = 0;
-                                // foreach ($xml->children() as $category)
-                                // {
-                                //     echo $category;
                                 foreach ($xml->children() as $user) {
                                     echo "<th scope='row'>" . ++$i .  "</th>
                                                 <td scope='col' class='name'>$user->NAME</td>

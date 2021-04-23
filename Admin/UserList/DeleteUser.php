@@ -1,16 +1,17 @@
 <?php
-$name = $_POST["name"];
-
+$email = $_POST["email"];;
 $xml = new DOMDocument;
 $xml->load('../../DataBase/user.xml');
 $database = $xml->documentElement;
 
-$users = $database->getElementsByTagName("NAME");
+$users = $database->getElementsByTagName("EMAIL");
 $amountOfUsers = $users->length;
 
 $elementsToDelete = null;
 for ($i = 0; $i < $amountOfUsers; $i++){
-    if ($users[$i]->textContent == $name) 
+    
+    if (trim($users[$i]->textContent)== $email) 
+    
     $elementToDelete = $users[$i]->parentNode;   
 }
 
