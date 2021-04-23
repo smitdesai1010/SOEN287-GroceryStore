@@ -13,6 +13,7 @@ urlParams.forEach(function (value, key) {
             document.getElementById("ProductName").value = ProductName;
             document.getElementById("ProductName").disabled = true;
             document.getElementsByTagName("h1")[0].innerHTML = "Edit Product";
+            document.getElementById("submitproduct").innerHTML = "Save Changes";
             break;
         case key == 'desc': Description = value;
             document.getElementById("Description").value = Description;
@@ -60,7 +61,6 @@ function submitProduct() {
         xhttp.open("POST", `../deleteproduct.php`, false);
         xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
         xhttp.send(`title=${ProductName}&category=${foodType}`);
-        document.getElementById("ProductName").disabled = true;
     }
     
 
@@ -72,7 +72,7 @@ function submitProduct() {
         foodType == 'Food Type' ||
         price == '' ||
         specialPrice == '') {
-            
+        document.getElementById("ProductName").disabled = true;
             alert('You must complete the form!');
             return;
     }
