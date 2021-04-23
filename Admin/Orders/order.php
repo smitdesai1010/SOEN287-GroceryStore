@@ -115,9 +115,6 @@
                                                     <td scope='col'>$$o->TOTAL</td>   
 
                                                     <td scope='col'>
-                                                    <a style='font-size:11px'
-                                                        class='btn btn-outline-primary btn-sm pl-3 pr-3 mr-1' href='#'
-                                                        role='button' onclick='edit(this)'>Edit</a>
                                                         <a style='font-size:11px' class='btn btn-outline-danger btn-sm pl-3 pr-3'
                                                             onclick='deleteOrder($o->ID)' role='button'>Delete</a>
                                                     </td>
