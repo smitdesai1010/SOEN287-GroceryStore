@@ -1,4 +1,4 @@
-<?php
+<?php 
 
 $product_name = $_POST['ProductName'];
 $description = $_POST['Description'];
@@ -17,6 +17,8 @@ $ispresent = false;
 foreach ($myfile->$category->PRODUCT as $product) {   #echo var_dump($product);
     if (trim($product->TITLE) == $product_name) {
         $ispresent = true;
+        include('../deleteproduct.php');
+        $product->addChild('TITLE', $product_name);
         $product->addChild('DESCRIPTION', $description);
         $product->addChild('IMAGE', $image_URL);
         $product->addChild('THUMBNAIL', $thumbnail_URL);
@@ -25,14 +27,20 @@ foreach ($myfile->$category->PRODUCT as $product) {   #echo var_dump($product);
         $product->addChild('SPECIAL', $onSpecial);
         $product->addChild('SPECIALPRICE', $specialPrice);
         break;
+
+        $myfile->asXML('../../../DataBase/products.xml');
+
+        header('location: /Admin/ProductList/productlist.php');
+        exit();
     }
 }
 
 //-----------------------------------------------------
 
 if (!$ispresent) {
+    echo "Creating!";
     $product = $myfile->$category->addChild('PRODUCT');
-    $product->addChild('NAME', $product_name);
+    $product->addChild('TITLE', $product_name);
     $product->addChild('DESCRIPTION', $description);
     $product->addChild('IMAGE', $image_URL);
     $product->addChild('THUMBNAIL', $thumbnail_URL);

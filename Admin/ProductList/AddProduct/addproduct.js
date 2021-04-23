@@ -44,6 +44,8 @@ urlParams.forEach(function (value, key) {
 
 
 function submitProduct() {
+    
+    document.getElementById("ProductName").disabled = false;
     let ProductName = document.getElementById('ProductName').value;
     let Description = document.getElementById('Description').value;
     let imageURL = document.getElementById('imageURL').value;
@@ -51,7 +53,14 @@ function submitProduct() {
     let foodType = document.getElementById('foodType').value;
     let price = document.getElementById('price').value;
     let onSpecial = document.getElementById("onSpecial").checked ? 1 : 0;
-    let specialPrice = document.getElementById('specialPrice').value
+    let specialPrice = document.getElementById('specialPrice').value;
+
+    if (document.getElementsByTagName("h1")[0].innerHTML === "Edit Product") {
+        const xhttp = new XMLHttpRequest();
+        xhttp.open("POST", `../deleteproduct.php`, false);
+        xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+        xhttp.send(`title=${ProductName}&category=${foodType}`);
+    }
 
     // All inputs must be filled.
     if (ProductName == '' ||
@@ -61,11 +70,13 @@ function submitProduct() {
         foodType == 'Food Type' ||
         price == '' ||
         specialPrice == '') {
-        alert('You must complete the form!');
-        return;
+            document.getElementById("ProductName").disabled = true;
+            alert('You must complete the form!');
+            return;
     }
-
-    document.getElementById('products').submit();
+    
     alert('Your product has been added!');
+    document.getElementById('products').submit();
+    
 }
 
