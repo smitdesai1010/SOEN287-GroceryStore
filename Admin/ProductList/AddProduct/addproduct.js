@@ -60,7 +60,9 @@ function submitProduct() {
         xhttp.open("POST", `../deleteproduct.php`, false);
         xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
         xhttp.send(`title=${ProductName}&category=${foodType}`);
+        document.getElementById("ProductName").disabled = true;
     }
+    
 
     // All inputs must be filled.
     if (ProductName == '' ||
@@ -70,7 +72,7 @@ function submitProduct() {
         foodType == 'Food Type' ||
         price == '' ||
         specialPrice == '') {
-            document.getElementById("ProductName").disabled = true;
+            
             alert('You must complete the form!');
             return;
     }
