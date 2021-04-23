@@ -117,7 +117,6 @@
                 xhttp.open("POST", `../DeleteUser.php`, false);
                 xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
                 xhttp.send(`email=${email}&`);
-                alert("Delete request was sent.");
             }
 
             document.getElementById("form").addEventListener("submit", (event) => event.preventDefault());

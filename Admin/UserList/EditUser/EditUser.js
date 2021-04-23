@@ -13,11 +13,4 @@ if (variable != null)
 {
     document.getElementById("email").disabled = true;
     document.getElementsByTagName("h3")[0].innerHTML = "Edit User";
-    // document.getElementById("form").setAttribute("action", "EditUser.php")
 }
-
-
-// if (urlParams.get('name') === null)
-// {
-    
-// }
