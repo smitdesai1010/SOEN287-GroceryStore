@@ -1,5 +1,4 @@
 <?php
-
     $name = $_POST['name'];
     $email = $_POST['email'];
     $password = $_POST['password'];
@@ -22,8 +21,8 @@
         if ($redirect == 'login')
             header('location: /Signup/Signup.html?message=Profile already exists');
     
-        // else 
-            // header('location: /Admin/UserList/EditUser/EditUser.html?message=Profile already exists');
+        else 
+            header('location: /Admin/UserList/EditUser/EditUser.html?message=Profile already exists');
         exit();
       }  
     }    
