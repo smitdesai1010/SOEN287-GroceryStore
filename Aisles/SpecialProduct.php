@@ -16,7 +16,7 @@
             <section class="px-4">
                 <div class="container">
                     <?php
-                        $myfile = simplexml_load_file('..\DataBase\products.xml');
+                        $myfile = simplexml_load_file('../DataBase/products.xml');
                         $ctr = 0;
                         $row = "<div class='row d-flex justify-content-center'>";
 
